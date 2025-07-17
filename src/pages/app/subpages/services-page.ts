@@ -1,20 +1,24 @@
 import {LitElement, html, css} from 'lit-element';
-import {customElement, property} from 'lit/decorators.js';
+import {customElement} from 'lit/decorators.js';
+import '../../layouts/full-layout.ts'
+import '../../../components/services/service-section.ts'
+import './gallery-page.ts'
 
 @customElement('services-page')
 export class ServicesPage extends LitElement {
-    @property({type: String}) foo = '';
-
     override render() {
-        return html`
-      <div></div>
+      return html`
+        <full-layout>
+          <service-section></service-section>
+        </full-layout>
     `;
     }
 
     static override styles = css`
-    :host {
-      display: block;
-    }
+      :host {
+        display: block;
+        height: 100%;
+      }
   `;
 }
 
