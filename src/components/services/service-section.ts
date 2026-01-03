@@ -4,6 +4,9 @@ import tailwindCss from "../../tailwind/tailwindCss.ts";
 import JK from '../../assets/Jenseits.jpg'
 import AR from '../../assets/Aura-reading.jpg'
 import SW from '../../assets/Seelenweg.jpg'
+import SB from '../../assets/Seelenbild.png'
+import KB from '../../assets/Krafttierbild.jpeg'
+import GP from '../../assets/Geistführer-Portrait.jpg'
 
 @customElement('service-section')
 export class ServiceSection extends LitElement {
@@ -113,7 +116,7 @@ export class ServiceSection extends LitElement {
 						<div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
 							<article class="relative isolate flex flex-col gap-8 lg:flex-row">
 								<div class="relative aspect-video sm:aspect-2/1 lg:aspect-square lg:w-64 lg:shrink-0">
-									<img src=${JK} alt="Jenseitskontakt" class="absolute inset-0 size-full rounded-2xl bg-gray-50 object-cover">
+									<img src=${SB} alt="Jenseitskontakt" class="absolute inset-0 size-full rounded-2xl bg-gray-50 object-cover">
 									<div class="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
 								</div>
 								<div>
@@ -122,6 +125,11 @@ export class ServiceSection extends LitElement {
 											Vertraue der geistigen Welt
 										</h3>
 										<p class="mt-5 text-sm/6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.</p>
+									</div>
+									<div class="mt-6 flex pt-6">
+										<button class="rounded-md bg-teal-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-teal-700 focus:shadow-none active:bg-teal-700 hover:bg-teal-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer" @click=${() => this.dispatchEvent(new CustomEvent('reroute', {detail: '/gallery?type=seelenbilder', bubbles: true, composed: true}))}>
+											Gallery
+										</button>
 									</div>
 								</div>
 							</article>
@@ -138,7 +146,7 @@ export class ServiceSection extends LitElement {
 						<div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
 							<article class="relative isolate flex flex-col gap-8 lg:flex-row">
 								<div class="relative aspect-video sm:aspect-2/1 lg:aspect-square lg:w-64 lg:shrink-0">
-									<img src=${JK} alt="Jenseitskontakt" class="absolute inset-0 size-full rounded-2xl bg-gray-50 object-cover">
+									<img src=${KB} alt="Jenseitskontakt" class="absolute inset-0 size-full rounded-2xl bg-gray-50 object-cover">
 									<div class="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
 								</div>
 								<div>
@@ -149,7 +157,7 @@ export class ServiceSection extends LitElement {
 										<p class="mt-5 text-sm/6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.</p>
 									</div>
 									<div class="mt-6 flex pt-6">
-										<button class="rounded-md bg-teal-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-teal-700 focus:shadow-none active:bg-teal-700 hover:bg-teal-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer" @click=${() => this.dispatchEvent(new CustomEvent('reroute', {detail: '/gallery', bubbles: true, composed: true}))}>
+										<button class="rounded-md bg-teal-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-teal-700 focus:shadow-none active:bg-teal-700 hover:bg-teal-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer" @click=${() => this.dispatchEvent(new CustomEvent('reroute', {detail: '/gallery?type=krafttierbilder', bubbles: true, composed: true}))}>
 											Gallery
 										</button>
 									</div>
@@ -168,7 +176,7 @@ export class ServiceSection extends LitElement {
 						<div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
 							<article class="relative isolate flex flex-col gap-8 lg:flex-row">
 								<div class="relative aspect-video sm:aspect-2/1 lg:aspect-square lg:w-64 lg:shrink-0">
-									<img src=${JK} alt="Jenseitskontakt" class="absolute inset-0 size-full rounded-2xl bg-gray-50 object-cover">
+									<img src=${GP} alt="Jenseitskontakt" class="absolute inset-0 size-full rounded-2xl bg-gray-50 object-cover">
 									<div class="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
 								</div>
 								<div>

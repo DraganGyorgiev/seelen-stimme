@@ -1,12 +1,10 @@
 import {LitElement, html} from 'lit-element';
-import {customElement, property} from 'lit/decorators.js';
+import {customElement} from 'lit/decorators.js';
 import tailwindCss from "../../tailwind/tailwindCss.ts";
 
 @customElement('page-not-found')
 export class PageNotFound extends LitElement {
-    @property({type: String}) foo = '';
-
-    override render() {
+      override render() {
       return html`
 	      <main class="relative isolate min-h-full">
 		      <img
@@ -23,7 +21,6 @@ export class PageNotFound extends LitElement {
 			      </div>
 		      </div>
 	      </main>
-
       `;
     }
 

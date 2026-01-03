@@ -26,6 +26,28 @@ export class GalleryPage extends LitElement {
 
 	galleryArray = galleryData;
 
+	connectedCallback() {
+		super.connectedCallback();
+
+		const params = new URLSearchParams(window.location.search);
+		const type = params.get('type');
+
+		this.setActiveGallery(type);
+	}
+
+	private setActiveGallery(type: string | null) {
+		this.galleryArray.forEach(item => (item.active = false));
+
+		if (type === 'krafttierbilder') {
+			this.galleryArray.find(i => i.label === 'Krafttierbilder')!.active = true;
+		} else {
+			// default
+			this.galleryArray.find(i => i.label === 'Seelenbilder')!.active = true;
+		}
+
+		this.requestUpdate();
+	}
+
 	private handleClick(e: any) {
 		if (e.target.classList.contains('gallery-image')) {
 			const imageSrc = e.target.src;
@@ -38,11 +60,18 @@ export class GalleryPage extends LitElement {
 		this.galleryArray.map((item) => item.active = false);
 		const activeItem = this.galleryArray.find((item) => item.id === id);
 		activeItem!.active = true;
-		this.requestUpdate('galleryArray');
+
+		const type =
+			activeItem!.label === 'Krafttierbilder'
+				? 'krafttierbilder'
+				: 'seelenbilder';
+
+		history.replaceState({}, '', `/gallery?type=${type}`);
+		this.requestUpdate();
 	}
 
 	get displayedImages() {
-		return this.galleryArray.find((item) => item.active === true)?.label;
+		return this.galleryArray.find((item) => item.active)?.label;
 	}
 
 	override render() {

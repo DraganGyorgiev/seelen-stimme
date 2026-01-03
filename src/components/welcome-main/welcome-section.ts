@@ -1,7 +1,7 @@
 import {LitElement, html} from 'lit-element';
 import {customElement} from 'lit/decorators.js';
 import tailwindCss from "../../tailwind/tailwindCss.ts";
-import imgMain from '../../assets/about_me_main.png'
+import imgMain from '../../assets/about_me_main.jpeg'
 
 @customElement('welcome-section')
 export class WelcomeSection extends LitElement {

@@ -8,15 +8,15 @@ export class AppPage extends LitElement {
   override render() {
     return html`
       <div class="app">
-	      <nav-bar></nav-bar>
+<!--	      <nav-bar></nav-bar>-->
         
-	      <div class="content">
+<!--	      <div class="content">-->
 	        <main>
 	          <slot></slot>
 	        </main>
 		      
-	        <footer-simple></footer-simple>
-	      </div>
+<!--	        <footer-simple></footer-simple>-->
+<!--	      </div>-->
       </div>
     `;
   }

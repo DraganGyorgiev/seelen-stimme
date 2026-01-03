@@ -9,7 +9,6 @@ type Page = {
   label: string;
   route: string;
   active: boolean;
-	submenu?: boolean;
 }
 
 @customElement('nav-bar')
@@ -30,19 +29,24 @@ export class NavBar extends LitElement {
 		const activeHeader = this.pages.find((page) => page.route === window.location.pathname);
 		activeHeader!.active = true;
 
-		window.addEventListener('reroute', ({detail}: any) => {
-			const {id, route} = this.pages.find((page) => page.route === detail)!;
-			this.redirect(id, route);
-		})
+	  window.addEventListener('reroute', ({ detail }: any) => {
+		  const url = new URL(detail, window.location.origin);
+		  const pathname = url.pathname;
+
+		  const page = this.pages.find(p => p.route === pathname);
+		  if (!page) return;
+
+		  this.redirect(page.id, detail);
+	  });
   }
   
   redirect(id: string, route: string) {
 		this.isOpen = false;
-
 		this.pages.map((page) => page.active = false);
 
 		const activePage = this.pages.find((page) => page.id === id);
 		activePage!.active = true;
+
 		this.requestUpdate('pages');
 
 		const appPage = document.querySelector('seelenstimme-app')?.shadowRoot?.querySelector('slot')?.assignedElements();
