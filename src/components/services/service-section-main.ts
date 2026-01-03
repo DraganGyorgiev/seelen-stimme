@@ -4,6 +4,8 @@ import tailwindCss from "../../tailwind/tailwindCss.ts";
 import JK from '../../assets/Jenseits.jpg'
 import AR from '../../assets/Aura-reading.jpg'
 import SW from '../../assets/Seelenweg.jpg'
+import OZ from '../../assets/Online-Zirkel.jpg'
+import EC from '../../assets/Einzelcoaching.jpeg'
 
 @customElement('service-section-main')
 export class ServiceSectionMain extends LitElement {
@@ -30,6 +32,16 @@ export class ServiceSectionMain extends LitElement {
 						<li class="transform transition duration-500 hover:scale-110">
 							<img class="mx-auto size-56 rounded-full" src=${SW} alt="">
 							<h3 class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Seelenweg</h3>
+						</li>
+
+						<li class="transform transition duration-500 hover:scale-110">
+							<img class="mx-auto size-56 rounded-full" src=${OZ} alt="">
+							<h3 class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Online Zirkel</h3>
+						</li>
+
+						<li class="transform transition duration-500 hover:scale-110">
+							<img class="mx-auto size-56 rounded-full" src=${EC} alt="">
+							<h3 class="mt-6 text-base/7 font-semibold tracking-tight text-gray-900">Einzelcoaching</h3>
 						</li>
 						<!-- More people... -->
 					</ul>
