@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://seelen-stimme.at/sitemap.xml
