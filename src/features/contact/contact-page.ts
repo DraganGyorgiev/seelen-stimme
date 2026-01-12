@@ -1,11 +1,84 @@
 import {LitElement, html, css} from 'lit-element';
-import {customElement} from 'lit/decorators.js';
-import tailwindCss from "../../../tailwind/tailwindCss.ts";
+import {customElement, state} from 'lit/decorators.js';
+import tailwindCss from "../../tailwind/tailwindCss.ts";
+import { repeat } from "lit/directives/repeat.js";
+import "../../components/ui/app-button.ts"
+
+const options: { id: string, value: string, duration?: { label: string; price: string }[]; }[] = [
+	{ id: 'jk', value: 'Jenseitskontakt' },
+	{ id: 'ar', value: 'Aura-reading' },
+	{	id: 'sw', value: 'Seelenweg' },
+	{	id: 'sb', value: 'Seelenbilder' },
+	{	id: 'kb', value: 'Krafttierbilder' },
+	{	id: 'gp', value: 'Geistführer-Portraits' },
+	{	id: 'oz',	value: 'Medialer Übungszirkel' },
+	{
+		id: 'ec',
+		value: 'Einzelcoaching',
+		duration: [
+			{ label: '60 Minuten', price: '100 EUR' },
+			{ label: '90 Minuten', price: '150 EUR' }
+		]
+	},
+	{
+		id: 'mb',
+		value: 'Mediale Beratung',
+		duration: [
+			{ label: '30 Minuten', price: '50 EUR' },
+			{ label: '60 Minuten', price: '100 EUR' }
+		]
+	},
+	{	id: 'kg',	value: 'Kostenloses Kennenlerngespräch'	}
+]
 
 @customElement('contact-page')
 export class ContactPage extends LitElement {
+	@state() selectedOption = options[0].id;
+	@state() selectedServiceLabel = options[0].value;
+	@state() selectedDuration = '';
 
-  override render() {
+	protected firstUpdated() {
+		const params = new URLSearchParams(window.location.search);
+		const service = params.get('service');
+
+		if (service && options.some(o => o.id === service)) {
+			this.selectedOption = service;
+
+			const match = options.find(o => o.id === service);
+			this.selectedServiceLabel = match?.value ?? '';
+		}
+	}
+
+	private onServiceChange(e: Event) {
+		const id = (e.target as HTMLSelectElement).value;
+		this.selectedOption = id;
+
+		const match = options.find(o => o.id === id);
+		this.selectedServiceLabel = match?.value ?? '';
+
+		this.selectedDuration = '';
+
+		if (match?.duration?.length !== 0) {
+			this.selectedDuration = match!.duration![0].label;
+		}
+	}
+
+	private onDurationChange(e: Event) {
+		this.selectedDuration = (e.target as HTMLSelectElement).value;
+	}
+
+	private get selectedService() {
+		return options.find(o => o.id === this.selectedOption);
+	}
+
+	private get hasDuration() {
+		return !!this.selectedService?.duration?.length;
+	}
+
+	override render() {
+		const service = this.selectedService;
+		const showDuration = this.hasDuration && service?.duration;
+
     return html`
       <full-layout>
         <div class="relative isolate bg-white">
@@ -91,6 +164,58 @@ export class ContactPage extends LitElement {
 			                <input required @invalid=${(e: any) => e.currentTarget.setCustomValidity('Dieses Feld ist erforderlich!')} @input=${(e: any) => e.currentTarget.setCustomValidity('')} type="text" name="address" id="address" autocomplete="address" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
 		                </div>
 	                </div>
+	                <div class="sm:col-span-2">
+		                <label for="address" class="input-field block text-sm/6 font-semibold text-gray-900">Leistung</label>
+		                <div class="mt-2.5">
+			                <select 
+				                required 
+				                @invalid=${(e: any) => e.currentTarget.setCustomValidity('Dieses Feld ist erforderlich!')} 
+				                @change=${this.onServiceChange} 
+				                name="service_id" 
+				                id="service" 
+				                .value=${this.selectedOption} 
+				                class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
+				                ${repeat(options, (option) => option.id, ({id, value}) => html`<option value=${id}>${value}</option>`)}
+			                </select>
+			                <input
+				                type="hidden"
+				                name="service"
+				                .value=${this.selectedServiceLabel}
+			                />
+		                </div>
+	                </div>
+	                ${showDuration ? html`
+				            <div class="sm:col-span-2">
+				              <label for="duration" class="input-field block text-sm/6 font-semibold text-gray-900">
+				                Dauer
+				              </label>
+				              <div class="mt-2.5">
+				                <select
+				                  required
+				                  @invalid=${(e: any) => e.currentTarget.setCustomValidity('Bitte wähle eine Dauer aus!')}
+				                  @input=${(e: any) => e.currentTarget.setCustomValidity('')}
+				                  @change=${this.onDurationChange}
+				                  name="duration"
+				                  id="duration"
+				                  .value=${this.selectedDuration}
+				                  class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600"
+				                >
+				                  <option value="" disabled hidden>Bitte auswählen</option>
+					                ${service.duration!.map((dur) => html`
+						                <option value=${dur.label}>${dur.label} – ${dur.price}</option>
+					                `)}
+				                </select>
+					              ${this.selectedDuration ? html`
+									        <p class="mt-2 text-sm text-gray-600">
+									          Ausgewählte Dauer: <strong>${this.selectedDuration}</strong> 
+									          (${service.duration!.find(d => d.label === this.selectedDuration)?.price || '—'})
+									        </p>
+									      ` : ''}
+				              </div>
+
+					            <input type="hidden" name="duration_price" .value=${service.duration!.find(d => d.label === this.selectedDuration)?.price || ''} />
+				            </div>
+				          ` : ''}
                   <div class="sm:col-span-2">
                     <label for="message" class="block text-sm/6 font-semibold text-gray-900">Nachricht</label>
                     <div class="mt-2.5">
@@ -99,8 +224,12 @@ export class ContactPage extends LitElement {
                   </div>
                 </div>
                 <div class="mt-8 flex justify-end">
-                  <button type="submit" class="rounded-md bg-sky-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-sky-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600">Nachricht senden</button>
+                  <app-button variant="primary" type="submit">Nachricht senden</app-button>
                 </div>
+	              <div class="mt-8 text-gray-500 text-sm letter-spacing">
+		              <p><strong>Hinweis</strong>:
+			              Meine Angebote dienen der spirituellen Begleitung und ersetzen keine medizinische, psychologische oder therapeutische Behandlung. Es werden keine Diagnosen gestellt und keine Heilversprechen gegeben.</p>
+	              </div>
               </div>
 
 	            <input type="hidden" name="_next" value="https://www.seelen-stimme.at/contact">
