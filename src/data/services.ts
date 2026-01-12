@@ -44,7 +44,7 @@ export const services: Service[] = [
 	{
 		id: 'sw',
 		title: 'Seelenweg',
-		subtitle: 'Lausche dem Klang deiner Seele und tauche in deine Seelenfrequenz ein.',
+		subtitle: 'Tiefe, einfühlsame Begleitung, die über das Alltägliche hinausgeht: In respektvoller Verbindung mit der Seele selbst entstehen Klarheit, Heilung und Ausrichtung – ein Gespräch, das nicht nur den Verstand, sondern das innerste Wesen berührt und erinnert.',
 		image: SW,
 		description:
 			'In der Seelenweg-Begleitung findest du klare Antworten auf die tiefsten Fragen deiner Seele.\n' +
@@ -80,7 +80,7 @@ export const services: Service[] = [
 		description:
 			'Geistführer-Portraits entstehen aus medialer Wahrnehmung und zeigen deinen geistigen Begleiter in einer individuellen Darstellung.',
 		price: '60 EUR',
-		// hasGallery: true
+		hasGallery: true
 	},
 	{
 		id: 'oz',
@@ -88,7 +88,7 @@ export const services: Service[] = [
 		subtitle: 'Gemeinsam üben und wachsen.',
 		image: OZ,
 		description:
-			'Der mediale Übungszirkel bietet Raum, um die eigene Wahrnehmung zu schulen, sich auszutauschen und gemeinsam spirituell zu wachsen.',
+			'Der mediale Übungszirkel bietet Raum, um die eigene Wahrnehmung zu schulen, sich auszutauschen und gemeinsam spirituell zu wachsen. Dieser Zirkel ist sowohl für Einsteiger als auch für Fortgeschrittene geeignet.',
 		duration: '2 Stunden',
 		price: '20 EUR'
 	},

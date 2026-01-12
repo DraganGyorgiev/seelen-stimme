@@ -2,46 +2,43 @@ import { LitElement, html, css } from 'lit-element';
 import { customElement, property, query } from 'lit/decorators.js';
 import tailwindCss from "../../../tailwind/tailwindCss.ts";
 import { choose } from 'lit/directives/choose.js';
+import Bear from '/src/assets/gallery/spirit-animal/Bear.jpg';
+import Elephant from '/src/assets/gallery/spirit-animal/Elephant.jpg';
+import Dear from '/src/assets/gallery/spirit-animal/Dear.jpg';
+import Cat from '/src/assets/gallery/spirit-animal/Cat.jpg';
+import Wolf from '/src/assets/gallery/spirit-animal/Wolf.jpg';
+import Fox from '/src/assets/gallery/spirit-animal/Fox.jpg';
+import Parrot from '/src/assets/gallery/spirit-animal/Parrot.jpg';
+import Birds from '/src/assets/gallery/spirit-animal/Birds.jpg';
+import Fox_2 from '/src/assets/gallery/spirit-animal/Fox_2.jpg';
+import Frog from '/src/assets/gallery/spirit-animal/Frog.jpeg';
+import Seahorse from '/src/assets/gallery/spirit-animal/Seahorse.jpeg';
+import Lizard from '/src/assets/gallery/spirit-animal/Lizard.jpeg';
+import SB_2 from '/src/assets/gallery/spirit-way/SB_2.jpeg';
+import SB_1 from '/src/assets/gallery/spirit-way/SB_1.jpeg';
+import SB_3 from	'/src/assets/gallery/spirit-way/SB_3.jpeg';
+import GP_1 from '/src/assets/gallery/spirit-guide/GP_1.jpeg';
+import GP_2 from '/src/assets/gallery/spirit-guide/GP_2.jpeg';
+import GP_3 from '/src/assets/gallery/spirit-guide/GP_3.jpeg';
 
 const galleries = [
 	{
 		id: 'seelen',
 		label: 'Seelenbilder',
-		type: 'seelenbilder',
-		images: [
-			'/src/assets/gallery/spirit-way/SB_2.jpeg',
-			'/src/assets/gallery/spirit-way/SB_1.jpeg',
-			'/src/assets/gallery/spirit-way/SB_3.jpeg',
-		]
+		type: 'sb',
+		images: [SB_1, SB_2, SB_3]
 	},
 	{
 		id: 'tier',
 		label: 'Krafttierbilder',
-		type: 'krafttierbilder',
-		images: [
-			'/src/assets/gallery/spirit-animal/Bear.jpg',
-			'/src/assets/gallery/spirit-animal/Elephant.jpg',
-			'/src/assets/gallery/spirit-animal/Dear.jpg',
-			'/src/assets/gallery/spirit-animal/Cat.jpg',
-			'/src/assets/gallery/spirit-animal/Wolf.jpg',
-			'/src/assets/gallery/spirit-animal/Fox.jpg',
-			'/src/assets/gallery/spirit-animal/Parrot.jpg',
-			'/src/assets/gallery/spirit-animal/Birds.jpg',
-			'/src/assets/gallery/spirit-animal/Fox_2.jpg',
-			'/src/assets/gallery/spirit-animal/Frog.jpeg',
-			'/src/assets/gallery/spirit-animal/Seahorse.jpeg',
-			'/src/assets/gallery/spirit-animal/Lizard.jpeg',
-		]
+		type: 'kb',
+		images: [Bear, Elephant, Dear, Cat, Wolf, Fox, Parrot, Birds, Fox_2, Frog, Seahorse, Lizard]
 	},
 	{
 		id: 'geist',
 		label: 'Geistführer-Portraits',
-		type: 'geistfuehrer-portraits',
-		images: [
-			'/src/assets/gallery/spirit-guide/GP_1.jpeg',
-			'/src/assets/gallery/spirit-guide/GP_2.jpeg',
-			'/src/assets/gallery/spirit-guide/GP_3.jpeg',
-		]
+		type: 'gp',
+		images: [GP_1, GP_2, GP_3]
 	}
 ];
 

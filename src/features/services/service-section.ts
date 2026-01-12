@@ -38,6 +38,7 @@ export class ServiceSection extends LitElement {
 		return html`
 			<div
 				@reroute=${(e: CustomEvent<string>) => {
+					console.log(e.detail)
 					e.stopPropagation();
 					Router.go(e.detail);
 				}}

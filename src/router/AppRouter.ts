@@ -1,5 +1,5 @@
 import { Router } from '@vaadin/router';
-import { saveScroll, restoreScroll, scrollToHashOrTop, markHistoryNavigation, resetNavigationFlag } from './scroll-manager';
+import { saveScroll, restoreScroll, scrollToHashOrTop, markHistoryNavigation, resetHistoryNavigationFlag } from './scroll-manager';
 
 import "../pages/app/app-page.ts";
 import "../pages/app/subpages/main-page.ts";
@@ -55,7 +55,7 @@ export default class AppRouter extends Router {
 				scrollToHashOrTop();
 			}
 
-			resetNavigationFlag();
+			resetHistoryNavigationFlag();
 		});
 
 		if ('scrollRestoration' in history) {

@@ -20,32 +20,33 @@ export class AppLink extends LitElement {
 		const isNav = this.variant === 'nav';
 
 		return html`
-			<a
-				href=${this.to}
-				@click=${this.onClick}
-				class="
-          ${isNav ? 'group transition-all duration-200 motion-safe:hover:-translate-y-0.5' : ''}
-          relative inline-block
-          focus-visible:outline-none
-          focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 rounded-sm
-          ${isNav
-					? this.active
-						? 'text-gray-900'
-						: 'text-gray-600 hover:text-gray-900'
-					: ''}
-        ">
-					<slot></slot>
-
-					${isNav ? html`
-	          <span
-	            class="
-	              pointer-events-none
-	              absolute -bottom-1 left-0 h-px w-full
-	              origin-left bg-gray-900/70
-	              transition-transform duration-300
-	              ${this.active ? 'scale-x-100 bg-teal-500' : 'scale-x-0 group-hover:scale-x-100'}">
-	          </span>` : null}
-			</a>
+			<div class="block w-full cursor-pointer" @click=${this.onClick}>
+				<a
+					href=${this.to}
+					class="
+	          ${isNav ? 'group transition-all duration-200 motion-safe:hover:-translate-y-0.5' : ''}
+	          relative inline-block
+	          focus-visible:outline-none
+	          focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 rounded-sm
+	          ${isNav
+						? this.active
+							? 'text-gray-900'
+							: 'text-gray-600 hover:text-gray-900'
+						: ''}
+	        ">
+						<slot></slot>
+	
+						${isNav ? html`
+		          <span
+		            class="
+		              pointer-events-none
+		              absolute -bottom-1 left-0 h-px w-full
+		              origin-left bg-gray-900/70
+		              transition-transform duration-300
+		              ${this.active ? 'scale-x-100 bg-teal-500' : 'scale-x-0 group-hover:scale-x-100'}">
+		          </span>` : null}
+				</a>
+			</div>
 		`;
 	}
 

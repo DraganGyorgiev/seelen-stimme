@@ -36,6 +36,7 @@ export class ContactPage extends LitElement {
 	@state() selectedOption = options[0].id;
 	@state() selectedServiceLabel = options[0].value;
 	@state() selectedDuration = '';
+	@state() zirkelLevel = '';
 
 	protected firstUpdated() {
 		const params = new URLSearchParams(window.location.search);
@@ -58,8 +59,8 @@ export class ContactPage extends LitElement {
 
 		this.selectedDuration = '';
 
-		if (match?.duration?.length !== 0) {
-			this.selectedDuration = match!.duration![0].label;
+		if (match?.duration && match.duration.length !== 0) {
+			this.selectedDuration = match.duration[0].label;
 		}
 	}
 
@@ -216,6 +217,21 @@ export class ContactPage extends LitElement {
 					            <input type="hidden" name="duration_price" .value=${service.duration!.find(d => d.label === this.selectedDuration)?.price || ''} />
 				            </div>
 				          ` : ''}
+
+	                ${service!.id === 'oz' ? html`
+									  <label for="zirkel-level" class="block text-sm font-medium text-gray-700">
+									    Erfahrungsniveau
+									  </label>
+									  <select
+									    id="zirkel-level"
+									    name="zirkel-level"
+									    class="mt-1 block w-full rounded-md rounded-md bg-white text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600"
+									    @change=${(e: any) => this.zirkelLevel = e.target.value}
+									  >
+									    <option value="beginner">Einsteiger</option>
+									    <option value="advanced">Fortgeschritten</option>
+									  </select>
+									` : null}
                   <div class="sm:col-span-2">
                     <label for="message" class="block text-sm/6 font-semibold text-gray-900">Nachricht</label>
                     <div class="mt-2.5">

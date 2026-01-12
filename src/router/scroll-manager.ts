@@ -1,16 +1,16 @@
 const positions = new Map<string, number>();
-let isHistoryNav = false;
+let isHistoryNavigation = false;
 
 function key() {
 	return location.pathname + location.hash;
 }
 
 export function markHistoryNavigation() {
-	isHistoryNav = true;
+	isHistoryNavigation = true;
 }
 
-export function resetNavigationFlag() {
-	isHistoryNav = false;
+export function resetHistoryNavigationFlag() {
+	isHistoryNavigation = false;
 }
 
 export function saveScroll() {
@@ -18,7 +18,7 @@ export function saveScroll() {
 }
 
 export function restoreScroll(): boolean {
-	if (!isHistoryNav) return false;
+	if (!isHistoryNavigation) return false;
 
 	const y = positions.get(key());
 	if (typeof y === 'number') {
@@ -30,14 +30,14 @@ export function restoreScroll(): boolean {
 
 export function scrollToHashOrTop() {
 	const id = location.hash.replace('#', '');
-
-	if (id) {
-		const el = document.getElementById(id);
-		if (el) {
-			el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-			return;
+	requestAnimationFrame(() => {
+		if (id) {
+			const el = document.getElementById(id);
+			if (el) {
+				el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				return;
+			}
 		}
-	}
-
-	window.scrollTo({ top: 0, behavior: 'auto' });
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	});
 }

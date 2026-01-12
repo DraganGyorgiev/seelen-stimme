@@ -9,8 +9,8 @@ export class SiteFooter extends LitElement {
   
   override render() {
     return html`
-	    <footer class="bg-white border-t border-gray-900/10 hover:bg-gray-50/40 transition-colors duration-300">
-		    <div class="mx-auto max-w-7xl overflow-hidden px-6 py-12 sm:py-16 lg:px-8">
+	    <footer class="bg-white border-t border-gray-900/10 hover:bg-gray-50/40 transition-colors duration-300 py-12 sm:py-16 lg:py-16 min-h-[240px]">
+		    <div class="mx-auto max-w-7xl overflow-hidden px-6 lg:px-8">
 			    <nav class="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6" aria-label="Footer">
 				    <app-link to="/impressum">Impressum</app-link>
 				    <app-link to="/agb">AGB</app-link>
