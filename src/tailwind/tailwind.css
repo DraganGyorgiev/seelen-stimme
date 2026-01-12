@@ -432,6 +432,9 @@
   .aspect-1313\/771 {
     aspect-ratio: 1313/771;
   }
+  .aspect-\[4\/5\] {
+    aspect-ratio: 4/5;
+  }
   .aspect-video {
     aspect-ratio: var(--aspect-video);
   }
@@ -472,6 +475,9 @@
   }
   .h-\[280px\] {
     height: 280px;
+  }
+  .h-auto {
+    height: auto;
   }
   .h-full {
     height: 100%;
@@ -520,6 +526,9 @@
   }
   .max-w-lg {
     max-width: var(--container-lg);
+  }
+  .max-w-none {
+    max-width: none;
   }
   .max-w-sm {
     max-width: var(--container-sm);

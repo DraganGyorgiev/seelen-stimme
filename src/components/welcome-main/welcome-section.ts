@@ -29,7 +29,7 @@ export class WelcomeSection extends LitElement {
 							</p>
 						</div>
 
-						<img class="size-fit xl:max-w-lg xl:mx-auto 2xl:origin-bottom rounded-3xl object-top" src=${imgMain} alt="Stefana Gyorgiev – Spirituelle Begleiterin"/>
+						<img class="w-full max-w-none h-auto rounded-3xl object-cover xl:max-w-lg xl:mx-auto 2xl:origin-bottom" src=${imgMain} alt="Stefana Gyorgiev – Spirituelle Begleiterin"/>
 					</div>
 				</div>
 			</section>
