@@ -29,7 +29,7 @@ export const services: Service[] = [
 		description:
 			'In einem geschützten und achtsamen Raum verbinde ich mich mit der Geistigen Welt, um Botschaften Ihrer Lieben aus dem Jenseits zu übermitteln. Diese Sitzung kann Trost, Klarheit und neue Perspektiven schenken.',
 		duration: '60 Minuten',
-		price: '150 EUR + MwSt.'
+		price: '150 EUR.'
 	},
 	{
 		id: 'ar',
@@ -39,7 +39,7 @@ export const services: Service[] = [
 		description:
 			'Aura-Reading basiert auf der Wahrnehmung des energetischen Feldes eines Menschen.',
 		duration: '60 Minuten',
-		price: '150 EUR + MwSt.'
+		price: '150 EUR.'
 	},
 	{
 		id: 'sw',
@@ -50,7 +50,7 @@ export const services: Service[] = [
 			'In der Seelenweg-Begleitung findest du klare Antworten auf die tiefsten Fragen deiner Seele.\n' +
 			'Gemeinsam schauen wir auf deine aktuellen Lebensthemen, Seelenaufgaben und nächsten Entwicklungsschritte – einfühlsam, tiefgehend und immer lösungsorientiert.',
 		duration: '60 Minuten',
-		price: '250 EUR + MwSt.'
+		price: '250 EUR.'
 	},
 	{
 		id: 'sb',
@@ -59,7 +59,7 @@ export const services: Service[] = [
 		image: SB,
 		description:
 			'Seelenbilder entstehen aus der Verbindung mit der Geistigen Welt und zeigen energetische Themen, Seelenanteile und innere Prozesse in bildlicher Form.',
-		price: 'ab 150 EUR + MwSt.',
+		price: 'ab 150 EUR.',
 		hasGallery: true
 	},
 	{
@@ -69,7 +69,7 @@ export const services: Service[] = [
 		image: KB,
 		description:
 			'Krafttierbilder zeigen dein persönliches Krafttier und dessen Botschaft. Sie stärken deine Verbindung zu deiner inneren Kraft und unterstützen dich auf deinem Weg.',
-		price: 'ab 50 EUR + MwSt.',
+		price: 'ab 50 EUR.',
 		hasGallery: true
 	},
 	{
@@ -79,7 +79,7 @@ export const services: Service[] = [
 		image: GP,
 		description:
 			'Geistführer-Portraits entstehen aus medialer Wahrnehmung und zeigen deinen geistigen Begleiter in einer individuellen Darstellung.',
-		price: '60 EUR + MwSt.',
+		price: '60 EUR.',
 		hasGallery: true
 	},
 	{
@@ -90,7 +90,7 @@ export const services: Service[] = [
 		description:
 			'Der mediale Übungszirkel bietet Raum, um die eigene Wahrnehmung zu schulen, sich auszutauschen und gemeinsam spirituell zu wachsen. Dieser Zirkel ist sowohl für Einsteiger als auch für Fortgeschrittene geeignet.',
 		duration: '2 Stunden',
-		price: '20 EUR + MwSt.'
+		price: '20 EUR.'
 	},
 	{
 		id: 'ec',
@@ -100,7 +100,7 @@ export const services: Service[] = [
 		description:
 			'Im Einzelcoaching widmen wir uns gezielt deinen persönlichen Themen. Die Sitzung wird individuell auf dich und deine Bedürfnisse abgestimmt.',
 		duration: '60 - 90 Minuten',
-		price: 'ab 100 EUR + MwSt.'
+		price: 'ab 100 EUR.'
 	},
 	{
 		id: 'mb',
@@ -110,7 +110,7 @@ export const services: Service[] = [
 		description:
 			'Die mediale Beratung bietet dir Antworten, Impulse und Orientierung zu aktuellen Lebensfragen – empathisch, achtsam und lösungsorientiert.',
 		duration: '30–60 Minuten',
-		price: 'ab 50 EUR + MwSt.'
+		price: 'ab 50 EUR.'
 	},
 	{
 		id: 'kg',
