@@ -240,7 +240,21 @@ export class ContactPage extends LitElement {
                   </div>
                 </div>
                 <div class="mt-8 flex justify-end">
-                  <app-button variant="primary" type="submit">Nachricht senden</app-button>
+	                <button type="submit" class="rounded-md bg-teal-600 text-white
+          hover:bg-teal-700
+          focus-visible:ring-teal-500
+          inline-flex items-center justify-center
+          px-4 py-2 text-sm font-medium
+          shadow-sm
+
+          transition-all duration-200
+          motion-safe:hover:-translate-y-0.5 motion-safe:hover:scale-[1.02]
+          motion-safe:active:translate-y-0
+
+          focus-visible:outline-none
+          focus-visible:ring-2 focus-visible:ring-offset-2
+
+          disabled:opacity-50 disabled:pointer-events-none">Nachricht senden</button>
                 </div>
 	              <div class="mt-8 text-gray-500 text-sm letter-spacing">
 		              <p><strong>Hinweis</strong>:
