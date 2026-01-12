@@ -16,16 +16,16 @@ const options: { id: string, value: string, duration?: { label: string; price: s
 		id: 'ec',
 		value: 'Einzelcoaching',
 		duration: [
-			{ label: '60 Minuten', price: '100 EUR + MwSt' },
-			{ label: '90 Minuten', price: '150 EUR + MwSt' }
+			{ label: '60 Minuten', price: '100 EUR + MwSt.' },
+			{ label: '90 Minuten', price: '150 EUR + MwSt.' }
 		]
 	},
 	{
 		id: 'mb',
 		value: 'Mediale Beratung',
 		duration: [
-			{ label: '30 Minuten', price: '50 EUR + MwSt' },
-			{ label: '60 Minuten', price: '100 EUR + MwSt' }
+			{ label: '30 Minuten', price: '50 EUR + MwSt.' },
+			{ label: '60 Minuten', price: '100 EUR + MwSt.' }
 		]
 	},
 	{	id: 'kg',	value: 'Kostenloses Kennenlerngespräch'	}
