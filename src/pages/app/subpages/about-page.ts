@@ -36,7 +36,7 @@ export class AboutPage extends LitElement {
 						    <p>Den Hinterbliebenen zu zeigen, dass ihre Liebsten weiterhin auf seelischer Ebene bei ihnen sind und sie begleiten, empfinde ich als eine sehr erfüllende und sinnstiftende Aufgabe.</p>
 					    </div>
 				    </div>
-				    <img src=${image} alt="" class="mt-10 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2">
+				    <img src=${image} alt="Stefana Gyorgiev – Spirituelle Begleiterin" class="mt-10 w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2">
 			    </div>
 		    </div>
 		    <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-linear-to-t from-white sm:h-32"></div>
