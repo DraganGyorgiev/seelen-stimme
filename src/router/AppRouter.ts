@@ -1,11 +1,5 @@
 import { Router } from '@vaadin/router';
-import {
-	saveScroll,
-	restoreScroll,
-	scrollToHashOrTop,
-	markHistoryNavigation,
-	resetHistoryFlag
-} from './scroll-manager';
+import { saveScroll, restoreScroll, scrollToHashOrTop, markHistoryNavigation, resetNavigationFlag } from './scroll-manager';
 
 import "../pages/app/app-page.ts";
 import "../pages/app/subpages/main-page.ts";
@@ -18,6 +12,7 @@ import "../pages/app/subpages/legally-required/impressum-page.ts";
 import "../pages/app/subpages/legally-required/datenschutz-page.ts";
 import "../pages/app/subpages/legally-required/agb-page.ts";
 import "../pages/app/subpages/legally-required/cookies-page.ts";
+import "../pages/app/subpages/gallery-page.ts";
 
 export default class AppRouter extends Router {
 	constructor() {
@@ -27,92 +22,44 @@ export default class AppRouter extends Router {
 			{
 				path: '/',
 				component: 'app-page',
-				action: () => {
-					// runs BEFORE navigation
-					saveScroll();
-					return true;
-				},
 				children: [
-					{
-						path: '/',
-						component: 'main-page',
-						onAfterEnter: () => this.handleScroll()
-					},
-					{
-						path: '/about',
-						component: 'about-page',
-						onAfterEnter: () => this.handleScroll()
-					},
-					{
-						path: '/about/:additional',
-						component: 'additional-info-page',
-						onAfterEnter: () => this.handleScroll()
-					},
-					{
-						path: '/contact',
-						component: 'contact-page',
-						onAfterEnter: () => this.handleScroll()
-					},
-					{
-						path: '/services',
-						component: 'services-page',
-						onAfterEnter: () => this.handleScroll()
-					},
-					{
-						path: '/gallery',
-						component: 'gallery-page',
-						onAfterEnter: () => this.handleScroll()
-					},
-					{
-						path: '/impressum',
-						component: 'impressum-page',
-						onAfterEnter: () => this.handleScroll()
-					},
-					{
-						path: '/datenschutz',
-						component: 'datenschutz-page',
-						onAfterEnter: () => this.handleScroll()
-					},
-					{
-						path: '/agb',
-						component: 'agb-page',
-						onAfterEnter: () => this.handleScroll()
-					},
-					{
-						path: '/cookies',
-						component: 'cookies-page',
-						onAfterEnter: () => this.handleScroll()
-					},
+					{ path: '/', component: 'main-page' },
+					{ path: '/about', component: 'about-page' },
+					{ path: '/about/:additional', component: 'additional-info-page' },
+					{ path: '/contact', component: 'contact-page' },
+					{ path: '/services', component: 'services-page' },
+					{ path: '/gallery', component: 'gallery-page' },
+					{ path: '/impressum', component: 'impressum-page' },
+					{ path: '/datenschutz', component: 'datenschutz-page' },
+					{ path: '/agb', component: 'agb-page' },
+					{ path: '/cookies', component: 'cookies-page' },
 				],
 			},
 			{
 				path: '(.*)',
 				component: 'page-not-found',
-				action: () => import('../pages/error/page-not-found.ts') as Promise<any>
 			},
 		]);
 
-		// Disable browser auto handling
+		// Back / forward only
+		window.addEventListener('popstate', () => {
+			saveScroll();
+			markHistoryNavigation();
+		});
+
+		// After each route change
+		window.addEventListener('vaadin-router-location-changed', () => {
+			const restored = restoreScroll();
+
+			if (!restored) {
+				scrollToHashOrTop();
+			}
+
+			resetNavigationFlag();
+		});
+
 		if ('scrollRestoration' in history) {
 			history.scrollRestoration = 'manual';
 		}
-	}
-
-	private handleScroll() {
-		// Detect browser back/forward
-		if (performance.getEntriesByType('navigation')[0]?.type === 'back_forward') {
-			markHistoryNavigation();
-		}
-
-		const restored = restoreScroll();
-
-		if (!restored) {
-			// wait one frame so layout & images exist
-			requestAnimationFrame(() => {
-				scrollToHashOrTop();
-			});
-		}
-
-		resetHistoryFlag();
 	}
 }

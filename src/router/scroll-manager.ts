@@ -9,7 +9,7 @@ export function markHistoryNavigation() {
 	isHistoryNav = true;
 }
 
-export function resetHistoryFlag() {
+export function resetNavigationFlag() {
 	isHistoryNav = false;
 }
 
