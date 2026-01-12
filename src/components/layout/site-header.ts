@@ -75,9 +75,9 @@ export class SiteHeader extends LitElement {
             class="fixed inset-y-0 right-0 z-20 w-full max-w-sm overflow-y-auto bg-white px-6 py-6 ring-1 ring-gray-900/10"
           >
             <div class="flex items-center justify-between">
-              <app-link to="/" @click=${() => (this.isOpen = false)}>
+              <app-link to="/" variant="logo" @click=${() => (this.isOpen = false)}>
                 <span class="sr-only">Seelenstimme</span>
-                <img class="h-20 w-auto" src=${Logo} alt="Seelenstimme Logo" />
+                <img class="h-20 w-auto pr-2.5" src=${Logo} alt="Seelenstimme Logo" />
               </app-link>
 
               <button
