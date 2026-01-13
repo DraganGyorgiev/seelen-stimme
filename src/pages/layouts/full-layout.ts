@@ -9,9 +9,7 @@ export class FullLayout extends LitElement {
   override render() {
     return html`
       <div class="mx-auto max-w-7xl p-6 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-7xl">
-          <slot></slot>
-        </div>
+        <slot></slot>
       </div>
     `;
   }

@@ -1,9 +1,6 @@
-const positions = new Map<string, number>();
 let isHistoryNavigation = false;
 
-function key() {
-	return location.pathname + location.hash;
-}
+const scrollPositions = new Map<string, number>();
 
 export function markHistoryNavigation() {
 	isHistoryNavigation = true;
@@ -13,31 +10,32 @@ export function resetHistoryNavigationFlag() {
 	isHistoryNavigation = false;
 }
 
-export function saveScroll() {
-	positions.set(key(), window.scrollY);
+export function saveScroll(path: string) {
+	scrollPositions.set(path, window.scrollY);
 }
 
-export function restoreScroll(): boolean {
-	if (!isHistoryNavigation) return false;
-
-	const y = positions.get(key());
-	if (typeof y === 'number') {
-		window.scrollTo({ top: y, behavior: 'auto' });
+export function restoreScroll(path: string): boolean {
+	const pos = scrollPositions.get(path);
+	if (pos !== undefined) {
+		requestAnimationFrame(() => window.scrollTo(0, pos));
 		return true;
 	}
 	return false;
 }
 
 export function scrollToHashOrTop() {
-	const id = location.hash.replace('#', '');
 	requestAnimationFrame(() => {
-		if (id) {
-			const el = document.getElementById(id);
+		if (location.hash) {
+			const el = document.getElementById(location.hash.slice(1));
 			if (el) {
-				el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+				el.scrollIntoView({ behavior: 'auto', block: 'start' });
 				return;
 			}
 		}
-		window.scrollTo({ top: 0, behavior: 'smooth' });
+		window.scrollTo(0, 0);
 	});
+}
+
+export function isHistoryNav() {
+	return isHistoryNavigation;
 }

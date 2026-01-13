@@ -1,5 +1,4 @@
 import { Router } from '@vaadin/router';
-import { saveScroll, restoreScroll, scrollToHashOrTop, markHistoryNavigation, resetHistoryNavigationFlag } from './scroll-manager';
 
 import "../pages/app/app-page.ts";
 import "../pages/app/subpages/main-page.ts";
@@ -7,16 +6,15 @@ import "../pages/app/subpages/about-page.ts";
 import "../pages/app/subpages/additional-info-page.ts";
 import "../features/contact/contact-page.ts";
 import "../pages/app/subpages/services-page.ts";
-import "../pages/app/coming-soon-page.ts";
+import "../pages/app/subpages/gallery-page.ts";
 import "../pages/app/subpages/legally-required/impressum-page.ts";
 import "../pages/app/subpages/legally-required/datenschutz-page.ts";
 import "../pages/app/subpages/legally-required/agb-page.ts";
 import "../pages/app/subpages/legally-required/cookies-page.ts";
-import "../pages/app/subpages/gallery-page.ts";
 
 export default class AppRouter extends Router {
-	constructor() {
-		super();
+	constructor(outlet: HTMLElement) {
+		super(outlet);
 
 		this.setRoutes([
 			{
@@ -35,27 +33,14 @@ export default class AppRouter extends Router {
 					{ path: '/cookies', component: 'cookies-page' },
 				],
 			},
-			{
-				path: '(.*)',
-				component: 'page-not-found',
-			},
 		]);
 
-		// Back / forward only
-		window.addEventListener('popstate', () => {
-			saveScroll();
-			markHistoryNavigation();
-		});
-
-		// After each route change
 		window.addEventListener('vaadin-router-location-changed', () => {
-			const restored = restoreScroll();
-
-			if (!restored) {
-				scrollToHashOrTop();
-			}
-
-			resetHistoryNavigationFlag();
+			requestAnimationFrame(() => {
+				if (!location.hash) {
+					window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+				}
+			});
 		});
 
 		if ('scrollRestoration' in history) {

@@ -14,6 +14,20 @@ export class ServiceCard extends LitElement {
 	@property({ type: String }) price?: string;
 	@property({ type: Boolean }) hasGallery = false;
 
+	firstUpdated() {
+		this.scrollToHash();
+	}
+
+	private scrollToHash() {
+		const id = location.hash.replace('#', '');
+		if (!id) return;
+
+		requestAnimationFrame(() => {
+			const el = this.renderRoot.querySelector(`#${id}`);
+			el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		});
+	}
+
 	private goToContact() {
 		this.dispatchEvent(
 			new CustomEvent('reroute', {

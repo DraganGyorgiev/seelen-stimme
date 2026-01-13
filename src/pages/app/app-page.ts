@@ -6,41 +6,38 @@ import '../../components/cookie-consent/cookie-consent-banner.ts'
 
 @customElement('app-page')
 export class AppPage extends LitElement {
-  override render() {
-    return html`
-      <div class="app">
-	      <cookie-consent-banner></cookie-consent-banner>
-	      <site-header></site-header>
-        
-	      <div class="content">
-	        <main>
-	          <slot></slot>
-	        </main>
-		      
-	        <site-footer></site-footer>
-	      </div>
-      </div>
-    `;
-  }
+	override render() {
+		return html`
+			<div class="app">
+				<site-header></site-header>
 
-  static override styles = css`
-    .app {
-      display: flex;
-      flex-direction: column;
-      box-sizing: border-box;
-      width: 100%;
-      height: 100%;
-    }
-	  
-	  .content {
-      overflow-x: hidden;
-	  }
+				<main>
+					<slot></slot>
+				</main>
 
-    main {
-      flex-grow: 1;
-    }
-  `;
+				<site-footer></site-footer>
+			</div>
+		`;
+	}
+
+	static override styles = css`
+		:host {
+			display: block;
+			min-height: 100vh;
+		}
+		
+		.app {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+		}
+		
+		main {
+			flex: 1;
+		}
+	`;
 }
+
 
 declare global {
     interface HTMLElementTagNameMap {

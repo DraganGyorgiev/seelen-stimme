@@ -8,7 +8,7 @@ export class SeelenstimmeApp extends LitElement {
   constructor() {
     super();
 
-    new AppRouter().setOutlet(this);
+    new AppRouter(this);
   }
 
   render() {

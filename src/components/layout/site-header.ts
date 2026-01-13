@@ -2,6 +2,7 @@ import { LitElement, html } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import tailwindCss from '../../tailwind/tailwindCss.ts';
 import Logo from '../../assets/Logo-cropped.png';
+import {css} from "lit-element";
 
 type Page = {
 	label: string;
@@ -110,7 +111,14 @@ export class SiteHeader extends LitElement {
     `;
 	}
 
-	static styles = tailwindCss;
+	static styles = [tailwindCss, css`
+		:host {
+			display: block;
+			position: sticky;
+			top: 0;
+			z-index: 50;
+		}
+	`];
 }
 
 declare global {
