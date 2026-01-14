@@ -38,7 +38,7 @@ export class SiteHeader extends LitElement {
           <div class="flex flex-1">
             <app-link to="/" variant="logo">
               <span class="sr-only">Seelenstimme</span>
-              <img class="xl:h-25 h-18 w-auto" src=${Logo} alt="Seelenstimme Logo" />
+              <img class="xl:h-25 h-18 w-auto pr-3" src=${Logo} alt="Seelenstimme Logo" />
             </app-link>
           </div>
 

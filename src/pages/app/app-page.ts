@@ -34,6 +34,7 @@ export class AppPage extends LitElement {
 		
 		main {
 			flex: 1;
+			overflow: hidden;
 		}
 	`;
 }

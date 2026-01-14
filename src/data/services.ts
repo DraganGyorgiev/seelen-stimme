@@ -119,7 +119,6 @@ export const services: Service[] = [
 		image: KG,
 		description:
 			'In einem kurzen, unverbindlichen Gespräch lernen wir uns kennen und besprechen dein Anliegen. Du kannst herausfinden, welches Angebot für dich passend ist und ob die Zusammenarbeit für dich stimmig ist.',
-		duration: '30 Minuten',
-		price: 'Kostenlos'
+		duration: '30 Minuten'
 	},
 ];

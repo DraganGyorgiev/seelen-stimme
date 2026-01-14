@@ -1,26 +1,6 @@
 /*! tailwindcss v4.1.3 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, components, utilities;
-
-/* WebKit browsers */
-::-webkit-scrollbar {
-	width: 12px;
-}
-
-::-webkit-scrollbar-track {
-	background: #ffffff;
-}
-
-::-webkit-scrollbar-thumb {
-	background-color: #14b8a6;
-	border-radius: 100px;
-	border: 3px solid #ffffff; /* creates padding effect */
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background-color: #94a3b8;
-}
-
 @layer theme {
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
@@ -121,21 +101,6 @@
   }
 }
 @layer base {
-	html, body {
-		margin: 0;
-		padding: 0;
-		min-height: 100%;
-	}
-	
-	html {
-		scrollbar-width: thin;
-		scrollbar-color: #cbd5e1 #ffffff;
-	}
-	
-	body {
-		overflow-x: hidden;
-	}
-	
   *, ::after, ::before, ::backdrop, ::file-selector-button {
     box-sizing: border-box;
     margin: 0;
@@ -966,8 +931,17 @@
   .pr-2\.5 {
     padding-right: calc(var(--spacing) * 2.5);
   }
+  .pr-3 {
+    padding-right: calc(var(--spacing) * 3);
+  }
   .pr-8 {
     padding-right: calc(var(--spacing) * 8);
+  }
+  .pb-0 {
+    padding-bottom: calc(var(--spacing) * 0);
+  }
+  .pb-4 {
+    padding-bottom: calc(var(--spacing) * 4);
   }
   .pb-5 {
     padding-bottom: calc(var(--spacing) * 5);
@@ -989,6 +963,9 @@
   }
   .text-justify {
     text-align: justify;
+  }
+  .text-left {
+    text-align: left;
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -1075,6 +1052,9 @@
   }
   .text-pretty {
     text-wrap: pretty;
+  }
+  .break-words {
+    overflow-wrap: break-word;
   }
   .text-black {
     color: var(--color-black);
@@ -1460,6 +1440,11 @@
       display: block;
     }
   }
+  .sm\:flex {
+    @media (width >= 40rem) {
+      display: flex;
+    }
+  }
   .sm\:hidden {
     @media (width >= 40rem) {
       display: none;
@@ -1493,6 +1478,11 @@
   .sm\:justify-between {
     @media (width >= 40rem) {
       justify-content: space-between;
+    }
+  }
+  .sm\:justify-center {
+    @media (width >= 40rem) {
+      justify-content: center;
     }
   }
   .sm\:p-12 {
@@ -1535,9 +1525,29 @@
       padding-top: calc(var(--spacing) * 40);
     }
   }
+  .sm\:pb-4 {
+    @media (width >= 40rem) {
+      padding-bottom: calc(var(--spacing) * 4);
+    }
+  }
   .sm\:pb-32 {
     @media (width >= 40rem) {
       padding-bottom: calc(var(--spacing) * 32);
+    }
+  }
+  .sm\:text-center {
+    @media (width >= 40rem) {
+      text-align: center;
+    }
+  }
+  .sm\:text-justify {
+    @media (width >= 40rem) {
+      text-align: justify;
+    }
+  }
+  .sm\:text-left {
+    @media (width >= 40rem) {
+      text-align: left;
     }
   }
   .sm\:text-4xl {
@@ -1584,6 +1594,16 @@
       margin-top: calc(var(--spacing) * 8);
     }
   }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
   .md\:h-\[750px\] {
     @media (width >= 48rem) {
       height: 750px;
@@ -1599,6 +1619,21 @@
       padding-top: calc(var(--spacing) * 0);
     }
   }
+  .md\:pb-0 {
+    @media (width >= 48rem) {
+      padding-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:text-justify {
+    @media (width >= 48rem) {
+      text-align: justify;
+    }
+  }
+  .md\:text-left {
+    @media (width >= 48rem) {
+      text-align: left;
+    }
+  }
   .md\:text-2xl {
     @media (width >= 48rem) {
       font-size: var(--text-2xl);
@@ -1609,6 +1644,12 @@
     @media (width >= 48rem) {
       font-size: var(--text-4xl);
       line-height: var(--tw-leading, var(--text-4xl--line-height));
+    }
+  }
+  .md\:text-5xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-5xl);
+      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
   .md\:text-7xl {
@@ -1791,6 +1832,16 @@
   .lg\:py-48 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 48);
+    }
+  }
+  .lg\:text-justify {
+    @media (width >= 64rem) {
+      text-align: justify;
+    }
+  }
+  .lg\:text-left {
+    @media (width >= 64rem) {
+      text-align: left;
     }
   }
   .lg\:text-4xl {

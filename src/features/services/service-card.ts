@@ -61,20 +61,14 @@ export class ServiceCard extends LitElement {
 ">
 					<!-- Header stays wide -->
 					<div class="mx-auto max-w-4xl w-full">
-						<h2 class="text-4xl font-semibold text-gray-900 sm:text-5xl">
-							${this.title}
-						</h2>
-						<p class="mt-2 text-lg text-gray-600">
-							${this.subtitle}
-						</p>
+						<h2 class="break-words text-3xl font-semibold text-gray-900 sm:text-4xl md:text-5xl md:text-left text-center">${this.title}</h2>
+						<p class="mt-4 text-lg text-gray-600">${this.subtitle}</p>
 					</div>
 
 					<!-- Content constrained + aligned -->
 					<div class="mx-auto max-w-4xl w-full">
 						<article
-							class="relative isolate mt-16 flex flex-col gap-8
-						       lg:flex-row lg:items-stretch lg:min-h-[18rem]"
-						>
+							class="relative isolate mt-16 flex flex-col gap-8 lg:flex-row lg:items-stretch lg:min-h-[18rem]">
 							<!-- Media -->
 							<div
 								class="relative aspect-video lg:aspect-square
@@ -93,7 +87,7 @@ export class ServiceCard extends LitElement {
 							</div>
 
 							<!-- Content -->
-							<div class="flex flex-1 flex-col max-w-2xl">
+							<div class="flex flex-1 flex-col max-w-4xl">
 								<!-- Body -->
 								<p class="mt-5 text-sm text-gray-600">
 									${this.description}
@@ -105,12 +99,9 @@ export class ServiceCard extends LitElement {
 								<!-- Meta + Actions -->
 								${(this.duration || this.price)
 									? html`
-										<div
-											class="mt-10 border-t border-gray-200 pt-6
-										       flex items-end justify-between gap-6"
-										>
+										<div class="mt-10 border-t border-gray-200 pt-6 md:flex sm:flex-row items-end justify-between gap-6">
 											<!-- Meta -->
-											<div class="space-y-1 text-sm text-gray-700">
+											<div class="space-y-1 text-sm text-gray-700 md:block flex justify-between md:pb-0 pb-4">
 												${this.duration
 													? html`
 														<p>
@@ -130,7 +121,7 @@ export class ServiceCard extends LitElement {
 											</div>
 
 											<!-- Actions -->
-											<div class="flex gap-3 shrink-0">
+											<div class="flex gap-3 shrink-0 justify-center">
 												${this.hasGallery ? html`<app-button variant="secondary" @click=${this.goToGallery}>Galerie</app-button>` : null}
 
 												<app-button variant=${this.isIntroService ? 'secondary' : 'primary'} @click=${this.goToContact}>
