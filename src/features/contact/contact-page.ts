@@ -193,37 +193,82 @@ export class ContactPage extends LitElement {
 									<div>
 										<label for="first-name" class="input-field block text-sm/6 font-semibold text-gray-900">Vorname</label>
 										<div class="mt-2.5">
-											<input required @invalid=${(e: any) => e.currentTarget.setCustomValidity('Dieses Feld ist erforderlich!')} @input=${(e: any) => e.currentTarget.setCustomValidity('')} type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
+											<input 
+												required 
+												@invalid=${(e: any) => e.currentTarget.setCustomValidity('Dieses Feld ist erforderlich!')} 
+												@input=${(e: any) => e.currentTarget.setCustomValidity('')} 
+												type="text"
+												name="first-name" 
+												id="first-name" 
+												autocomplete="given-name" 
+												class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
 										</div>
 									</div>
 									<div>
 										<label for="last-name" class="input-field block text-sm/6 font-semibold text-gray-900">Nachname</label>
 										<div class="mt-2.5">
-											<input required @invalid=${(e: any) => e.currentTarget.setCustomValidity('Dieses Feld ist erforderlich!')} @input=${(e: any) => e.currentTarget.setCustomValidity('')} type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
+											<input 
+												required 
+												@invalid=${(e: any) => e.currentTarget.setCustomValidity('Dieses Feld ist erforderlich!')} 
+												@input=${(e: any) => e.currentTarget.setCustomValidity('')} 
+												type="text"
+												name="last-name" 
+												id="last-name" 
+												autocomplete="family-name" 
+												class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
 										</div>
 									</div>
 									<div class="sm:col-span-2">
 										<label for="email" class="input-field block text-sm/6 font-semibold text-gray-900">E-Mail</label>
 										<div class="mt-2.5">
-											<input required @invalid=${(e: any) => e.currentTarget.setCustomValidity('Dieses Feld ist erforderlich!')} @input=${(e: any) => e.currentTarget.setCustomValidity('')} type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
+											<input 
+												required 
+												@invalid=${(e: any) => e.currentTarget.setCustomValidity('Dieses Feld ist erforderlich!')} 
+												@input=${(e: any) => e.currentTarget.setCustomValidity('')} 
+												type="email"
+												name="email" 
+												id="email" 
+												autocomplete="email" 
+												class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
 										</div>
 									</div>
 									<div class="sm:col-span-2">
 										<label for="phone-number" class="input-field block text-sm/6 font-semibold text-gray-900">Telefonnummer</label>
 										<div class="mt-2.5">
-											<input required @invalid=${(e: any) => e.currentTarget.setCustomValidity('Dieses Feld ist erforderlich!')} @input=${(e: any) => e.currentTarget.setCustomValidity('')} type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
+											<input 
+												required 
+												@invalid=${(e: any) => e.currentTarget.setCustomValidity('Dieses Feld ist erforderlich!')} 
+												@input=${(e: any) => e.currentTarget.setCustomValidity('')} 
+												type="tel"
+												name="phone-number" 
+												id="phone-number" 
+												autocomplete="tel" 
+												class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
 										</div>
 									</div>
 									<div class="sm:col-span-2">
 										<label for="address" class="input-field block text-sm/6 font-semibold text-gray-900">Anschrift</label>
 										<div class="mt-2.5">
-											<input required @invalid=${(e: any) => e.currentTarget.setCustomValidity('Dieses Feld ist erforderlich!')} @input=${(e: any) => e.currentTarget.setCustomValidity('')} type="text" name="address" id="address" autocomplete="address" class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
+											<input 
+												required 
+												@invalid=${(e: any) => e.currentTarget.setCustomValidity('Dieses Feld ist erforderlich!')} 
+												@input=${(e: any) => e.currentTarget.setCustomValidity('')} 
+												type="text"
+												name="address" 
+												id="address" 
+												autocomplete="address" 
+												class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
 										</div>
 									</div>
 									<div class="sm:col-span-2">
 										<label for="service" class="input-field block text-sm/6 font-semibold text-gray-900">Leistung</label>
 										<div class="mt-2.5">
-											<select required @invalid=${(e: any) => e.currentTarget.setCustomValidity('Dieses Feld ist erforderlich!')} @change=${this.onServiceChange} name="service_id" id="service" .value=${this.selectedOption} class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
+											<select 
+												required 
+												@invalid=${(e: any) => e.currentTarget.setCustomValidity('Dieses Feld ist erforderlich!')} 
+												@change=${this.onServiceChange}
+												id="service" .value=${this.selectedOption}
+												class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
 												${repeat(options, (option) => option.id, ({id, value}) => html`<option value=${id}>${value}</option>`)}
 											</select>
 											<input type="hidden" name="service" .value=${this.selectedServiceLabel} />
@@ -233,7 +278,15 @@ export class ContactPage extends LitElement {
 										<div class="sm:col-span-2">
 											<label for="duration" class="input-field block text-sm/6 font-semibold text-gray-900">Dauer</label>
 											<div class="mt-2.5">
-												<select required @invalid=${(e: any) => e.currentTarget.setCustomValidity('Bitte wähle eine Dauer aus!')} @input=${(e: any) => e.currentTarget.setCustomValidity('')} @change=${this.onDurationChange} name="duration" id="duration" .value=${this.selectedDuration} class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
+												<select 
+													required 
+													@invalid=${(e: any) => e.currentTarget.setCustomValidity('Bitte wähle eine Dauer aus!')} 
+													@input=${(e: any) => e.currentTarget.setCustomValidity('')} 
+													@change=${this.onDurationChange} 
+													name="duration" 
+													id="duration" 
+													.value=${this.selectedDuration} 
+													class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
 													<option value="" disabled hidden>Bitte auswählen</option>
 													${service.duration!.map((dur) => html`<option value=${dur.label}>${dur.label} – ${dur.price}</option>`)}
 												</select>
