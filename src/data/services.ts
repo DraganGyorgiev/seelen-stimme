@@ -114,7 +114,7 @@ export const services: Service[] = [
 	},
 	{
 		id: 'kg',
-		title: 'Kostenloses Kennenlerngespräch',
+		title: `Kostenloses Kennenlern\u00ADgespräch`,
 		subtitle: 'Unverbindlich kennenlernen und deine Fragen klären.',
 		image: KG,
 		description:
