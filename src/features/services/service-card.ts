@@ -13,6 +13,7 @@ export class ServiceCard extends LitElement {
 	@property({ type: String }) duration?: string;
 	@property({ type: String }) price?: string;
 	@property({ type: Boolean }) hasGallery = false;
+	@property({ type: Boolean }) isFullyBooked = false;
 
 	firstUpdated() {
 		this.scrollToHash();
@@ -21,7 +22,6 @@ export class ServiceCard extends LitElement {
 	private scrollToHash() {
 		const id = location.hash.replace('#', '');
 		if (!id) return;
-
 		requestAnimationFrame(() => {
 			const el = this.renderRoot.querySelector(`#${id}`);
 			el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -29,6 +29,9 @@ export class ServiceCard extends LitElement {
 	}
 
 	private goToContact() {
+		// Prevent navigation if booked
+		if (this.isFullyBooked) return;
+
 		this.dispatchEvent(
 			new CustomEvent('reroute', {
 				detail: `/contact?service=${this.id}`,
@@ -55,10 +58,25 @@ export class ServiceCard extends LitElement {
 	override render() {
 		return html`
 			<div id=${this.id} class="pt-20 scroll-mt-28">
-				<div class="group mx-auto max-w-7xl rounded-3xl px-8 py-8 shadow-sm transition-all duration-300 hover:shadow-lg
-					${this.isIntroService ? 'bg-teal-50 ring-2 ring-teal-200' : 'bg-sky-50'}">
+				<div class="group mx-auto max-w-7xl rounded-3xl px-8 py-8 shadow-sm transition-all duration-300 
+          ${this.isFullyBooked
+					? 'bg-gray-50 ring-1 ring-gray-200 opacity-75 grayscale-[0.2]'
+					: `${this.isIntroService ? 'bg-teal-50 ring-2 ring-teal-200 hover:shadow-lg' : 'bg-sky-50 hover:shadow-lg'}`
+				}">
+
 					<div class="mx-auto max-w-4xl w-full">
-						<h2 class="break-words text-3xl font-semibold text-gray-900 sm:text-4xl md:text-5xl md:text-left text-center">${this.title}</h2>
+						<div class="flex flex-wrap items-center gap-4">
+							<h2 class="break-words text-3xl font-semibold text-gray-900 sm:text-4xl md:text-5xl md:text-left text-center">
+								${this.title}
+							</h2>
+
+							${this.isFullyBooked ? html`
+                <span class="inline-flex items-center rounded-md bg-gray-100 px-3 py-1 text-sm font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">
+                  Zurzeit ausgebucht
+                </span>
+              ` : null}
+						</div>
+
 						<p class="mt-4 md:text-lg sm:text-m text-gray-600">${this.subtitle}</p>
 					</div>
 
@@ -69,9 +87,9 @@ export class ServiceCard extends LitElement {
 									src=${this.image}
 									alt=${this.title}
 									class="
-								    absolute inset-0 h-full w-full rounded-2xl object-cover
-								    transition-transform duration-300
-								    group-hover:scale-[1.03]"
+                    absolute inset-0 h-full w-full rounded-2xl object-cover
+                    transition-transform duration-300
+                    ${this.isFullyBooked ? '' : 'group-hover:scale-[1.03]'}"
 								/>
 								<div class="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
 							</div>
@@ -92,9 +110,16 @@ export class ServiceCard extends LitElement {
 											<div class="flex gap-3 shrink-0 justify-center">
 												${this.hasGallery ? html`<app-button variant="secondary" @click=${this.goToGallery}>Galerie</app-button>` : null}
 
-												<app-button variant=${this.isIntroService ? 'secondary' : 'primary'} @click=${this.goToContact}>
-													${this.isIntroService ? 'Kostenloses Gespräch buchen' : 'Termin anfragen'}
-												</app-button>
+												${this.isFullyBooked
+													? html`
+                              <button disabled class="rounded-lg bg-gray-200 px-4 py-2 text-sm font-semibold text-gray-500 cursor-not-allowed">
+                                Zurzeit ausgebucht
+                              </button>`
+													: html`
+                              <app-button variant=${this.isIntroService ? 'secondary' : 'primary'} @click=${this.goToContact}>
+                                ${this.isIntroService ? 'Kostenloses Gespräch buchen' : 'Termin anfragen'}
+                              </app-button>`
+												}
 											</div>
 										</div>
 									`

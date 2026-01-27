@@ -5,8 +5,8 @@ import { repeat } from "lit/directives/repeat.js";
 import "../../components/ui/app-button.ts";
 import "../../components/ui/app-toast.ts"; // Ensure this path is correct
 
-const options: { id: string, value: string, duration?: { label: string; price: string }[]; }[] = [
-	{ id: 'jk', value: 'Jenseitskontakt' },
+const options: { id: string, value: string, duration?: { label: string; price: string }[]; disabled?: boolean; }[] = [
+	{ id: 'jk', value: 'Jenseitskontakt', disabled: true },
 	{ id: 'ar', value: 'Aura-reading' },
 	{ id: 'sw', value: 'Seelenweg' },
 	{ id: 'sb', value: 'Seelenbilder' },
@@ -32,14 +32,15 @@ const options: { id: string, value: string, duration?: { label: string; price: s
 	{  id: 'kg',  value: 'Kostenloses Kennenlerngespräch'  }
 ]
 
+const defaultOption = options.find(o => !o.disabled) || options[0];
+
 @customElement('contact-page')
 export class ContactPage extends LitElement {
-	@state() selectedOption = options[0].id;
-	@state() selectedServiceLabel = options[0].value;
+	@state() selectedOption = defaultOption.id;
+	@state() selectedServiceLabel = defaultOption.value;
 	@state() selectedDuration = '';
 	@state() zirkelLevel = '';
 
-	// Feedback states
 	@state() isSubmitting = false;
 	@state() toastOpen = false;
 	@state() toastType: 'success' | 'error' = 'success';
@@ -53,7 +54,10 @@ export class ContactPage extends LitElement {
 		if (service && options.some(o => o.id === service)) {
 			this.selectedOption = service;
 			const match = options.find(o => o.id === service);
-			this.selectedServiceLabel = match?.value ?? '';
+			if (match && !match.disabled) {
+				this.selectedOption = match.id;
+				this.selectedServiceLabel = match.value;
+			}
 		}
 	}
 
@@ -99,13 +103,14 @@ export class ContactPage extends LitElement {
 		setTimeout(() => { this.toastOpen = false; }, 6000);
 	}
 
-	// ... (Keep existing selection handlers onServiceChange etc.)
 	private onServiceChange(e: Event) {
 		const id = (e.target as HTMLSelectElement).value;
 		this.selectedOption = id;
+
 		const match = options.find(o => o.id === id);
 		this.selectedServiceLabel = match?.value ?? '';
 		this.selectedDuration = '';
+
 		if (match?.duration && match.duration.length !== 0) {
 			this.selectedDuration = match.duration[0].label;
 		}
@@ -269,7 +274,7 @@ export class ContactPage extends LitElement {
 												@change=${this.onServiceChange}
 												id="service" .value=${this.selectedOption}
 												class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600">
-												${repeat(options, (option) => option.id, ({id, value}) => html`<option value=${id}>${value}</option>`)}
+												${repeat(options, (option) => option.id, ({id, value, disabled}) => html`<option value=${id} ?disabled=${disabled} class=${disabled ? 'text-gray-400' : ''}>${value}${disabled ? ' — 🚫 (Momentan keine Termine frei)' : ''}</option>`)}
 											</select>
 											<input type="hidden" name="service" .value=${this.selectedServiceLabel} />
 										</div>

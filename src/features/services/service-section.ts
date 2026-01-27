@@ -27,6 +27,7 @@ export class ServiceSection extends LitElement {
               .duration=${service.duration}
               .price=${service.price}
               .hasGallery=${service.hasGallery ?? false}
+              .isFullyBooked=${service.isFullyBooked ?? false}
             ></service-card>
           </section>
         `)}

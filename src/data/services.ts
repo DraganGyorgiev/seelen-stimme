@@ -18,6 +18,7 @@ export type Service = {
 	duration?: string;
 	price?: string;
 	hasGallery?: boolean;
+	isFullyBooked?: boolean;
 };
 
 export const services: Service[] = [
@@ -29,7 +30,8 @@ export const services: Service[] = [
 		description:
 			'In einem geschützten und achtsamen Raum verbinde ich mich mit der Geistigen Welt, um Botschaften Ihrer Lieben aus dem Jenseits zu übermitteln. Diese Sitzung kann Trost, Klarheit und neue Perspektiven schenken.',
 		duration: '60 Minuten',
-		price: '150 EUR'
+		price: '150 EUR',
+		isFullyBooked: true
 	},
 	{
 		id: 'ar',
