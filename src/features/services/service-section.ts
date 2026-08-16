@@ -1,41 +1,62 @@
-import { LitElement, html } from 'lit';
-import { customElement } from 'lit/decorators.js';
-import tailwindCss from '../../tailwind/tailwindCss.ts';
-import { services } from '../../data/services.ts';
-import { Router } from '@vaadin/router';
-import './service-card.ts';
+import { LitElement, html } from 'lit'
+import { customElement } from 'lit/decorators.js'
+import { localized } from '@lit/localize'
+import tailwindCss from '../../tailwind/tailwindCss.ts'
+import { getServices } from '../../data/services.ts'
+import './service-card.ts'
 
+@localized()
 @customElement('service-section')
 export class ServiceSection extends LitElement {
+	private readonly onHashChange = () => this.scrollToHashedService()
+
+	override connectedCallback() {
+		super.connectedCallback()
+		window.addEventListener('hashchange', this.onHashChange)
+	}
+
+	override disconnectedCallback() {
+		window.removeEventListener('hashchange', this.onHashChange)
+		super.disconnectedCallback()
+	}
+
+	override firstUpdated() {
+		this.scrollToHashedService()
+	}
 
 	override render() {
 		return html`
-      <div
-	      @reroute=${(e: CustomEvent<string>) => {
-					e.stopPropagation();
-					Router.go(e.detail);
-				}}
-      >
-        ${services.map(service => html`
-          <section id=${service.id} class="scroll-mt-32">
-            <service-card
-              .id=${service.id}
-              .title=${service.title}
-              .subtitle=${service.subtitle}
-              .description=${service.description}
-              .image=${service.image}
-              .duration=${service.duration}
-              .price=${service.price}
-              .hasGallery=${service.hasGallery ?? false}
-              .isFullyBooked=${service.isFullyBooked ?? false}
-            ></service-card>
-          </section>
-        `)}
-      </div>
-    `;
+			<div class="space-y-20 py-20">
+				${getServices().map(
+					(service) => html`
+						<section id=${service.id} class="scroll-mt-40 xl:scroll-mt-52">
+							<service-card
+								.serviceId=${service.id}
+								.serviceTitle=${service.title}
+								.subtitle=${service.subtitle}
+								.description=${service.description}
+								.image=${service.image}
+								.duration=${service.duration}
+								.price=${service.price}
+								.hasGallery=${service.hasGallery ?? false}
+								.isFullyBooked=${service.isFullyBooked ?? false}
+							></service-card>
+						</section>
+					`,
+				)}
+			</div>
+		`
 	}
 
-	static override styles = tailwindCss;
+	private scrollToHashedService() {
+		const serviceId = decodeURIComponent(location.hash.slice(1))
+		if(!serviceId) return
+
+		const section = this.renderRoot.querySelector(`section[id="${CSS.escape(serviceId)}"]`)
+		requestAnimationFrame(() => section?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
+	}
+
+	static override styles = tailwindCss
 }
 
 declare global {

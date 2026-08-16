@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit';
+import { LitElement, html, css, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import tailwindCss from "../../tailwind/tailwindCss.ts";
 
@@ -6,7 +6,7 @@ import tailwindCss from "../../tailwind/tailwindCss.ts";
 export class AppToast extends LitElement {
 	@property({ type: Boolean }) open = false;
 	@property({ type: String }) type: 'success' | 'error' = 'success';
-	@property({ type: String }) title = '';
+	@property({ type: String }) heading = '';
 	@property({ type: String }) message = '';
 
 	private close() {
@@ -14,12 +14,16 @@ export class AppToast extends LitElement {
 	}
 
 	override render() {
-		if (!this.open) return null;
+		if(!this.open) return nothing;
 
 		const isSuccess = this.type === 'success';
 
 		return html`
-      <div class="fixed top-6 left-1/2 z-50 w-full max-w-md -translate-x-1/2 px-4 md:px-0">
+      <div
+        role=${isSuccess ? 'status' : 'alert'}
+        aria-live=${isSuccess ? 'polite' : 'assertive'}
+        class="fixed top-6 left-1/2 w-full max-w-md -translate-x-1/2 px-4 md:px-0"
+      >
         <div 
           class="
             relative overflow-hidden rounded-xl bg-white p-4 shadow-2xl ring-1 ring-gray-200
@@ -46,7 +50,7 @@ export class AppToast extends LitElement {
 
             <div class="flex-1 pt-0.5">
               <h3 class="text-sm font-bold text-gray-900">
-                ${this.title || (isSuccess ? 'Erfolg!' : 'Fehler!')}
+                ${this.heading || (isSuccess ? 'Erfolg!' : 'Fehler!')}
               </h3>
               <p class="mt-1 text-sm text-gray-600 leading-relaxed">
                 ${this.message}
@@ -70,9 +74,10 @@ export class AppToast extends LitElement {
 
 	static override styles = [tailwindCss, css`
 		:host {
-			z-index: 1000;
+			position: relative;
+			z-index: 100;
 		}
-		
+
     @keyframes slideDown {
       from {
         opacity: 0;

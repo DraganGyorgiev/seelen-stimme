@@ -1,8 +1,7 @@
-import {LitElement, html, css} from 'lit-element';
-import {customElement} from 'lit/decorators.js';
+import { LitElement, html, css } from 'lit'
+import { customElement } from 'lit/decorators.js'
 import '../../components/layout/site-header.ts'
 import '../../components/layout/site-footer.ts'
-import '../../components/cookie-consent/cookie-consent-banner.ts'
 
 @customElement('app-page')
 export class AppPage extends LitElement {
@@ -17,31 +16,30 @@ export class AppPage extends LitElement {
 
 				<site-footer></site-footer>
 			</div>
-		`;
+		`
 	}
 
 	static override styles = css`
 		:host {
 			display: block;
-			min-height: 100vh;
 		}
-		
+
 		.app {
 			min-height: 100vh;
+			min-height: 100dvh;
 			display: flex;
 			flex-direction: column;
 		}
-		
+
 		main {
 			flex: 1;
-			overflow: hidden;
+			overflow-x: clip;
 		}
-	`;
+	`
 }
 
-
 declare global {
-    interface HTMLElementTagNameMap {
-        'app-page': AppPage;
-    }
+	interface HTMLElementTagNameMap {
+		'app-page': AppPage;
+	}
 }

@@ -1,6 +1,6 @@
-import { LitElement, html } from 'lit';
+import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import tailwindCss from '../../tailwind/tailwindCss';
+import tailwindCss from '../../tailwind/tailwindCss.ts';
 
 type ButtonVariant = 'primary' | 'secondary' | 'ghost';
 
@@ -51,7 +51,8 @@ export class AppButton extends LitElement {
           focus-visible:outline-none
           focus-visible:ring-2 focus-visible:ring-offset-2
 
-          disabled:opacity-50 disabled:pointer-events-none
+          disabled:opacity-50 disabled:pointer-events-none disabled:cursor-not-allowed
+          motion-reduce:transition-none
 
           ${this.variantClasses}
         "
@@ -61,7 +62,14 @@ export class AppButton extends LitElement {
 		`;
 	}
 
-	static override styles = tailwindCss;
+	static override styles = [
+		tailwindCss,
+		css`
+			:host {
+				display: inline-block;
+			}
+		`,
+	];
 }
 
 declare global {

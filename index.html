@@ -3,13 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	  <meta name="description" content="Spirituelle Begleitung, Jenseitskontakte, Aura Reading und Seelenbilder – Seelenstimme.">
-	  <title>Seelenstimme – Spirituelle Begleitung</title>
-	  <link rel="stylesheet" type="text/css" href="src/styles.css" />
-	  <link rel="stylesheet" type="text/css" href="./src/tailwind/tailwind.css" />
+
+    <title>Seelenstimme – Spirituelle Begleitung & Jenseitskontakte</title>
+    <meta
+      name="description"
+      content="Stefana Gyorgiev begleitet dich medial und einfühlsam: Jenseitskontakte, Aura-Reading, Seelenweg, Seelenbilder und Krafttierbilder im Burgenland und online."
+    />
+    <link rel="canonical" href="https://seelen-stimme.at/" />
+    <meta name="theme-color" content="#0d9488" />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Seelenstimme" />
+    <meta property="og:locale" content="de_AT" />
+    <meta property="og:title" content="Seelenstimme – Spirituelle Begleitung & Jenseitskontakte" />
+    <meta
+      property="og:description"
+      content="Stefana Gyorgiev begleitet dich medial und einfühlsam: Jenseitskontakte, Aura-Reading, Seelenweg, Seelenbilder und Krafttierbilder im Burgenland und online."
+    />
+    <meta property="og:url" content="https://seelen-stimme.at/" />
+    <meta property="og:image" content="https://seelen-stimme.at/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="stylesheet" href="/src/tailwind/tailwind.css" />
     <script type="module" src="/src/seelenstimme-app.ts"></script>
   </head>
   <body>
     <seelenstimme-app></seelenstimme-app>
+
+    <!-- Note: not dead markup — Netlify only detects forms it can parse at build time, and the real
+         form is inside a shadow root. Keep in sync with the contact form; see README "The contact form". -->
+    <form name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="bot-field" />
+      <input type="text" name="first-name" />
+      <input type="text" name="last-name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone-number" />
+      <input type="text" name="address" />
+      <input type="text" name="service" />
+      <input type="text" name="duration" />
+      <input type="text" name="preis" />
+      <input type="text" name="zirkel-level" />
+      <textarea name="message"></textarea>
+      <input type="text" name="datenschutz-zustimmung" />
+      <input type="text" name="sprache" />
+      <input type="text" name="subject" />
+    </form>
   </body>
 </html>

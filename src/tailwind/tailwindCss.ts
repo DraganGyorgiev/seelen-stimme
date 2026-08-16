@@ -1,4 +1,4 @@
-import { css } from 'lit';
-import tailwind from './tailwind.css?inline';
+import { unsafeCSS } from 'lit'
+import tailwind from './tailwind.css?inline'
 
-export default css([tailwind] as any);
+export default unsafeCSS(tailwind)

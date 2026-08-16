@@ -1,199 +1,194 @@
-import { LitElement, html, css } from 'lit-element';
-import { customElement, property, query } from 'lit/decorators.js';
-import tailwindCss from "../../../tailwind/tailwindCss.ts";
-import { choose } from 'lit/directives/choose.js';
-import Bear from '/src/assets/gallery/spirit-animal/Bear.jpg';
-import Elephant from '/src/assets/gallery/spirit-animal/Elephant.jpg';
-import Dear from '/src/assets/gallery/spirit-animal/Dear.jpg';
-import Cat from '/src/assets/gallery/spirit-animal/Cat.jpg';
-import Wolf from '/src/assets/gallery/spirit-animal/Wolf.jpg';
-import Fox from '/src/assets/gallery/spirit-animal/Fox.jpg';
-import Parrot from '/src/assets/gallery/spirit-animal/Parrot.jpg';
-import Birds from '/src/assets/gallery/spirit-animal/Birds.jpg';
-import Fox_2 from '/src/assets/gallery/spirit-animal/Fox_2.jpg';
-import Frog from '/src/assets/gallery/spirit-animal/Frog.jpeg';
-import Seahorse from '/src/assets/gallery/spirit-animal/Seahorse.jpeg';
-import Lizard from '/src/assets/gallery/spirit-animal/Lizard.jpeg';
-import SB_2 from '/src/assets/gallery/spirit-way/SB_2.jpeg';
-import SB_1 from '/src/assets/gallery/spirit-way/SB_1.jpeg';
-import SB_3 from	'/src/assets/gallery/spirit-way/SB_3.jpeg';
-import GP_1 from '/src/assets/gallery/spirit-guide/GP_1.jpeg';
-import GP_2 from '/src/assets/gallery/spirit-guide/GP_2.jpeg';
-import GP_3 from '/src/assets/gallery/spirit-guide/GP_3.jpeg';
+import { LitElement, html, css, nothing } from 'lit'
+import { customElement, state } from 'lit/decorators.js'
+import { localized, msg, str } from '@lit/localize'
+import tailwindCss from '../../../tailwind/tailwindCss.ts'
+import Bear from '../../../assets/gallery/spirit-animal/Bear.webp'
+import BearThumb from '../../../assets/gallery/spirit-animal/Bear-thumb.webp'
+import Elephant from '../../../assets/gallery/spirit-animal/Elephant.webp'
+import ElephantThumb from '../../../assets/gallery/spirit-animal/Elephant-thumb.webp'
+import Dear from '../../../assets/gallery/spirit-animal/Dear.webp'
+import DearThumb from '../../../assets/gallery/spirit-animal/Dear-thumb.webp'
+import Cat from '../../../assets/gallery/spirit-animal/Cat.webp'
+import CatThumb from '../../../assets/gallery/spirit-animal/Cat-thumb.webp'
+import Wolf from '../../../assets/gallery/spirit-animal/Wolf.webp'
+import WolfThumb from '../../../assets/gallery/spirit-animal/Wolf-thumb.webp'
+import Fox from '../../../assets/gallery/spirit-animal/Fox.webp'
+import FoxThumb from '../../../assets/gallery/spirit-animal/Fox-thumb.webp'
+import Parrot from '../../../assets/gallery/spirit-animal/Parrot.webp'
+import ParrotThumb from '../../../assets/gallery/spirit-animal/Parrot-thumb.webp'
+import Birds from '../../../assets/gallery/spirit-animal/Birds.webp'
+import BirdsThumb from '../../../assets/gallery/spirit-animal/Birds-thumb.webp'
+import Fox_2 from '../../../assets/gallery/spirit-animal/Fox_2.webp'
+import Fox_2Thumb from '../../../assets/gallery/spirit-animal/Fox_2-thumb.webp'
+import Frog from '../../../assets/gallery/spirit-animal/Frog.webp'
+import FrogThumb from '../../../assets/gallery/spirit-animal/Frog-thumb.webp'
+import Seahorse from '../../../assets/gallery/spirit-animal/Seahorse.webp'
+import SeahorseThumb from '../../../assets/gallery/spirit-animal/Seahorse-thumb.webp'
+import Lizard from '../../../assets/gallery/spirit-animal/Lizard.webp'
+import LizardThumb from '../../../assets/gallery/spirit-animal/Lizard-thumb.webp'
 
-const galleries = [
-	{
-		id: 'seelen',
-		label: 'Seelenbilder',
-		type: 'sb',
-		images: [SB_1, SB_2, SB_3]
-	},
-	{
-		id: 'tier',
-		label: 'Krafttierbilder',
-		type: 'kb',
-		images: [Bear, Elephant, Dear, Cat, Wolf, Fox, Parrot, Birds, Fox_2, Frog, Seahorse, Lizard]
-	},
-	{
-		id: 'geist',
-		label: 'Geistführer-Portraits',
-		type: 'gp',
-		images: [GP_1, GP_2, GP_3]
-	}
-];
+type GalleryImage = {
+	full: string
+	thumb: string
+}
 
+const images: GalleryImage[] = [
+	{ full: Bear, thumb: BearThumb },
+	{ full: Elephant, thumb: ElephantThumb },
+	{ full: Dear, thumb: DearThumb },
+	{ full: Cat, thumb: CatThumb },
+	{ full: Wolf, thumb: WolfThumb },
+	{ full: Fox, thumb: FoxThumb },
+	{ full: Parrot, thumb: ParrotThumb },
+	{ full: Birds, thumb: BirdsThumb },
+	{ full: Fox_2, thumb: Fox_2Thumb },
+	{ full: Frog, thumb: FrogThumb },
+	{ full: Seahorse, thumb: SeahorseThumb },
+	{ full: Lizard, thumb: LizardThumb },
+]
+
+@localized()
 @customElement('gallery-page')
 export class GalleryPage extends LitElement {
-	@property({ type: String }) activeGalleryId = 'seelen';
+	@state() private lightboxIndex: number | null = null
 
-	@query('#lightbox') lightbox!: HTMLDivElement;
-	@query('#lightbox-image') lightboxImage!: HTMLImageElement;
+	private readonly onKeyDown = (event: KeyboardEvent) => {
+		if(this.lightboxIndex === null) return
 
-	connectedCallback() {
-		super.connectedCallback();
-
-		const params = new URLSearchParams(window.location.search);
-		const type = params.get('type');
-
-		const found = galleries.find(g => g.type === type);
-		if (found) this.activeGalleryId = found.id;
+		if(event.key === 'Escape') this.closeLightbox()
+		if(event.key === 'ArrowRight') this.stepLightbox(1)
+		if(event.key === 'ArrowLeft') this.stepLightbox(-1)
 	}
 
-	private handleGalleryChange(id: string) {
-		this.activeGalleryId = id;
-
-		const active = galleries.find(g => g.id === id);
-		if (active) {
-			history.replaceState({}, '', `/gallery?type=${active.type}`);
-		}
+	override connectedCallback() {
+		super.connectedCallback()
+		window.addEventListener('keydown', this.onKeyDown)
 	}
 
-	private openLightbox(src: string) {
-		this.lightboxImage.src = src;
-		this.lightbox.style.display = 'flex';
+	override disconnectedCallback() {
+		window.removeEventListener('keydown', this.onKeyDown)
+		document.body.style.removeProperty('overflow')
+		super.disconnectedCallback()
+	}
+
+	private openLightbox(index: number) {
+		this.lightboxIndex = index
+		document.body.style.setProperty('overflow', 'hidden')
 	}
 
 	private closeLightbox() {
-		this.lightbox.style.display = 'none';
+		this.lightboxIndex = null
+		document.body.style.removeProperty('overflow')
 	}
 
-	private renderGallery(images: string[]) {
-		return html`
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        ${images.map(src => html`
-          <img
-            src=${src}
-            class="gallery-image object-cover rounded-3xl w-full h-[280px] cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
-            @click=${() => this.openLightbox(src)}
-            alt="Galeriebild"
-          />
-        `)}
-      </div>
-    `;
+	private stepLightbox(offset: number) {
+		this.lightboxIndex = ((this.lightboxIndex ?? 0) + offset + images.length) % images.length
 	}
 
 	override render() {
 		return html`
-      <section class="py-20">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-	        
-          <div class="grid gap-2.5 pb-5 text-center">
-            <h2 class="text-gray-900 text-4xl font-bold leading-normal">
-              Meine Galerie
-            </h2>
-            <p class="text-gray-600 text-lg leading-8">
-	            Hier findest du eine Auswahl meiner medial empfangenen Bilder –
-	            mit viel Liebe, Achtsamkeit und in Verbindung mit der Geistigen Welt gestaltet.
-            </p>
-          </div>
+			<section class="py-20">
+				<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+					<div class="grid gap-2.5 pb-5 text-center">
+						<h1 class="text-4xl font-bold leading-normal text-gray-900">${msg('Meine Galerie')}</h1>
+						<p class="text-lg leading-8 text-gray-600">
+							${msg(
+								'Hier findest du eine Auswahl meiner medial empfangenen Krafttierbilder – mit viel Liebe, Achtsamkeit und in Verbindung mit der Geistigen Welt gestaltet.',
+							)}
+						</p>
+					</div>
 
-	        <div class="mb-8 text-center text-gray-600 space-y-2">
-		        <p class="text-gray-600 text-lg leading-8">
-			        Jedes Bild erhält ein Echtheitssiegel, das die Originalität und Einzigartigkeit
-			        deines Kunstwerks bestätigt.
-		        </p>
+					<div class="mb-12 text-center">
+						<p class="text-lg leading-8 text-gray-600">
+							${msg(
+								'Jedes Bild erhält ein Echtheitssiegel, das die Originalität und Einzigartigkeit deines Kunstwerks bestätigt.',
+							)}
+						</p>
+					</div>
 
-		        ${this.activeGalleryId === 'geist' ? html`
-			        <p class="text-teal-700 font-semibold italic">
-				        ✨ Inklusive einer persönlichen Botschaft deines Geistführers,
-				        die speziell für dich übermittelt wird.
-			        </p>
-					  ` : null}
-	        </div>
-	        
-          <div class="mb-10 sm:hidden">
-            <select
-              class="w-full rounded-md border border-gray-300 py-2 px-3"
-              @change=${(e: any) => this.handleGalleryChange(e.target.value)}
-            >
-              ${galleries.map(g => html`
-                <option value=${g.id} ?selected=${this.activeGalleryId === g.id}>
-                  ${g.label}
-                </option>
-              `)}
-            </select>
-          </div>
-	        
-          <div class="hidden sm:block mb-16">
-            <div class="border-b border-gray-200">
-              <nav class="-mb-px flex justify-center">
-                ${galleries.map(g => html`
-                  <div
-                    class="w-1/4 border-b-2 px-1 py-4 text-center text-lg font-medium cursor-pointer
-                      ${this.activeGalleryId === g.id
-												? 'border-teal-500 text-teal-600'
-												: 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'}"
-                    @click=${() => this.handleGalleryChange(g.id)}
-                  >
-                    ${g.label}
-                  </div>
-                `)}
-              </nav>
-            </div>
-          </div>
-	        
-          ${choose(this.activeGalleryId, galleries.map(g => [g.id, () => this.renderGallery(g.images)]))}
-	        <p class="mt-10 text-gray-600 text-m leading-8"><strong>Hinweis:</strong> Die Bilder entstehen auf medialem Weg und stellen keine fotografische oder objektive Darstellung dar, sondern eine künstlerisch-mediale Interpretation.</p>
-        </div>
-	      
-        <div class="lightbox" id="lightbox" @click=${(e: any) => e.target === this.lightbox && this.closeLightbox()}>
-          <span class="close" @click=${this.closeLightbox}>&times;</span>
-          <img id="lightbox-image" class="lightbox-image" />
-        </div>
+					<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+						${images.map(
+							(image, index) => html`
+								<button
+									type="button"
+									class="h-[280px] w-full overflow-hidden rounded-3xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2"
+									@click=${() => this.openLightbox(index)}
+								>
+									<img
+										src=${image.thumb}
+										loading="lazy"
+										decoding="async"
+										alt=${msg(str`Krafttierbild ${index + 1} vergrößern`)}
+										class="h-full w-full object-cover transition-transform duration-300 hover:scale-[1.02] cursor-pointer"
+									/>
+								</button>
+							`,
+						)}
+					</div>
 
-      </section>
-    `;
+					<p class="mt-10 text-sm leading-8 text-gray-600">
+						${msg(html`<strong>Hinweis:</strong> Die Bilder entstehen auf medialem Weg und stellen keine fotografische
+							oder objektive Darstellung dar, sondern eine künstlerisch-mediale Interpretation.`)}
+					</p>
+				</div>
+
+				${this.lightboxIndex === null ? nothing : this.renderLightbox(this.lightboxIndex)}
+			</section>
+		`
+	}
+
+	private renderLightbox(index: number) {
+		return html`
+			<div
+				class="fixed inset-0 z-[999] flex items-center justify-center bg-black/85 p-4"
+				role="dialog"
+				aria-modal="true"
+				aria-label=${msg(str`Krafttierbild ${index + 1} von ${images.length}`)}
+				@click=${(event: Event) => event.target === event.currentTarget && this.closeLightbox()}
+			>
+				<button
+					type="button"
+					class="absolute top-4 right-6 text-5xl leading-none text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+					@click=${this.closeLightbox}
+				>
+					<span class="sr-only">${msg('Schließen')}</span>
+					<span aria-hidden="true">&times;</span>
+				</button>
+
+				<button
+					type="button"
+					class="absolute left-4 text-5xl leading-none text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+					@click=${() => this.stepLightbox(-1)}
+				>
+					<span class="sr-only">${msg('Vorheriges Bild')}</span>
+					<span aria-hidden="true">&lsaquo;</span>
+				</button>
+				<button
+					type="button"
+					class="absolute right-4 text-5xl leading-none text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+					@click=${() => this.stepLightbox(1)}
+				>
+					<span class="sr-only">${msg('Nächstes Bild')}</span>
+					<span aria-hidden="true">&rsaquo;</span>
+				</button>
+
+				<img
+					src=${images[index].full}
+					alt=${msg(str`Krafttierbild ${index + 1}`)}
+					class="max-h-[90vh] max-w-[90vw] rounded-2xl object-contain"
+				/>
+			</div>
+		`
 	}
 
 	static override styles = [
 		tailwindCss,
 		css`
-			.lightbox {
-				display: none;
-				position: fixed;
-				inset: 0;
-				z-index: 999;
-				background: rgba(0,0,0,0.85);
-				align-items: center;
-				justify-content: center;
+			:host {
+				display: block;
 			}
-			
-			.lightbox-image {
-				max-width: 90vw;
-				max-height: 90vh;
-				border-radius: 1rem;
-			}
-			
-			.close {
-				position: absolute;
-				top: 20px;
-				right: 30px;
-				font-size: 3rem;
-				color: white;
-				cursor: pointer;
-			}
-		`
-	];
+		`,
+	]
 }
 
 declare global {

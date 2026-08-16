@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+<file target-language="en" source-language="de" original="lit-localize-inputs" datatype="plaintext">
+<body>
+<trans-unit id="s89d2ccab25dbf2e2">
+  <source>Wie gehe ich bei einem Jenseitskontakt vor?</source>
+  <target>How does a mediumship reading work?</target>
+</trans-unit>
+<trans-unit id="sb45aeea3754aaf5a">
+  <source>Als beweisführendes Medium möchte ich keinerlei Vorinformationen von dir oder deinen Lieben erhalten – so stelle ich sicher, dass ich alle Informationen ausschließlich von deinem Lieben erhalte.
+
+Zuallererst beschreibe ich dir deinen Lieben, damit du sicher sein kannst, dass es sich um die richtige Seele handelt. Danach erhältst du eine persönliche Botschaft oder auch mehrere Botschaften.
+
+Im Anschluss kannst du gerne 2–3 Fragen an deine liebe Seele stellen – oder auch an mich, falls noch Unklarheiten bestehen.</source>
+  <target>As an evidential medium, I prefer not to know anything about you or your loved one beforehand – that way you can be certain that everything I pass on comes from them, and not from me. I begin by describing your loved one, so you can be sure it’s the right person coming through. You’ll then receive a personal message, or several. Afterwards you’re welcome to ask them two or three questions – or to ask me, if anything is still unclear.</target>
+</trans-unit>
+<trans-unit id="s5cadb4149cf791e7">
+  <source>Wo findet die Jenseitssitzung statt?</source>
+  <target>Where do sessions take place?</target>
+</trans-unit>
+<trans-unit id="s85df3f8cae9bfa49">
+  <source>Die Jenseitssitzung findet ausschließlich über Zoom oder WhatsApp statt. Bitte beachte, dass nur über Zoom eine Aufzeichnung der Sitzung möglich ist.</source>
+  <target>Sessions take place over Zoom or WhatsApp only. Please note that a recording is possible on Zoom alone.</target>
+</trans-unit>
+<trans-unit id="s4400c39239d95ff6">
+  <source>Was ist ein Seelenweg?</source>
+  <target>What is a Soul Path reading?</target>
+</trans-unit>
+<trans-unit id="se3131520d6934001">
+  <source>Erkenne und finde wieder deinen Weg.
+
+Entfalte dein persönliches Potenzial.
+
+Erlange Selbsterkenntnis und finde deinen inneren Frieden.
+
+Finde deine Berufung und Bestimmung heraus.
+
+Durchbrich wiederkehrende Muster in deinem Leben.</source>
+  <target>Rediscover your direction. Unlock the potential you already carry. Come to know yourself and find your peace. Discover your calling and your purpose. Break the patterns that keep repeating in your life.</target>
+</trans-unit>
+<trans-unit id="sd63f6ebd4c54c0db">
+  <source>Ist der Seelenweg die richtige Auswahl für mich?</source>
+  <target>Is a Soul Path reading right for me?</target>
+</trans-unit>
+<trans-unit id="s0c9e3ecc9dc55d36">
+  <source>Du befindest dich in einer für dich aussichtslosen Situation und weißt im Moment nicht ein und aus. Du bist daran interessiert, was zu deinen Seelenaufgaben zählt. Du möchtest deinen Weg wiederfinden und verschiedene Themen in deinem Leben genauer unter die Lupe nehmen.</source>
+  <target>You feel stuck in a situation with no way forward. You want to understand what your soul came here to do. You want to find your direction again and look honestly at the areas of your life that need your attention.</target>
+</trans-unit>
+<trans-unit id="s1e44e5975527516d">
+  <source>Findet ein Vorgespräch statt?</source>
+  <target>Do we speak beforehand?</target>
+</trans-unit>
+<trans-unit id="s400655a000b83d42">
+  <source>Ein Vorgespräch ist nicht unbedingt erforderlich. Du kannst mir deine Fragen, die du bereits im Vorfeld hast, aber gerne mitteilen – so lasse ich diese in mein Channeling einfließen.</source>
+  <target>A conversation beforehand isn’t essential. You are very welcome to send me any questions you already have, though, and I’ll let them flow into the channelling.</target>
+</trans-unit>
+<trans-unit id="sa6eb8f1648543c45">
+  <source>Was bekomme ich in der Sitzung?</source>
+  <target>What do I take away from the session?</target>
+</trans-unit>
+<trans-unit id="sc85305d28d3d7196">
+  <source>Am Ende unserer Sitzung erhältst du die gesamte Sitzung als Video und den Bericht der Sitzung in schriftlicher Form per E-Mail zugeschickt.</source>
+  <target>Afterwards I email you a video of the whole session, together with a written summary of what came through.</target>
+</trans-unit>
+<trans-unit id="s5129322d3f9f4162">
+  <source>Häufig gestellte Fragen</source>
+  <target>Frequently asked questions</target>
+</trans-unit>
+<trans-unit id="se38d17d3d2b6ca51">
+  <source>Thema auswählen</source>
+  <target>Choose a topic</target>
+</trans-unit>
+<trans-unit id="sb99042e75f0963c7">
+  <source>FAQ-Themen</source>
+  <target>FAQ topics</target>
+</trans-unit>
+<trans-unit id="s2baf4453480f6659">
+  <source>Lebensbaum im Abendlicht</source>
+  <target>Tree of life in the evening light</target>
+</trans-unit>
+<trans-unit id="hd2a2d2d84b9ede7a">
+  <source>„Was man tief in seinem Herzen besitzt,<x id="0" equiv-text="&lt;br&gt;"/>kann man nicht durch den Tod verlieren.“</source>
+  <target>“What we hold deep in our hearts<x id="0" equiv-text="&lt;br&gt;"/>can never be lost to death.”</target>
+</trans-unit>
+<trans-unit id="se41558cce0a47e47">
+  <source>Sprache wechseln zu <x id="0" equiv-text="${localeLabels[next]}"/></source>
+  <target>Switch language to <x id="0" equiv-text="${localeLabels[next]}"/></target>
+</trans-unit>
+<trans-unit id="sd11a46c2e7022f58">
+  <source>Impressum</source>
+  <target>Legal notice</target>
+</trans-unit>
+<trans-unit id="sfa25b319a06b9e89">
+  <source>AGB</source>
+  <target>Terms</target>
+</trans-unit>
+<trans-unit id="s335f7bde651f8f16">
+  <source>Datenschutz</source>
+  <target>Privacy</target>
+</trans-unit>
+<trans-unit id="sc354c34c1a7cbcc4">
+  <source>Cookies</source>
+  <target>Cookies</target>
+</trans-unit>
+<trans-unit id="s2cf5fbfc89b15df9">
+  <source>Rechtliches</source>
+  <target>Legal</target>
+</trans-unit>
+<trans-unit id="s40054ecc54073578">
+  <source>Seelenstimme auf Facebook</source>
+  <target>Seelenstimme on Facebook</target>
+</trans-unit>
+<trans-unit id="s4287722a1ed30ec4">
+  <source>Alle Rechte vorbehalten.</source>
+  <target>All rights reserved.</target>
+</trans-unit>
+<trans-unit id="s6abb1cd87fe0114e">
+  <source>Home</source>
+  <target>Home</target>
+</trans-unit>
+<trans-unit id="s062a3b992089a481">
+  <source>Über mich</source>
+  <target>About me</target>
+</trans-unit>
+<trans-unit id="sde9107b55b3f537d">
+  <source>Leistungen</source>
+  <target>Services</target>
+</trans-unit>
+<trans-unit id="sfb4410b48e95fa73">
+  <source>Kontakt</source>
+  <target>Contact</target>
+</trans-unit>
+<trans-unit id="s4bd8b1e7a8147b62">
+  <source>Galerie</source>
+  <target>Gallery</target>
+</trans-unit>
+<trans-unit id="sbd4575edfbf5c84f">
+  <source>Hauptnavigation</source>
+  <target>Main navigation</target>
+</trans-unit>
+<trans-unit id="se47675a84f19a970">
+  <source>Seelenstimme – zur Startseite</source>
+  <target>Seelenstimme – home page</target>
+</trans-unit>
+<trans-unit id="sb5cd556ea8f46bb8">
+  <source>Menü öffnen</source>
+  <target>Open menu</target>
+</trans-unit>
+<trans-unit id="s6d8b7baee47fca15">
+  <source>Menü</source>
+  <target>Menu</target>
+</trans-unit>
+<trans-unit id="s40799ce046cba3ab">
+  <source>Menü schließen</source>
+  <target>Close menu</target>
+</trans-unit>
+<trans-unit id="s2d49545386ab5b30">
+  <source>1000 Dank nochmal… Ich habe sowas noch nie erlebt… Es hat alles gestimmt, sooo viele Informationen, das hättest du niemals von irgendjemand wissen können… Alles hat zu 100 Prozent gepasst… Es war magisch!!! Ich danke dir von ganzem Herzen!!!!</source>
+  <target>A thousand thanks again… I have never experienced anything like it… It was all right, sooo much information, there’s no way you could have known any of it from anyone… Every bit of it fitted… It was magical!!! Thank you from the bottom of my heart!!!!</target>
+</trans-unit>
+<trans-unit id="saf9c22d92912bf2c">
+  <source>Ein großes Dankeschön an Stefi für den wunderbaren Jenseits Kontakt zu meinem lieben Papa! Ich bin noch ganz geflasht und gerührt. Danke Stefi! Hvala! Ευχαριστώ μπαμπάκα!</source>
+  <target>A huge thank you to Stefi for the wonderful contact with my dear dad on the other side! I’m still completely blown away and moved. Thank you Stefi! Hvala! Ευχαριστώ μπαμπάκα!</target>
+</trans-unit>
+<trans-unit id="s0175470bb6eac569">
+  <source>Sie nahm Kontakt zu meinem Bruder auf und es war der Wahnsinn, sie hat seinen Charakter genau beschrieben, sie nannte mir Einzelheiten zur Todesursache und sie hat mir Botschaften übermittelt, die genau zu meiner aktuellen Lebenslage passen. Liebe Stefi, ich bin dir unheimlich dankbar für diesen tollen und sehr emotionalen Kontakt. Vielen, vielen Dank!</source>
+  <target>She made contact with my brother and it was unbelievable – she described his character exactly, she told me details about how he died, and she passed on messages that fit exactly where I am in my life right now. Dear Stefi, I am so grateful for this wonderful, deeply emotional contact. Thank you so, so much!</target>
+</trans-unit>
+<trans-unit id="sad80a1d540f2dc21">
+  <source>Ich hatte mit Stefana Gyorgiev einen ganz tollen Kontakt zu meinem Opa. Mir fehlen noch immer die Worte. So vieles, was gepasst hat, was kein Außenstehender wissen kann. Es ist einfach umwerfend gewesen, kann es gar nicht in Worte fassen. Zudem muss ich sagen, dass Stefi einfach nur klasse ist, einfühlsam, lieb, entspannt. Es macht einfach Riesenspaß sich mit ihr zu unterhalten und tut furchtbar gut. Ich kann sie nur weiterempfehlen. Vielen Dank meine liebe</source>
+  <target>I had the most wonderful contact with my grandfather through Stefana Gyorgiev. I still can’t find the words. So much of it was right, things no outsider could possibly know. It was simply stunning, I can’t put it into words. And I have to say — Stefi is just brilliant: warm, kind, easy to be around. Talking to her is a real joy and does you so much good. I can only recommend her. Thank you so much, my dear.</target>
+</trans-unit>
+<trans-unit id="sdcbaaeaa51bf0046">
+  <source>Ich möchte mich bei Stefi von ganzem Herzen bedanken. Sie hatte Kontakt mit meinem Papa. Ich bin total überwältigt. Es war zu 98% alles stimmig. Stefi, du bist ein wundervoller, einfühlsamer Engel. Für mich war dies das 1. Mal und es hat meine Erwartungen zu 1000% übertroffen. Du hast ihn so gut beschrieben, als hättest du ihn gekannt. Die Nachricht, die er mir zukommen ließ durch dich, hat mir sehr viel Trost und Mut gegeben. Du bist ein wundervoller Mensch, der mit einer wundervollen Gabe gesegnet ist. Vielen lieben Dank für deine Zeit und deine Energie.</source>
+  <target>I want to thank Stefi from the bottom of my heart. She had contact with my dad. I’m completely overwhelmed. 98% of it was spot on. Stefi, you’re a wonderful, warm-hearted angel. It was my first time and it went beyond anything I expected. You described him so well, as though you had known him. The message he sent me through you gave me so much comfort and courage. You’re a wonderful person, blessed with a wonderful gift. Thank you for your time and your energy.</target>
+</trans-unit>
+<trans-unit id="s800d93b905e5b0b9">
+  <source>Wir möchten uns ganz herzlich bei der lieben Stefi bedanken für den wundervollen Kontakt unseres Sohns Julian. Alles war so stimmig und hat auch neue Erkenntnisse gebracht. Sie arbeitet sehr beweisführend. Das durfte ich heute selbst erleben. Ich danke dir und kann dich sehr gerne weiterempfehlen.</source>
+  <target>We want to thank dear Stefi so warmly for the wonderful contact with our son Julian. Everything fitted, and it brought new understanding too. She works in a very evidential way – I got to experience that for myself today. Thank you, and I would gladly recommend you to anyone.</target>
+</trans-unit>
+<trans-unit id="se526aac70262ceeb">
+  <source>Ich möchte mich auch hier nochmals herzlich bedanken bei Stefi für den Kontakt gestern zu meiner verstorbenen Mama. Es war einfach magisch, berührend. Gänsehaut-Moment: sie wusste Dinge, die sie niemals wissen konnte, alles bis ins kleinste Detail beschrieben und den Nagel auf den Kopf getroffen, 100%. Ich bin so dankbar, dass ich mit meiner Mama Kontakt haben durfte, jetzt weiß ich, dass sie gut da drüben angekommen ist und ihren Frieden gefunden hat.</source>
+  <target>I want to thank Stefi here once again for the contact yesterday with my late mum. It was simply magical and so moving. A goosebump moment: she knew things she could never have known, described everything down to the last detail and hit the nail on the head, 100%. I’m so grateful I was able to have contact with my mum – now I know she’s arrived safely on the other side and has found her peace.</target>
+</trans-unit>
+<trans-unit id="se7c1a9c3a64eb91e">
+  <source>Was sagen die Klienten</source>
+  <target>What my clients say</target>
+</trans-unit>
+<trans-unit id="h52cf05fff4f692b0">
+  <source>Herzlich willkommen,<x id="0" equiv-text="&lt;br&gt;"/>schön, dass du hier bist.</source>
+  <target>Welcome —<x id="0" equiv-text="&lt;br&gt;"/>I’m so glad you’re here.</target>
+</trans-unit>
+<trans-unit id="h03006cdf727a8c37">
+  <source>Mein Name ist <x id="0" equiv-text="&lt;strong&gt;"/>Stefana Gyorgiev<x id="1" equiv-text="&lt;/strong&gt;"/> und ich begleite Menschen auf ihrem
+									spirituellen Weg – mit medialer Wahrnehmung, Einfühlungsvermögen und viel Respekt für deine
+									persönliche Situation.</source>
+  <target>My name is <x id="0" equiv-text="&lt;strong&gt;"/>Stefana Gyorgiev<x id="1" equiv-text="&lt;/strong&gt;"/>, and I walk alongside people on their spiritual path – with mediumship, empathy, and real respect for wherever you find yourself right now.</target>
+</trans-unit>
+<trans-unit id="s1de0656f543ff251">
+  <source>In einem geschützten und achtsamen Rahmen stelle ich eine Verbindung zur Geistigen Welt her, um Botschaften, Zeichen und liebevolle Impulse deiner Verstorbenen weiterzugeben. Für viele Menschen kann dies Trost, Klarheit und neue Zuversicht in Zeiten der Trauer bringen.</source>
+  <target>In a safe, unhurried space I connect with the Spirit World to pass on messages, signs and loving words from those you’ve lost. For many people this brings comfort, clarity and a renewed sense of hope in their grief.</target>
+</trans-unit>
+<trans-unit id="sb0d26205dbb5039f">
+  <source>Darüber hinaus biete ich verschiedene spirituelle Begleitungen an, die dich dabei unterstützen können, dich selbst besser zu verstehen, neue Perspektiven zu gewinnen und deinen eigenen Weg mit mehr Vertrauen zu gehen.</source>
+  <target>Alongside that, I offer other forms of spiritual guidance to help you understand yourself better, see things from a new angle, and walk your own path with more confidence.</target>
+</trans-unit>
+<trans-unit id="s35053082138f49bb">
+  <source>Jede Sitzung ist so individuell wie der Mensch selbst. Mir ist es wichtig, dir auf Augenhöhe zu begegnen und einen Raum zu schaffen, in dem du dich sicher und angenommen fühlen darfst.</source>
+  <target>Every session is as individual as the person sitting with me. What matters to me is meeting you as an equal, in a space where you feel safe and accepted exactly as you are.</target>
+</trans-unit>
+<trans-unit id="sa865d8630de09852">
+  <source>Stefana Gyorgiev – Spirituelle Begleiterin</source>
+  <target>Stefana Gyorgiev – spiritual guide</target>
+</trans-unit>
+<trans-unit id="sfaa832f9a3be4dc8">
+  <source>Jenseitskontakt</source>
+  <target>Mediumship Reading</target>
+</trans-unit>
+<trans-unit id="s136e10962ba2e7b5">
+  <source>Nehmen Sie Kontakt mit Ihren Lieben im Jenseits auf.</source>
+  <target>Reconnect with your loved ones in spirit.</target>
+</trans-unit>
+<trans-unit id="sd1bb42eb4fa43abf">
+  <source>In einem geschützten und achtsamen Raum verbinde ich mich mit der Geistigen Welt, um Botschaften Ihrer Lieben aus dem Jenseits zu übermitteln. Diese Sitzung kann Trost, Klarheit und neue Perspektiven schenken.</source>
+  <target>In a safe, gentle space I connect with the Spirit World to bring you messages from your loved ones in spirit. A session can offer comfort, clarity and a new perspective.</target>
+</trans-unit>
+<trans-unit id="s8603043ec8339159">
+  <source>60 Minuten</source>
+  <target>60 minutes</target>
+</trans-unit>
+<trans-unit id="sba4649c0fa231645">
+  <source>150 EUR</source>
+  <target>150 EUR</target>
+</trans-unit>
+<trans-unit id="secab7fa9c8f404d7">
+  <source>Aura-Reading</source>
+  <target>Aura Reading</target>
+</trans-unit>
+<trans-unit id="sa44e53fc82f0db05">
+  <source>Sich und seine Mitmenschen tiefer verstehen.</source>
+  <target>Understand yourself, and the people around you, more deeply.</target>
+</trans-unit>
+<trans-unit id="s497cc0e8d9053eda">
+  <source>Aura-Reading basiert auf der Wahrnehmung des energetischen Feldes eines Menschen.</source>
+  <target>An aura reading works with the energy field that surrounds every person.</target>
+</trans-unit>
+<trans-unit id="sbd7c295642177a78">
+  <source>Seelenweg</source>
+  <target>Soul Path</target>
+</trans-unit>
+<trans-unit id="sbe5f38746195d57d">
+  <source>Tiefe, einfühlsame Begleitung, die über das Alltägliche hinausgeht: In respektvoller Verbindung mit der Seele selbst entstehen Klarheit, Heilung und Ausrichtung – ein Gespräch, das nicht nur den Verstand, sondern das innerste Wesen berührt und erinnert.</source>
+  <target>Deep, gentle guidance that reaches past the everyday. In respectful connection with the soul itself, clarity, healing and direction emerge – a conversation that speaks not only to the mind, but to something far older in you.</target>
+</trans-unit>
+<trans-unit id="s0c6e2ac709769959">
+  <source>In der Seelenweg-Begleitung findest du klare Antworten auf die tiefsten Fragen deiner Seele. Gemeinsam schauen wir auf deine aktuellen Lebensthemen, Seelenaufgaben und nächsten Entwicklungsschritte – einfühlsam, tiefgehend und immer lösungsorientiert.</source>
+  <target>A Soul Path reading brings clear answers to your soul’s deepest questions. Together we look at what you’re living through now, what your soul came here to do, and the next steps in front of you – gently, deeply, and always with a way forward.</target>
+</trans-unit>
+<trans-unit id="s5f2a4a00ba07b574">
+  <source>250 EUR</source>
+  <target>250 EUR</target>
+</trans-unit>
+<trans-unit id="s46962b21b12fde2b">
+  <source>Krafttierbilder</source>
+  <target>Power Animal Paintings</target>
+</trans-unit>
+<trans-unit id="scec0f37e72f69bd0">
+  <source>Dein spiritueller Begleiter in Bildform.</source>
+  <target>Your spiritual companion, captured in a painting.</target>
+</trans-unit>
+<trans-unit id="s9aa4ce5288949266">
+  <source>Krafttierbilder zeigen dein persönliches Krafttier und dessen Botschaft. Sie stärken deine Verbindung zu deiner inneren Kraft und unterstützen dich auf deinem Weg.</source>
+  <target>A power animal painting reveals your own power animal and the message it carries for you. It strengthens the connection to your inner strength and supports you on your way.</target>
+</trans-unit>
+<trans-unit id="s8e6fb6923fd2b463">
+  <source>ab 50 EUR</source>
+  <target>from 50 EUR</target>
+</trans-unit>
+<trans-unit id="sa3ddb952ad7f98b2">
+  <source>Medialer Übungszirkel</source>
+  <target>Mediumship Development Circle</target>
+</trans-unit>
+<trans-unit id="sc40b1c3a1d90543c">
+  <source>Gemeinsam üben und wachsen.</source>
+  <target>Practise, share and grow together.</target>
+</trans-unit>
+<trans-unit id="s6c40903ed113ffd8">
+  <source>Der mediale Übungszirkel bietet Raum, um die eigene Wahrnehmung zu schulen, sich auszutauschen und gemeinsam spirituell zu wachsen. Dieser Zirkel ist sowohl für Einsteiger als auch für Fortgeschrittene geeignet.</source>
+  <target>The development circle is a space to build your own awareness, share experiences and grow together. It’s open to complete beginners and to those further along the path alike.</target>
+</trans-unit>
+<trans-unit id="sad800da140c453da">
+  <source>2 Stunden</source>
+  <target>2 hours</target>
+</trans-unit>
+<trans-unit id="s3cf4dae27023aa7f">
+  <source>20 EUR</source>
+  <target>20 EUR</target>
+</trans-unit>
+<trans-unit id="s8eb6c12e408c54b0">
+  <source>Einzelcoaching</source>
+  <target>One-to-One Coaching</target>
+</trans-unit>
+<trans-unit id="s22693d5e5633963c">
+  <source>Individuelle Begleitung auf deinem Weg.</source>
+  <target>Personal guidance, shaped around you.</target>
+</trans-unit>
+<trans-unit id="s81035a2a0e7c1f58">
+  <source>Im Einzelcoaching widmen wir uns gezielt deinen persönlichen Themen. Die Sitzung wird individuell auf dich und deine Bedürfnisse abgestimmt.</source>
+  <target>In one-to-one coaching we work on whatever you’re carrying at the moment. Every session is shaped entirely around you and what you need.</target>
+</trans-unit>
+<trans-unit id="sdf3f768f4d0a59e1">
+  <source>60 – 90 Minuten</source>
+  <target>60 – 90 minutes</target>
+</trans-unit>
+<trans-unit id="sd471e8aa33e09789">
+  <source>ab 100 EUR</source>
+  <target>from 100 EUR</target>
+</trans-unit>
+<trans-unit id="s1f75fd52e557376e">
+  <source>90 Minuten</source>
+  <target>90 minutes</target>
+</trans-unit>
+<trans-unit id="s62441d58864cf0e0">
+  <source>Mediale Beratung</source>
+  <target>Psychic Guidance</target>
+</trans-unit>
+<trans-unit id="sdeefc1ef8e85a678">
+  <source>Klarheit und Impulse aus der Geistigen Welt.</source>
+  <target>Clarity and insight from the Spirit World.</target>
+</trans-unit>
+<trans-unit id="s66c1bad16edf83cd">
+  <source>Die mediale Beratung bietet dir Antworten, Impulse und Orientierung zu aktuellen Lebensfragen – empathisch, achtsam und lösungsorientiert.</source>
+  <target>A psychic guidance session offers you answers, insight and a clearer sense of direction on whatever life is asking of you right now – warm, unhurried and always practical.</target>
+</trans-unit>
+<trans-unit id="s5df88d0908342808">
+  <source>30 Minuten</source>
+  <target>30 minutes</target>
+</trans-unit>
+<trans-unit id="scd420f1b194ec88e">
+  <source>Nachricht gesendet</source>
+  <target>Message sent</target>
+</trans-unit>
+<trans-unit id="s3264dd86338486db">
+  <source>Vielen Dank! Ich habe deine Nachricht erhalten und melde mich in Kürze.</source>
+  <target>Thank you! I’ve received your message and will be in touch very soon.</target>
+</trans-unit>
+<trans-unit id="scae6d03fe110472b">
+  <source>Sende mir einfach eine Nachricht</source>
+  <target>Just send me a message</target>
+</trans-unit>
+<trans-unit id="sdd2fffdf86bf5b6e">
+  <source>Adresse</source>
+  <target>Address</target>
+</trans-unit>
+<trans-unit id="sab1114a5f102dedc">
+  <source>Telefon</source>
+  <target>Phone</target>
+</trans-unit>
+<trans-unit id="s63e457bc703a3030">
+  <source>E-Mail</source>
+  <target>Email</target>
+</trans-unit>
+<trans-unit id="sb893ee617c654dfe">
+  <source>Leistung</source>
+  <target>Service</target>
+</trans-unit>
+<trans-unit id="sc39f0153f5a6fd0f">
+  <source>Bitte wähle eine Leistung aus!</source>
+  <target>Please choose a service!</target>
+</trans-unit>
+<trans-unit id="s36b2300aa1eadf9f">
+  <source><x id="0" equiv-text="${option.title}"/> — zurzeit ausgebucht</source>
+  <target><x id="0" equiv-text="${option.title}"/> — currently fully booked</target>
+</trans-unit>
+<trans-unit id="s89208746d63e788d">
+  <source>Bitte wähle eine Dauer aus!</source>
+  <target>Please choose a duration!</target>
+</trans-unit>
+<trans-unit id="s2efe4f770f2ba4c4">
+  <source>Bitte auswählen</source>
+  <target>Please select</target>
+</trans-unit>
+<trans-unit id="s148fa25d7fe9dd72">
+  <source>Erfahrungsniveau</source>
+  <target>Experience level</target>
+</trans-unit>
+<trans-unit id="s0f15d9368fb8a284">
+  <source>Einsteiger</source>
+  <target>Beginner</target>
+</trans-unit>
+<trans-unit id="s0995af6c92f919a0">
+  <source>Fortgeschritten</source>
+  <target>Advanced</target>
+</trans-unit>
+<trans-unit id="s0830a1e0d2456d9b">
+  <source>Nachricht</source>
+  <target>Message</target>
+</trans-unit>
+<trans-unit id="s5f0b96bf7a2b1c7a">
+  <source>Bitte stimme der Datenschutzerklärung zu!</source>
+  <target>Please agree to the privacy policy!</target>
+</trans-unit>
+<trans-unit id="hde27001df2496403">
+  <source>Ich habe die
+											<x id="0" equiv-text="&lt;a href=&quot;/datenschutz&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; class=&quot;font-semibold text-teal-700 underline&quot;&gt;"/>Datenschutzerklärung<x id="1" equiv-text="&lt;/a&gt;"/>
+											gelesen und stimme der Verarbeitung meiner Angaben zur Bearbeitung dieser Anfrage zu.</source>
+  <target>I have read the <x id="0" equiv-text="&lt;a href=&quot;/datenschutz&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot; class=&quot;font-semibold text-teal-700 underline&quot;&gt;"/>privacy policy<x id="1" equiv-text="&lt;/a&gt;"/> and agree to my details being used to answer this enquiry.</target>
+</trans-unit>
+<trans-unit id="s04efbe8c5d89b034">
+  <source>Wird gesendet …</source>
+  <target>Sending …</target>
+</trans-unit>
+<trans-unit id="sed052d09e8043504">
+  <source>Nachricht senden</source>
+  <target>Send message</target>
+</trans-unit>
+<trans-unit id="h140f5737ed301b8f">
+  <source><x id="0" equiv-text="&lt;strong&gt;"/>Hinweis<x id="1" equiv-text="&lt;/strong&gt;"/>: Meine Angebote dienen der spirituellen Begleitung und ersetzen
+										keine medizinische, psychologische oder therapeutische Behandlung. Es werden keine Diagnosen
+										gestellt und keine Heilversprechen gegeben.</source>
+  <target><x id="0" equiv-text="&lt;strong&gt;"/>Please note<x id="1" equiv-text="&lt;/strong&gt;"/>: my work is spiritual guidance. It is not a substitute for medical, psychological or therapeutic treatment, and I do not make diagnoses or promise healing.</target>
+</trans-unit>
+<trans-unit id="s40631610bd91dba0">
+  <source>Neue Anfrage: <x id="0" equiv-text="${service.title}"/></source>
+  <target>New enquiry: <x id="0" equiv-text="${service.title}"/></target>
+</trans-unit>
+<trans-unit id="sd72cac450c159603">
+  <source>Vorname</source>
+  <target>First name</target>
+</trans-unit>
+<trans-unit id="s4e9995a5ac28f038">
+  <source>Nachname</source>
+  <target>Last name</target>
+</trans-unit>
+<trans-unit id="s1017b5df4e059160">
+  <source>Telefonnummer</source>
+  <target>Phone number</target>
+</trans-unit>
+<trans-unit id="s838598c97307a5d3">
+  <source>Anschrift</source>
+  <target>Postal address</target>
+</trans-unit>
+<trans-unit id="s4f3605e1b53bf087">
+  <source>Dieses Feld ist erforderlich!</source>
+  <target>This field is required!</target>
+</trans-unit>
+<trans-unit id="s89b1385897c9b1b1">
+  <source>Zurzeit ausgebucht</source>
+  <target>Currently fully booked</target>
+</trans-unit>
+<trans-unit id="s5b97a3b933c21a72">
+  <source>Dauer</source>
+  <target>Duration</target>
+</trans-unit>
+<trans-unit id="s862e948ac324408a">
+  <source>Preis</source>
+  <target>Price</target>
+</trans-unit>
+<trans-unit id="sea8361f8b9dd42d0">
+  <source>Termin anfragen</source>
+  <target>Request a session</target>
+</trans-unit>
+<trans-unit id="s5238f5c2f7bd4069">
+  <source>Meine Leistungen</source>
+  <target>My services</target>
+</trans-unit>
+<trans-unit id="sebfb4da03b71ccf3">
+  <source>Entdecke meine Angebote für deine spirituelle Entwicklung.</source>
+  <target>Find the support that fits where you are right now.</target>
+</trans-unit>
+<trans-unit id="s2069aee4b60079ba">
+  <source>Das bin ich</source>
+  <target>My story</target>
+</trans-unit>
+<trans-unit id="s61076a197b901f1d">
+  <source>Mein Name ist Stefana Gyorgiev. Ich wurde 1989 in Serbien geboren und lebe seit meinem zweiten Lebensjahr mit meiner Familie in Österreich. Ich habe einen Sohn und lebe in einem Haus auf dem Land.</source>
+  <target>My name is Stefana Gyorgiev. I was born in Serbia in 1989 and have lived in Austria since I was two. I have a son, and we live in a house out in the countryside.</target>
+</trans-unit>
+<trans-unit id="s8ef64babb44377c5">
+  <source>Schon seit meiner Kindheit habe ich vieles hinterfragt und wollte die Dinge tiefer verstehen – besonders die Frage nach dem Leben nach dem Tod. Für mich war früh spürbar, dass mit dem Tod nicht einfach alles endet und wir auf einer anderen Ebene weiterbestehen.</source>
+  <target>Even as a child I questioned things and wanted to understand them more deeply – above all, the question of what happens after we die. I sensed early on that death isn’t simply the end, and that we go on existing on another level.</target>
+</trans-unit>
+<trans-unit id="s2a0b9da5346ab800">
+  <source>Da ich von klein auf offen für die Geistige Welt war, zeigten sich bei mir im Laufe der Zeit Wahrträume, Vorahnungen und innere Bilder, die immer deutlicher wurden. Ich erhielt viele klare Zeichen und Impulse, die ich nicht mehr als Zufall abtun konnte. Diese Erfahrungen haben mich schließlich dazu geführt, meine mediale Wahrnehmung bewusst zu entwickeln.</source>
+  <target>Because I was open to the Spirit World from a young age, prophetic dreams, premonitions and inner images came to me and grew clearer over the years. I received far too many unmistakable signs to keep calling them coincidence. In the end, those experiences led me to develop my mediumship properly.</target>
+</trans-unit>
+<trans-unit id="sa35ecc566c18b943">
+  <source>Ich ließ mich medial ausbilden, besuchte zahlreiche Kurse und vertiefte meine Fähigkeiten in enger Verbindung mit der Geistigen Welt. Dieser Weg war für mich nicht nur eine Ausbildung, sondern ein innerer Entwicklungsprozess, der mich bis heute begleitet.</source>
+  <target>I trained as a medium, took course after course, and deepened my abilities in close connection with the Spirit World. That path was never only a training for me; it was an inner journey, and it’s one I’m still on.</target>
+</trans-unit>
+<trans-unit id="s9f491ea15e997cf9">
+  <source>Heute folge ich diesem Ruf mit großer Hingabe und Dankbarkeit. Es ist mir eine Herzensangelegenheit, Menschen, die einen geliebten Menschen verloren haben, Trost zu schenken und ihnen die Möglichkeit zu geben, wieder in Kontakt zu treten. Besonders wichtig ist mir dabei, Unausgesprochenes, offene Fragen und innere Unruhe in liebevoller Weise aufzulösen.</source>
+  <target>Today I follow this calling with great devotion and gratitude. Bringing comfort to people who have lost someone they love, and giving them the chance to make contact again, is close to my heart. What matters most to me is gently resolving what was left unsaid – the open questions, and the restlessness that comes with them.</target>
+</trans-unit>
+<trans-unit id="s08519cd30b65a25e">
+  <source>Den Hinterbliebenen zu zeigen, dass ihre Liebsten weiterhin auf seelischer Ebene bei ihnen sind und sie begleiten, empfinde ich als eine sehr erfüllende und sinnstiftende Aufgabe.</source>
+  <target>Showing the bereaved that the people they love are still with them in spirit, still walking alongside them, is the most fulfilling work I know.</target>
+</trans-unit>
+<trans-unit id="s8a3daa3e915d7836">
+  <source>Meine Galerie</source>
+  <target>My gallery</target>
+</trans-unit>
+<trans-unit id="sd27f9c3427fb334e">
+  <source>Jedes Bild erhält ein Echtheitssiegel, das die Originalität und Einzigartigkeit deines Kunstwerks bestätigt.</source>
+  <target>Every painting comes with a certificate of authenticity, confirming that your artwork is original and one of a kind.</target>
+</trans-unit>
+<trans-unit id="h6dc1a783e7289b52">
+  <source><x id="0" equiv-text="&lt;strong&gt;"/>Hinweis:<x id="1" equiv-text="&lt;/strong&gt;"/> Die Bilder entstehen auf medialem Weg und stellen keine fotografische
+							oder objektive Darstellung dar, sondern eine künstlerisch-mediale Interpretation.</source>
+  <target><x id="0" equiv-text="&lt;strong&gt;"/>Please note:<x id="1" equiv-text="&lt;/strong&gt;"/> these paintings come through mediumship. They aren’t photographs or literal likenesses, but an artistic impression of what I’m shown.</target>
+</trans-unit>
+<trans-unit id="sb2246a8686ca9805">
+  <source>Schließen</source>
+  <target>Close</target>
+</trans-unit>
+<trans-unit id="s637376fd03047144">
+  <source>Vorheriges Bild</source>
+  <target>Previous image</target>
+</trans-unit>
+<trans-unit id="sf592e9ad59fde6e8">
+  <source>Nächstes Bild</source>
+  <target>Next image</target>
+</trans-unit>
+<trans-unit id="s8a22dd04b506a647">
+  <source>Allgemeine Geschäftsbedingungen</source>
+  <target>Terms and Conditions</target>
+</trans-unit>
+<trans-unit id="s8dfab11c91defea5">
+  <source>1. Geltungsbereich</source>
+  <target>1. Scope</target>
+</trans-unit>
+<trans-unit id="h987f5d6269a684ed">
+  <source>Diese Allgemeinen Geschäftsbedingungen gelten für alle Dienstleistungen von
+									<x id="0" equiv-text="&lt;strong&gt;"/>Seelenstimme<x id="1" equiv-text="&lt;/strong&gt;"/>.</source>
+  <target>These Terms and Conditions apply to all services provided by <x id="0" equiv-text="&lt;strong&gt;"/>Seelenstimme<x id="1" equiv-text="&lt;/strong&gt;"/>.</target>
+</trans-unit>
+<trans-unit id="sa8e3cde1ab598c0b">
+  <source>2. Leistungen</source>
+  <target>2. Services</target>
+</trans-unit>
+<trans-unit id="h2c57ce97d6ef413e">
+  <source><x id="0" equiv-text="&lt;strong&gt;"/>Rechtlicher Hinweis:<x id="1" equiv-text="&lt;/strong&gt;"/> Die angebotenen Leistungen dienen ausschließlich der
+									spirituellen und persönlichen Weiterentwicklung. Sie stellen keine medizinische, psychologische oder
+									therapeutische Beratung oder Behandlung dar und ersetzen nicht den Besuch bei Ärzt:innen,
+									Psychotherapeut:innen oder anderen medizinischen Fachpersonen. Es werden keine Diagnosen gestellt und
+									keine Heilversprechen abgegeben. Die Inanspruchnahme der Angebote erfolgt in eigener
+									Verantwortung.</source>
+  <target><x id="0" equiv-text="&lt;strong&gt;"/>Legal notice:<x id="1" equiv-text="&lt;/strong&gt;"/> the services offered are intended solely for spiritual and personal development. They do not constitute medical, psychological or therapeutic advice or treatment, and are not a substitute for consulting a doctor, psychotherapist or other medical professional. No diagnoses are made and no promises of healing are given. Use of these services is at your own responsibility.</target>
+</trans-unit>
+<trans-unit id="s78958ee2d2465eeb">
+  <source>3. Terminvereinbarung, Terminverschiebungen und Stornierung</source>
+  <target>3. Booking, rescheduling and cancellation</target>
+</trans-unit>
+<trans-unit id="sf74efad2f14bde4f">
+  <source>Termine gelten nach Buchung (telefonisch, online, schriftlich) als verbindlich vereinbart.</source>
+  <target>Appointments are binding once booked, whether by phone, online or in writing.</target>
+</trans-unit>
+<trans-unit id="s89ecfc9479acc264">
+  <source>4. Zahlung</source>
+  <target>4. Payment</target>
+</trans-unit>
+<trans-unit id="s4fb5f089552d24f4">
+  <source>Die Bezahlung erfolgt vor der Sitzung per vereinbarter Zahlungsmethode.</source>
+  <target>Payment is made before the session using the agreed payment method.</target>
+</trans-unit>
+<trans-unit id="sbce39921a525e680">
+  <source>5. Haftungsausschluss</source>
+  <target>5. Disclaimer</target>
+</trans-unit>
+<trans-unit id="s9a562cf2a5098981">
+  <source>Es wird keine Garantie für bestimmte Ergebnisse übernommen. Jede Person handelt eigenverantwortlich.</source>
+  <target>No guarantee is given for particular outcomes. Each person acts on their own responsibility.</target>
+</trans-unit>
+<trans-unit id="s430b09d5c5dfab34">
+  <source>6. Datenschutz</source>
+  <target>6. Data protection</target>
+</trans-unit>
+<trans-unit id="sb74bd6187500c7fa">
+  <source>Es gelten die Bestimmungen der Datenschutzerklärung.</source>
+  <target>The provisions of the privacy policy apply.</target>
+</trans-unit>
+<trans-unit id="s038eabbb98d21e7f">
+  <source>7. Anzuwendendes Recht</source>
+  <target>7. Governing law</target>
+</trans-unit>
+<trans-unit id="sc8b772b950b8f18f">
+  <source>Es gilt österreichisches Recht. Maßgeblich ist die deutschsprachige Fassung dieser Bedingungen; Übersetzungen dienen ausschließlich der Verständlichkeit.</source>
+  <target>Austrian law applies. The German-language version of these terms is authoritative; translations are provided for ease of understanding only.</target>
+</trans-unit>
+<trans-unit id="sc5ead4ed1af209e9">
+  <source>Cookie-Richtlinie</source>
+  <target>Cookie policy</target>
+</trans-unit>
+<trans-unit id="se582c7653db27b2e">
+  <source>1. Diese Website setzt keine Cookies</source>
+  <target>1. This website sets no cookies</target>
+</trans-unit>
+<trans-unit id="s8b9f4c1854b60929">
+  <source>Es werden keine Cookies gesetzt – weder für Analyse noch für Marketing oder Tracking. Aus diesem Grund gibt es auch keinen Cookie-Hinweis, dem Sie zustimmen müssten.</source>
+  <target>No cookies are set – neither for analytics nor for marketing or tracking. For that reason there is also no cookie banner for you to consent to.</target>
+</trans-unit>
+<trans-unit id="s66a8ea9d4609abf8">
+  <source>Datenschutzerklärung</source>
+  <target>Privacy Policy</target>
+</trans-unit>
+<trans-unit id="s25b26fa94113c6f0">
+  <source>1. Verantwortliche Stelle</source>
+  <target>1. Controller</target>
+</trans-unit>
+<trans-unit id="s629ab799508cec69">
+  <source>Obere Hauptstrasse 109, 7537 Neuberg im Burgenland</source>
+  <target>Obere Hauptstrasse 109, 7537 Neuberg im Burgenland, Austria</target>
+</trans-unit>
+<trans-unit id="s6c262c75b4e7cbd2">
+  <source>2. Verarbeitung personenbezogener Daten</source>
+  <target>2. Processing of personal data</target>
+</trans-unit>
+<trans-unit id="sed12dc8b0a6a591e">
+  <source>Personenbezogene Daten werden nur erhoben, wenn Sie diese freiwillig über das Kontaktformular oder per E-Mail mitteilen.</source>
+  <target>Personal data is only collected when you provide it voluntarily via the contact form or by email.</target>
+</trans-unit>
+<trans-unit id="s9c45a6fa0721d2c1">
+  <source>3. Zweck und Rechtsgrundlage</source>
+  <target>3. Purpose and legal basis</target>
+</trans-unit>
+<trans-unit id="s6f04c6bd1d0e6828">
+  <source>Wenn Sie uns per Formular kontaktieren, werden Ihre Angaben zwecks Bearbeitung der Anfrage gespeichert. Rechtsgrundlage ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sowie die Anbahnung eines Vertragsverhältnisses (Art. 6 Abs. 1 lit. b DSGVO). Sie können Ihre Einwilligung jederzeit per E-Mail widerrufen.</source>
+  <target>If you contact us using the form, your details are stored in order to handle your enquiry. The legal basis is your consent (Art. 6(1)(a) GDPR) and the initiation of a contractual relationship (Art. 6(1)(b) GDPR). You may withdraw your consent at any time by email.</target>
+</trans-unit>
+<trans-unit id="s177b59e4b92d8484">
+  <source>5. Weitergabe von Daten</source>
+  <target>5. Disclosure of data</target>
+</trans-unit>
+<trans-unit id="s5416227d524cedf1">
+  <source>Eine weitere Weitergabe an Dritte erfolgt nicht, außer wenn dies gesetzlich vorgeschrieben ist.</source>
+  <target>No further disclosure to third parties takes place unless required by law.</target>
+</trans-unit>
+<trans-unit id="s883f8037b2c6842c">
+  <source>6. Cookies und lokale Speicherung</source>
+  <target>6. Cookies and local storage</target>
+</trans-unit>
+<trans-unit id="sa22a4d18ecb647f9">
+  <source>7. Ihre Rechte</source>
+  <target>7. Your rights</target>
+</trans-unit>
+<trans-unit id="s7002258321d854f4">
+  <source>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch sowie Datenübertragbarkeit.</source>
+  <target>You have the right to access, rectification, erasure, restriction of processing, objection and data portability.</target>
+</trans-unit>
+<trans-unit id="s676b4ba483a909ef">
+  <source>8. Beschwerderecht</source>
+  <target>8. Right to lodge a complaint</target>
+</trans-unit>
+<trans-unit id="s2b01396e36ea9ff7">
+  <source>Sie haben das Recht, sich bei der österreichischen Datenschutzbehörde zu beschweren:</source>
+  <target>You have the right to lodge a complaint with the Austrian Data Protection Authority:</target>
+</trans-unit>
+<trans-unit id="s348d6dc699f16e05">
+  <source>9. Maßgebliche Fassung</source>
+  <target>9. Authoritative version</target>
+</trans-unit>
+<trans-unit id="s2f4893a6e693faf8">
+  <source>Maßgeblich ist die deutschsprachige Fassung dieser Datenschutzerklärung; Übersetzungen dienen ausschließlich der Verständlichkeit.</source>
+  <target>The German-language version of this privacy policy is authoritative; translations are provided for ease of understanding only.</target>
+</trans-unit>
+<trans-unit id="sfbe2dc5cc2c75f6b">
+  <source>1. Angaben gemäß § 5 ECG</source>
+  <target>1. Details pursuant to § 5 of the Austrian E-Commerce Act (ECG)</target>
+</trans-unit>
+<trans-unit id="sef49aec68fd1dc66">
+  <source>Name</source>
+  <target>Name</target>
+</trans-unit>
+<trans-unit id="sd36123eb3e55718d">
+  <source>Unternehmensbezeichnung</source>
+  <target>Trading name</target>
+</trans-unit>
+<trans-unit id="s95ef101333b3e304">
+  <source>Jenseitsmedium und spirituelle Begleitung</source>
+  <target>Medium and spiritual guide</target>
+</trans-unit>
+<trans-unit id="s7ae64181372627ec">
+  <source>Obere Hauptstrasse 109, 7537 Neuberg im Burgenland, Österreich</source>
+  <target>Obere Hauptstrasse 109, 7537 Neuberg im Burgenland, Austria</target>
+</trans-unit>
+<trans-unit id="s5511869c3a273fb5">
+  <source>2. Kontakt</source>
+  <target>2. Contact</target>
+</trans-unit>
+<trans-unit id="s16bb254c19c5cfa2">
+  <source>3. Unternehmensgegenstand</source>
+  <target>3. Business activity</target>
+</trans-unit>
+<trans-unit id="s8483b2ffaf6f673f">
+  <source>Energetische und spirituell begleitende Leistungen im nicht-heilkundlichen Bereich.</source>
+  <target>Energy work and spiritual guidance, outside the practice of medicine.</target>
+</trans-unit>
+<trans-unit id="s3e60b314d3a08907">
+  <source>4. Haftung für Inhalte</source>
+  <target>4. Liability for content</target>
+</trans-unit>
+<trans-unit id="s2e227b76c02b5734">
+  <source>Alle Inhalte wurden sorgfältig erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird jedoch keine Gewähr übernommen.</source>
+  <target>All content has been prepared with care. However, no guarantee is given as to its accuracy, completeness or timeliness.</target>
+</trans-unit>
+<trans-unit id="s07875fed2c6f33db">
+  <source>5. Urheberrecht</source>
+  <target>5. Copyright</target>
+</trans-unit>
+<trans-unit id="s1e03db5b6a1fcecd">
+  <source>Die durch die Seitenbetreiberin erstellten Inhalte und Werke auf dieser Website unterliegen dem österreichischen Urheberrecht.</source>
+  <target>The content and works created by the site owner on this website are subject to Austrian copyright law.</target>
+</trans-unit>
+<trans-unit id="s825e50ccad222773">
+  <source>Seite nicht gefunden</source>
+  <target>Page not found</target>
+</trans-unit>
+<trans-unit id="sda9f1b9eaac0560e">
+  <source>Zur Startseite</source>
+  <target>Back to home</target>
+</trans-unit>
+<trans-unit id="se85108fb129116eb">
+  <source>Leistungen ansehen</source>
+  <target>See my services</target>
+</trans-unit>
+<trans-unit id="s912a1f8d17f207fa">
+  <source>Kontakt aufnehmen</source>
+  <target>Get in touch</target>
+</trans-unit>
+<trans-unit id="s40efb1f74e2b430f">
+  <source>Seelenstimme – Spirituelle Begleitung &amp; Jenseitskontakte</source>
+  <target>Seelenstimme – Mediumship Readings and Spiritual Guidance</target>
+</trans-unit>
+<trans-unit id="s932021f4c0580e85">
+  <source>Über mich – Seelenstimme</source>
+  <target>About me – Seelenstimme</target>
+</trans-unit>
+<trans-unit id="sdfed1e428d1182d6">
+  <source>Wie ich zur medialen Arbeit gekommen bin: mein Weg als Jenseitsmedium und spirituelle Begleiterin.</source>
+  <target>How I came to this work: my path as a medium and spiritual guide in Burgenland, Austria.</target>
+</trans-unit>
+<trans-unit id="s97c33ec77f3882c1">
+  <source>Leistungen – Seelenstimme</source>
+  <target>Services – Seelenstimme</target>
+</trans-unit>
+<trans-unit id="sab1e9f584b6d52ce">
+  <source>Kontakt &amp; Terminanfrage – Seelenstimme</source>
+  <target>Contact and Booking – Seelenstimme</target>
+</trans-unit>
+<trans-unit id="sb161925b0c6a770a">
+  <source>Impressum – Seelenstimme</source>
+  <target>Legal Notice – Seelenstimme</target>
+</trans-unit>
+<trans-unit id="s9eaf9fd6faeb1328">
+  <source>Anbieterkennzeichnung gemäß § 5 ECG: Name, Adresse und Kontaktdaten der Betreiberin von seelen-stimme.at.</source>
+  <target>Provider identification pursuant to § 5 ECG: name, address and contact details of the owner of seelen-stimme.at.</target>
+</trans-unit>
+<trans-unit id="sdf0f1a929135522a">
+  <source>Datenschutzerklärung – Seelenstimme</source>
+  <target>Privacy Policy – Seelenstimme</target>
+</trans-unit>
+<trans-unit id="s226b6ace061a9d5c">
+  <source>Welche personenbezogenen Daten seelen-stimme.at verarbeitet, zu welchem Zweck, auf welcher Rechtsgrundlage und welche Rechte dir dabei zustehen.</source>
+  <target>What personal data seelen-stimme.at processes, why, on what legal basis, and what rights you have.</target>
+</trans-unit>
+<trans-unit id="sfac73e2634b2f0cd">
+  <source>AGB – Seelenstimme</source>
+  <target>Terms and Conditions – Seelenstimme</target>
+</trans-unit>
+<trans-unit id="sfcc8ffae5ff05b7f">
+  <source>Allgemeine Geschäftsbedingungen für Sitzungen und Bilder: Leistungsumfang, Terminvereinbarung, Stornofristen, Zahlung und Haftung.</source>
+  <target>Terms and conditions for sessions and paintings: what is included, booking, cancellation, payment and liability.</target>
+</trans-unit>
+<trans-unit id="s9da70b0b4b731aad">
+  <source>Cookie-Richtlinie – Seelenstimme</source>
+  <target>Cookie Policy – Seelenstimme</target>
+</trans-unit>
+<trans-unit id="s542a9db01dc2f83b">
+  <source>Seite nicht gefunden – Seelenstimme</source>
+  <target>Page not found – Seelenstimme</target>
+</trans-unit>
+<trans-unit id="s1c69dd4b34299566">
+  <source>Diese Seite existiert nicht oder wurde verschoben.</source>
+  <target>This page doesn’t exist, or it has moved.</target>
+</trans-unit>
+<trans-unit id="sf6501467b54ba4d0">
+  <source>Sendefehler</source>
+  <target>Message not sent</target>
+</trans-unit>
+<trans-unit id="s1a036c931b011039">
+  <source>Hoppla! Etwas ist schiefgelaufen. Bitte überprüfe deine Internetverbindung oder schreibe mir direkt per E-Mail.</source>
+  <target>Something went wrong. Please check your connection and try again, or email me directly.</target>
+</trans-unit>
+<trans-unit id="s66ef2f677f3b88f4">
+  <source>4. Hosting und Kontaktformular</source>
+  <target>4. Hosting and contact form</target>
+</trans-unit>
+<trans-unit id="s908a3c9cce200e0f">
+  <source>Diese Website wird von Netlify (Netlify, Inc., 512 2nd Street, San Francisco, CA 94107, USA) gehostet. Beim Aufruf der Website werden dabei technisch notwendige Server-Logdaten einschließlich Ihrer IP-Adresse verarbeitet. Auch die über das Kontaktformular gesendeten Angaben werden von Netlify entgegengenommen, gespeichert und per E-Mail an uns weitergeleitet. Zur Abwehr von Spam wird die Nachricht dabei automatisiert geprüft. Eine Übermittlung in die USA erfolgt auf Grundlage der EU-Standardvertragsklauseln. Alternativ können Sie uns jederzeit direkt per E-Mail oder telefonisch erreichen.</source>
+  <target>This website is hosted by Netlify (Netlify, Inc., 512 2nd Street, San Francisco, CA 94107, USA). When you visit the site, technically necessary server log data including your IP address is processed. The details you send through the contact form are also received and stored by Netlify and forwarded to us by email. The message is checked automatically to filter out spam. Any transfer to the USA takes place on the basis of the EU Standard Contractual Clauses. Alternatively you can always reach us directly by email or telephone.</target>
+</trans-unit>
+<trans-unit id="sfc523d72b225b3d2">
+  <source>30 – 90 Minuten</source>
+  <target>30 – 90 minutes</target>
+</trans-unit>
+<trans-unit id="s8a023e9b474521dc">
+  <source>ab 60 EUR</source>
+  <target>from 60 EUR</target>
+</trans-unit>
+<trans-unit id="s4df29127f45d3ea2">
+  <source>50 Minuten</source>
+  <target>50 minutes</target>
+</trans-unit>
+<trans-unit id="se296d35f656b9e5a">
+  <source>Direkt über WhatsApp schreiben</source>
+  <target>Message me on WhatsApp</target>
+</trans-unit>
+<trans-unit id="h926d1ccd78972b4e">
+  <source><x id="0" equiv-text="&lt;strong&gt;"/>Wichtiger Hinweis zur Terminabsage:<x id="1" equiv-text="&lt;/strong&gt;"/> Gebuchte Termine sind verbindlich.
+										Sollten Sie einen vereinbarten Termin nicht wahrnehmen und nicht mindestens 24 Stunden vorher
+										absagen, wird der volle Preis der gebuchten Leistung als Ausfallgebühr in Rechnung gestellt.</source>
+  <target><x id="0" equiv-text="&lt;strong&gt;"/>Important note on cancellations:<x id="1" equiv-text="&lt;/strong&gt;"/> booked appointments are binding. If you do not attend an agreed appointment and have not cancelled at least 24 hours beforehand, the full price of the booked service will be charged as a cancellation fee.</target>
+</trans-unit>
+<trans-unit id="se4bff42a04e37820">
+  <source>Hier findest du eine Auswahl meiner medial empfangenen Krafttierbilder – mit viel Liebe, Achtsamkeit und in Verbindung mit der Geistigen Welt gestaltet.</source>
+  <target>Here you will find a selection of the power animal paintings I have received through mediumship – each one made with care, in connection with the Spirit World.</target>
+</trans-unit>
+<trans-unit id="s28be17afba0e69ac">
+  <source>Krafttierbild <x id="0" equiv-text="${index + 1}"/> vergrößern</source>
+  <target>Enlarge power animal painting <x id="0" equiv-text="${index + 1}"/></target>
+</trans-unit>
+<trans-unit id="s6d94eafe4e0630eb">
+  <source>Krafttierbild <x id="0" equiv-text="${index + 1}"/> von <x id="1" equiv-text="${images.length}"/></source>
+  <target>Power animal painting <x id="0" equiv-text="${index + 1}"/> of <x id="1" equiv-text="${images.length}"/></target>
+</trans-unit>
+<trans-unit id="s477a0521b1f195de">
+  <source>Krafttierbild <x id="0" equiv-text="${index + 1}"/></source>
+  <target>Power animal painting <x id="0" equiv-text="${index + 1}"/></target>
+</trans-unit>
+<trans-unit id="h0e187cf8da088fd0">
+  <source><x id="0" equiv-text="&lt;strong&gt;"/>Wichtiger Hinweis zur Terminabsage:<x id="1" equiv-text="&lt;/strong&gt;"/> Gebuchte Termine sind verbindlich.
+									Sollten Sie einen vereinbarten Termin nicht wahrnehmen und nicht mindestens 24 Stunden vorher
+									absagen, wird der volle Preis der gebuchten Leistung als Ausfallgebühr in Rechnung gestellt.</source>
+  <target><x id="0" equiv-text="&lt;strong&gt;"/>Important note on cancellations:<x id="1" equiv-text="&lt;/strong&gt;"/> booked appointments are binding. If you do not attend an agreed appointment and have not cancelled at least 24 hours beforehand, the full price of the booked service will be charged as a cancellation fee.</target>
+</trans-unit>
+<trans-unit id="s87102e510e0cf149">
+  <source>Die Stornierung hat per E-Mail zu erfolgen.</source>
+  <target>Cancellations must be made by email.</target>
+</trans-unit>
+<trans-unit id="s1ab5803c93a46c95">
+  <source>Stefana Gyorgiev begleitet dich medial und einfühlsam: Jenseitskontakte, Aura-Reading, Seelenweg, Krafttierbilder und mediale Beratung im Burgenland und online.</source>
+  <target>Mediumship readings, aura readings, Soul Path sessions, power animal paintings and psychic guidance with Stefana Gyorgiev – in Burgenland, Austria, and online.</target>
+</trans-unit>
+<trans-unit id="s4c5d74cc0c24a0d6">
+  <source>Jenseitskontakt, Aura-Reading, Seelenweg, Krafttierbilder, medialer Übungszirkel, Einzelcoaching und mediale Beratung – mit Dauer und Preisen.</source>
+  <target>Mediumship readings, aura readings, Soul Path sessions, power animal paintings, development circle, one-to-one coaching and psychic guidance – with times and prices.</target>
+</trans-unit>
+<trans-unit id="s59146ef83632b333">
+  <source>Galerie – Krafttierbilder</source>
+  <target>Gallery – Power Animal Paintings</target>
+</trans-unit>
+<trans-unit id="sb709a907ee7ff5dd">
+  <source>Eine Auswahl medial empfangener Krafttierbilder – jedes Bild individuell gestaltet und mit Echtheitssiegel.</source>
+  <target>A selection of power animal paintings received through mediumship – each one made individually for the person it belongs to, with a certificate of authenticity.</target>
+</trans-unit>
+<trans-unit id="s2c0fc7bd66a8f3d2">
+  <source>Sende eine unverbindliche Terminanfrage für Jenseitskontakt, Aura-Reading, Seelenweg oder mediale Beratung – ich melde mich in Kürze bei dir.</source>
+  <target>Send a no-obligation request for a mediumship reading, aura reading, Soul Path session or psychic guidance – I will get back to you shortly.</target>
+</trans-unit>
+<trans-unit id="sc7d14c64c7b30d51">
+  <source>2. Keine Speicherung auf Ihrem Gerät</source>
+  <target>2. Nothing stored on your device</target>
+</trans-unit>
+<trans-unit id="sac01ded5d0ad77f2">
+  <source>Es werden auch keine sonstigen Daten auf Ihrem Gerät abgelegt. Die gewählte Sprache ergibt sich ausschließlich aus der aufgerufenen Adresse und muss daher nicht gespeichert werden.</source>
+  <target>No other data is stored on your device either. The language shown follows solely from the address you visit, so there is nothing to remember.</target>
+</trans-unit>
+<trans-unit id="s419230b0c5374e58">
+  <source>3. Kontaktformular</source>
+  <target>3. Contact form</target>
+</trans-unit>
+<trans-unit id="sfa594b44cc99b3f9">
+  <source>Beim Absenden des Kontaktformulars werden Ihre Angaben an unseren Hosting-Anbieter Netlify übermittelt, der die Nachricht zur Spam-Abwehr prüft und an uns weiterleitet. Details finden Sie in der Datenschutzerklärung.</source>
+  <target>When you submit the contact form, your details are transmitted to our hosting provider Netlify, which checks the message for spam and forwards it to us. You will find details in the privacy policy.</target>
+</trans-unit>
+<trans-unit id="sd905489ae69f3433">
+  <source>Diese Website setzt keine Cookies und legt keine Daten im Speicher Ihres Browsers ab. Details finden Sie in der Cookie-Richtlinie.</source>
+  <target>This website sets no cookies and stores no data in your browser. You will find details in the cookie policy.</target>
+</trans-unit>
+<trans-unit id="s6c495e302c9c1018">
+  <source>Diese Website setzt keine Cookies. Was das für dich bedeutet und welche Dienste beim Absenden des Formulars beteiligt sind.</source>
+  <target>This website sets no cookies. What that means for you, and which services are involved when you submit the contact form.</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

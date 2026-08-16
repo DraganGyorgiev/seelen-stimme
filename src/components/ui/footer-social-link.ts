@@ -25,7 +25,6 @@ export class FooterSocialLink extends LitElement {
 			>
 				<slot></slot>
 
-				<!-- subtle underline -->
 				<span
 					class="
             pointer-events-none

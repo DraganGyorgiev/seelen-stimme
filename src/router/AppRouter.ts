@@ -1,50 +1,80 @@
-import { Router } from '@vaadin/router';
+import { Router, type Route } from '@vaadin/router'
+import { applyPageMeta } from './page-meta.ts'
+import { applyStructuredData } from '../seo/structured-data.ts'
+import { restoreScrollPosition, startScrollRestoration } from './scroll-restoration.ts'
+import { activateLocale, localeFromPath, localizedPath } from '../i18n/locale.ts'
 
-import "../pages/app/app-page.ts";
-import "../pages/app/subpages/main-page.ts";
-import "../pages/app/subpages/about-page.ts";
-import "../pages/app/subpages/additional-info-page.ts";
-import "../features/contact/contact-page.ts";
-import "../pages/app/subpages/services-page.ts";
-import "../pages/app/subpages/gallery-page.ts";
-import "../pages/app/subpages/legally-required/impressum-page.ts";
-import "../pages/app/subpages/legally-required/datenschutz-page.ts";
-import "../pages/app/subpages/legally-required/agb-page.ts";
-import "../pages/app/subpages/legally-required/cookies-page.ts";
+import '../pages/app/app-page.ts'
+
+type Page = {
+	path: string
+	component: string
+	load: () => Promise<unknown>
+}
+
+const pages: Page[] = [
+	{ path: '/', component: 'main-page', load: () => import('../pages/app/subpages/main-page.ts') },
+	{ path: '/about', component: 'about-page', load: () => import('../pages/app/subpages/about-page.ts') },
+	{ path: '/services', component: 'services-page', load: () => import('../pages/app/subpages/services-page.ts') },
+	{ path: '/gallery', component: 'gallery-page', load: () => import('../pages/app/subpages/gallery-page.ts') },
+	{ path: '/contact', component: 'contact-page', load: () => import('../features/contact/contact-page.ts') },
+	{
+		path: '/impressum',
+		component: 'impressum-page',
+		load: () => import('../pages/app/subpages/legally-required/impressum-page.ts'),
+	},
+	{
+		path: '/datenschutz',
+		component: 'datenschutz-page',
+		load: () => import('../pages/app/subpages/legally-required/datenschutz-page.ts'),
+	},
+	{
+		path: '/agb',
+		component: 'agb-page',
+		load: () => import('../pages/app/subpages/legally-required/agb-page.ts'),
+	},
+	{
+		path: '/cookies',
+		component: 'cookies-page',
+		load: () => import('../pages/app/subpages/legally-required/cookies-page.ts'),
+	},
+]
+
+export const routablePaths = pages.map((page) => page.path)
 
 export default class AppRouter extends Router {
 	constructor(outlet: HTMLElement) {
-		super(outlet);
+		super(outlet)
+
+		const toRoute = (page: Page, path: string): Route => ({
+			path,
+			component: page.component,
+			action: async () => void (await page.load()),
+		})
 
 		this.setRoutes([
 			{
 				path: '/',
 				component: 'app-page',
 				children: [
-					{ path: '/', component: 'main-page' },
-					{ path: '/about', component: 'about-page' },
-					{ path: '/about/:additional', component: 'additional-info-page' },
-					{ path: '/contact', component: 'contact-page' },
-					{ path: '/services', component: 'services-page' },
-					{ path: '/gallery', component: 'gallery-page' },
-					{ path: '/impressum', component: 'impressum-page' },
-					{ path: '/datenschutz', component: 'datenschutz-page' },
-					{ path: '/agb', component: 'agb-page' },
-					{ path: '/cookies', component: 'cookies-page' },
+					...pages.map((page) => toRoute(page, page.path)),
+					...pages.map((page) => toRoute(page, localizedPath(page.path, 'en'))),
+					{
+						path: '(.*)',
+						component: 'page-not-found',
+						action: async () => void (await import('../pages/error/page-not-found.ts')),
+					},
 				],
 			},
-		]);
+		])
 
-		window.addEventListener('vaadin-router-location-changed', () => {
-			requestAnimationFrame(() => {
-				if (!location.hash) {
-					window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
-				}
-			});
-		});
+		startScrollRestoration()
 
-		if ('scrollRestoration' in history) {
-			history.scrollRestoration = 'manual';
-		}
+		window.addEventListener('vaadin-router-location-changed', async () => {
+			await activateLocale(localeFromPath(window.location.pathname))
+			applyPageMeta(window.location.pathname)
+			applyStructuredData()
+			restoreScrollPosition()
+		})
 	}
 }
