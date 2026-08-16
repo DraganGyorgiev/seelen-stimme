@@ -115,7 +115,7 @@ Comment non-obvious committed values — empty/optional vars and `your_*`-style 
 
 ## General Guidelines
 
-- **Never suggest, offer, or bring up committing — and never push.** Leave changes uncommitted for review by default. An explicit "commit" instruction from the user is the one exception: then run `git commit` locally (still never push, and never PR/issue actions — draft text for the user instead).
+- **Never suggest, offer, or bring up committing or pushing.** Leave changes uncommitted for review by default. An explicit "commit" or "push" instruction from the user is the exception: then run `git commit` / `git push` (still never PR/issue actions — draft text for the user instead).
 - Prefer editing existing files over creating new ones.
 - **Default to ZERO comments — this code is read mostly by AI, and a wall of `// Note:` narration is worse than none.** The bar for a code comment is a *one-line, in-place wrong-change guard* the code genuinely cannot carry (a library quirk, an ordering hazard, a "looks-removable-but-isn't"). Write those silently, without asking. Everything else is not a comment:
     - **Explaining *why*, a mechanism, an algorithm, a design rationale, or anything longer than one line → goes in `docs/` (usually `architecture-overview.md`) or the nearest README, NOT in a code comment.** A multi-line `// Note:` block is always a defect: move it to docs and leave the code bare (a one-line pointer to the doc is fine).
