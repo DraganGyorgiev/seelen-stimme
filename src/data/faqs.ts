@@ -78,6 +78,12 @@ export function getFaqTopics(): FaqTopic[] {
 					),
 				},
 				{
+					question: msg('In welcher Sprache finden die Sitzungen statt?'),
+					answer: msg(
+						'Die Sitzungen finden auf Deutsch oder auf Englisch statt. Sag mir bei der Terminanfrage einfach, was dir lieber ist.',
+					),
+				},
+				{
 					question: msg('Wie und wann bezahle ich?'),
 					answer: msg(
 						'Die Bezahlung erfolgt vor der Sitzung über die Zahlungsmethode, die wir gemeinsam vereinbaren. Die Details bekommst du von mir, sobald der Termin feststeht.',

@@ -889,11 +889,7 @@ Im Anschluss kannst du gerne 2–3 Fragen an deine liebe Seele stellen – oder 
 Im Unterschied zum Jenseitskontakt geht es dabei nicht um Verstorbene, sondern um dich – um deine Situation, deine Muster und deine Richtung.
 
 Am Ende hast du Antworten auf die Fragen, die dich beschäftigen, und ein klareres Bild davon, wohin dein Weg führt.</source>
-  <target>A Soul Path reading is a channelled session in which I connect with your soul and pass on what comes through: the themes shaping your life right now, the tasks that belong to your path, and the step that comes next.
-
-Unlike a mediumship reading, it isn’t about someone who has died – it’s about you: your situation, your patterns and your direction.
-
-By the end you have answers to the questions on your mind, and a clearer picture of where your path is leading.</target>
+  <target>A Soul Path reading is a channelled session in which I connect with your soul and pass on what comes through: the themes shaping your life right now, the tasks that belong to your path, and the step that comes next. Unlike a mediumship reading, it isn’t about someone who has died – it’s about you: your situation, your patterns and your direction. By the end you have answers to the questions on your mind, and a clearer picture of where your path is leading.</target>
 </trans-unit>
 <trans-unit id="se4054cd91d5c4832">
   <source>Ist der Seelenweg das Richtige für mich?</source>
@@ -905,11 +901,7 @@ By the end you have answers to the questions on your mind, and a clearer picture
 Geht es dir dagegen um eine konkrete Frage zu einer aktuellen Situation, ist die mediale Beratung meist die passendere Wahl. Und wenn du Kontakt zu einer verstorbenen Person suchst, ist der Jenseitskontakt der richtige Weg.
 
 Wenn du unsicher bist, schreib mir einfach – ich sage dir ehrlich, was zu deinem Anliegen passt.</source>
-  <target>Most likely yes, if you are stuck in a situation with no way forward, if the same patterns keep repeating in your life, or if you sense that something fundamental is out of step.
-
-If instead you have one specific question about a current situation, psychic guidance is usually the better fit. And if you are looking to make contact with someone who has died, a mediumship reading is the right choice.
-
-If you are not sure, just write to me – I will tell you honestly which one suits what you are bringing.</target>
+  <target>Most likely yes, if you are stuck in a situation with no way forward, if the same patterns keep repeating in your life, or if you sense that something fundamental is out of step. If instead you have one specific question about a current situation, psychic guidance is usually the better fit. And if you are looking to make contact with someone who has died, a mediumship reading is the right choice. If you are not sure, just write to me – I will tell you honestly which one suits what you are bringing.</target>
 </trans-unit>
 <trans-unit id="sab57976947438246">
   <source>Ablauf &amp; Organisation</source>
@@ -923,9 +915,7 @@ If you are not sure, just write to me – I will tell you honestly which one sui
   <source>Schreib mir über das Kontaktformular, per E-Mail oder direkt über WhatsApp und nenne mir die gewünschte Leistung. Ich melde mich mit möglichen Terminen bei dir zurück.
 
 Für den Jenseitskontakt sind die Termine zeitweise ausgebucht – melde dich trotzdem gerne, dann sage ich dir Bescheid, sobald wieder etwas frei wird.</source>
-  <target>Write to me through the contact form, by email or directly on WhatsApp, and tell me which service you would like. I will come back to you with possible dates.
-
-Mediumship readings are fully booked from time to time – do get in touch anyway, and I will let you know as soon as something opens up.</target>
+  <target>Write to me through the contact form, by email or directly on WhatsApp, and tell me which service you would like. I will come back to you with possible dates. Mediumship readings are fully booked from time to time – do get in touch anyway, and I will let you know as soon as something opens up.</target>
 </trans-unit>
 <trans-unit id="s3ed76849157a926d">
   <source>Wie und wann bezahle ich?</source>
@@ -943,9 +933,7 @@ Mediumship readings are fully booked from time to time – do get in touch anywa
   <source>Nein. Du brauchst nichts vorzubereiten und nichts mitzubringen. Sorge nur dafür, dass du während der Sitzung ungestört bist und eine stabile Internetverbindung hast.
 
 Wenn du magst, kannst du dir vorher Fragen notieren – nötig ist das aber nicht.</source>
-  <target>No. There is nothing to prepare and nothing to bring. Just make sure you will be undisturbed during the session and have a stable internet connection.
-
-If you like, you can note down questions beforehand – but it isn’t necessary.</target>
+  <target>No. There is nothing to prepare and nothing to bring. Just make sure you will be undisturbed during the session and have a stable internet connection. If you like, you can note down questions beforehand – but it isn’t necessary.</target>
 </trans-unit>
 <trans-unit id="scca22898808fc721">
   <source>Was ist, wenn ich während der Sitzung sehr emotional werde?</source>
@@ -970,6 +958,14 @@ If you like, you can note down questions beforehand – but it isn’t necessary
 <trans-unit id="s02132bbadbcb188a">
   <source>Wie ein Jenseitskontakt abläuft, wo die Sitzungen stattfinden, wie du einen Termin bekommst und was du vorbereiten musst – die häufigsten Fragen beantwortet.</source>
   <target>How a mediumship reading works, where sessions take place, how to book an appointment and what you need to prepare – the most common questions answered.</target>
+</trans-unit>
+<trans-unit id="s8e30e84ac8fc76d4">
+  <source>In welcher Sprache finden die Sitzungen statt?</source>
+  <target>What language are sessions held in?</target>
+</trans-unit>
+<trans-unit id="s0b4ad87075ed7f01">
+  <source>Die Sitzungen finden auf Deutsch oder auf Englisch statt. Sag mir bei der Terminanfrage einfach, was dir lieber ist.</source>
+  <target>Sessions are held in German or in English. Just tell me which you would prefer when you request an appointment.</target>
 </trans-unit>
 </body>
 </file>

@@ -31,6 +31,7 @@
 's08519cd30b65a25e': `Showing the bereaved that the people they love are still with them in spirit, still walking alongside them, is the most fulfilling work I know.`,
 's0908ec8b87fc99c3': `Seelen-Stimme on Facebook`,
 's0995af6c92f919a0': `Advanced`,
+'s0b4ad87075ed7f01': `Sessions are held in German or in English. Just tell me which you would prefer when you request an appointment.`,
 's0c6e2ac709769959': `A Soul Path reading brings clear answers to your soul’s deepest questions. Together we look at what you’re living through now, what your soul came here to do, and the next steps in front of you – gently, deeply, and always with a way forward.`,
 's0f15d9368fb8a284': `Beginner`,
 's1017b5df4e059160': `Phone number`,
@@ -59,9 +60,7 @@
 's2cf5fbfc89b15df9': `Legal`,
 's2d49545386ab5b30': `A thousand thanks again… I have never experienced anything like it… It was all right, sooo much information, there’s no way you could have known any of it from anyone… Every bit of it fitted… It was magical!!! Thank you from the bottom of my heart!!!!`,
 's2e227b76c02b5734': `All content has been prepared with care. However, no guarantee is given as to its accuracy, completeness or timeliness.`,
-'s2ed5725fd08d3aab': `Write to me through the contact form, by email or directly on WhatsApp, and tell me which service you would like. I will come back to you with possible dates.
-
-Mediumship readings are fully booked from time to time – do get in touch anyway, and I will let you know as soon as something opens up.`,
+'s2ed5725fd08d3aab': `Write to me through the contact form, by email or directly on WhatsApp, and tell me which service you would like. I will come back to you with possible dates. Mediumship readings are fully booked from time to time – do get in touch anyway, and I will let you know as soon as something opens up.`,
 's2efe4f770f2ba4c4': `Please select`,
 's2f1942b250ccd8bf': `Legal Notice – Seelen-Stimme`,
 's2f4893a6e693faf8': `The German-language version of this privacy policy is authoritative; translations are provided for ease of understanding only.`,
@@ -138,6 +137,7 @@ Mediumship readings are fully booked from time to time – do get in touch anywa
 's8a3daa3e915d7836': `My gallery`,
 's8b9f4c1854b60929': `No cookies are set – neither for analytics nor for marketing or tracking. For that reason there is also no cookie banner for you to consent to.`,
 's8dfab11c91defea5': `1. Scope`,
+'s8e30e84ac8fc76d4': `What language are sessions held in?`,
 's8e6fb6923fd2b463': `from 50 EUR`,
 's8eb6c12e408c54b0': `One-to-One Coaching`,
 's8ef64babb44377c5': `Even as a child I questioned things and wanted to understand them more deeply – above all, the question of what happens after we die. I sensed early on that death isn’t simply the end, and that we go on existing on another level.`,
@@ -191,11 +191,7 @@ Mediumship readings are fully booked from time to time – do get in touch anywa
 'scae6d03fe110472b': `Just send me a message`,
 'scca22898808fc721': `What if I become very emotional during the session?`,
 'scd420f1b194ec88e': `Message sent`,
-'scd93736b870a5e44': `Most likely yes, if you are stuck in a situation with no way forward, if the same patterns keep repeating in your life, or if you sense that something fundamental is out of step.
-
-If instead you have one specific question about a current situation, psychic guidance is usually the better fit. And if you are looking to make contact with someone who has died, a mediumship reading is the right choice.
-
-If you are not sure, just write to me – I will tell you honestly which one suits what you are bringing.`,
+'scd93736b870a5e44': `Most likely yes, if you are stuck in a situation with no way forward, if the same patterns keep repeating in your life, or if you sense that something fundamental is out of step. If instead you have one specific question about a current situation, psychic guidance is usually the better fit. And if you are looking to make contact with someone who has died, a mediumship reading is the right choice. If you are not sure, just write to me – I will tell you honestly which one suits what you are bringing.`,
 'sce5e4c17f80c8273': `Payment is made before the session, using the payment method we agree between us. You will get the details from me once the appointment is confirmed.`,
 'scec0f37e72f69bd0': `Your spiritual companion, captured in a painting.`,
 'sd11a46c2e7022f58': `Legal notice`,
@@ -216,9 +212,7 @@ If you are not sure, just write to me – I will tell you honestly which one sui
 'sdf3f768f4d0a59e1': `60 – 90 minutes`,
 'sdf75186963c0d7ca': `Terms and Conditions – Seelen-Stimme`,
 'sdfed1e428d1182d6': `How I came to this work: my path as a medium and spiritual guide in Burgenland, Austria.`,
-'se2300dbd57346cbb': `No. There is nothing to prepare and nothing to bring. Just make sure you will be undisturbed during the session and have a stable internet connection.
-
-If you like, you can note down questions beforehand – but it isn’t necessary.`,
+'se2300dbd57346cbb': `No. There is nothing to prepare and nothing to bring. Just make sure you will be undisturbed during the session and have a stable internet connection. If you like, you can note down questions beforehand – but it isn’t necessary.`,
 'se296d35f656b9e5a': `Message me on WhatsApp`,
 'se38d17d3d2b6ca51': `Choose a topic`,
 'se4054cd91d5c4832': `Is a Soul Path reading right for me?`,
@@ -238,11 +232,7 @@ If you like, you can note down questions beforehand – but it isn’t necessary
 'sef92a77253a5cc36': `Yes. Please cancel by email at least 24 hours beforehand and we will find a new date. For later cancellations the full price of the booked service is charged as a cancellation fee – the details are in the terms and conditions.`,
 'sf32ec7199cf4745b': `FAQ`,
 'sf592e9ad59fde6e8': `Next image`,
-'sf5dba1a33b2571be': `A Soul Path reading is a channelled session in which I connect with your soul and pass on what comes through: the themes shaping your life right now, the tasks that belong to your path, and the step that comes next.
-
-Unlike a mediumship reading, it isn’t about someone who has died – it’s about you: your situation, your patterns and your direction.
-
-By the end you have answers to the questions on your mind, and a clearer picture of where your path is leading.`,
+'sf5dba1a33b2571be': `A Soul Path reading is a channelled session in which I connect with your soul and pass on what comes through: the themes shaping your life right now, the tasks that belong to your path, and the step that comes next. Unlike a mediumship reading, it isn’t about someone who has died – it’s about you: your situation, your patterns and your direction. By the end you have answers to the questions on your mind, and a clearer picture of where your path is leading.`,
 'sf6501467b54ba4d0': `Message not sent`,
 'sf74efad2f14bde4f': `Appointments are binding once booked, whether by phone, online or in writing.`,
 'sfa25b319a06b9e89': `Terms`,
