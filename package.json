@@ -17,7 +17,8 @@
     "check": "npm run typecheck && npm run lint && npm test",
     "localize:extract": "lit-localize extract",
     "localize:build": "lit-localize build",
-    "images:optimize": "node scripts/optimize-images.mjs"
+    "images:optimize": "node scripts/optimize-images.mjs",
+    "relock": "node -e \"const fs=require('node:fs');fs.rmSync('node_modules',{recursive:true,force:true});fs.rmSync('package-lock.json',{force:true})\" && npm install"
   },
   "dependencies": {
     "@lit/localize": "^0.12.2",
@@ -33,7 +34,7 @@
     "eslint": "^9.39.2",
     "eslint-plugin-lit": "^2.1.1",
     "prettier": "^3.7.4",
-    "sharp": "^0.34.5",
+    "sharp": "^0.35.3",
     "ts-lit-plugin": "^2.0.2",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.20.0",

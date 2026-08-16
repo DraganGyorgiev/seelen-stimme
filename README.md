@@ -29,6 +29,7 @@ npm run dev          # http://localhost:5173
 | `npm run localize:extract` | scan `msg()` calls and update `xliff/en.xlf` with any new strings |
 | `npm run localize:build` | turn the translated XLIFF into the modules under `src/generated/` |
 | `npm run images:optimize` | convert any new image in `src/assets/` to sized WebP |
+| `npm run relock` | wipe `node_modules` and the lockfile, then reinstall from scratch |
 
 ## How Tailwind reaches the components
 
@@ -44,6 +45,21 @@ npm run dev          # http://localhost:5173
 step. Class names are discovered via the `@source "../**/*.ts"` directive, so utilities only work if
 they appear literally in a `.ts` file — a class assembled from string fragments at runtime will not be
 generated.
+
+## Dependencies
+
+Netlify builds with `npm ci`, which installs strictly from `package-lock.json` — so the lockfile has to
+be complete or the deploy fails.
+
+**After adding, removing or bumping a dependency, run `npm run relock`** rather than a plain
+`npm install`. Several dependencies here ship per-platform native binaries (`sharp`, `rollup`,
+`esbuild`, `lightningcss`, `@tailwindcss/oxide`); installing on Windows can prune the Linux variants
+from the lockfile ([npm/cli#4828](https://github.com/npm/cli/issues/4828)), which then breaks the build
+on Netlify. A clean relock rewrites the full cross-platform set. Commit the resulting lockfile.
+
+Relock deletes `node_modules`, so **stop the dev server first**, and close any editor holding a native
+binary open — WebStorm's Tailwind language server keeps `@tailwindcss/oxide` locked and causes `EPERM`
+partway through, leaving the tree half-deleted.
 
 ## Images
 
