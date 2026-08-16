@@ -47,6 +47,20 @@ describe('page metadata', () => {
 	it('resolves metadata for a page through its English url', () => {
 		expect(resolvePageMeta('/en/about')).toEqual(resolvePageMeta('/about'))
 	})
+
+	// The host redirects /services to /services/, so every direct page load arrives with a trailing
+	// slash. Without normalising it the lookup misses and every page claims to be the 404.
+	it('resolves metadata when the url carries a trailing slash', () => {
+		for(const path of ['/about', '/services', '/gallery', '/contact', '/agb']) {
+			expect(resolvePageMeta(`${path}/`), path).toEqual(resolvePageMeta(path))
+			expect(resolvePageMeta(`/en${path}/`), path).toEqual(resolvePageMeta(`/en${path}`))
+		}
+	})
+
+	it('does not mistake a trailing-slash url for the not-found page', () => {
+		expect(resolvePageMeta('/services/').title).not.toContain('nicht gefunden')
+		expect(resolvePageMeta('/en/services/').title).not.toContain('nicht gefunden')
+	})
 })
 
 describe('locale routing', () => {
@@ -71,5 +85,17 @@ describe('locale routing', () => {
 	it('keeps the home page prefix free of a trailing slash', () => {
 		expect(localizedPath('/', 'en')).toBe('/en')
 		expect(stripLocale('/en')).toBe('/')
+	})
+
+	it('normalises the trailing slash the host adds', () => {
+		expect(stripLocale('/services/')).toBe('/services')
+		expect(stripLocale('/en/services/')).toBe('/services')
+		expect(stripLocale('/en/')).toBe('/')
+		expect(stripLocale('/')).toBe('/')
+	})
+
+	it('reads the locale from a url with a trailing slash', () => {
+		expect(localeFromPath('/en/')).toBe('en')
+		expect(localeFromPath('/services/')).toBe('de')
 	})
 })

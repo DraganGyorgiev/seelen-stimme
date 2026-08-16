@@ -11,7 +11,7 @@ import './language-switcher.ts'
 @customElement('site-header')
 export class SiteHeader extends LitElement {
 	@state() private isMenuOpen = false
-	@state() private currentPath = window.location.pathname
+	@state() private currentPath = stripLocale(window.location.pathname)
 
 	private readonly onLocationChanged = () => {
 		this.currentPath = stripLocale(window.location.pathname)
@@ -59,9 +59,7 @@ export class SiteHeader extends LitElement {
 						</app-link>
 					</div>
 
-					<div class="flex items-center gap-1 lg:hidden">
-						<language-switcher></language-switcher>
-
+					<div class="flex lg:hidden">
 						<button
 							type="button"
 							aria-expanded=${this.isMenuOpen}
@@ -127,6 +125,10 @@ export class SiteHeader extends LitElement {
 									</app-link>
 								`,
 							)}
+						</div>
+
+						<div class="mt-6 border-t border-gray-900/10 pt-6">
+							<language-switcher></language-switcher>
 						</div>
 					</div>
 				</div>

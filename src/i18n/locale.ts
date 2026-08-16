@@ -32,12 +32,16 @@ export function otherLocale(locale: Locale): Locale {
  * language. Nothing is persisted: a link or bookmark already carries the locale.
  */
 export function localeFromPath(pathname: string): Locale {
-	return pathname === '/en' || pathname.startsWith('/en/') ? 'en' : sourceLocale
+	const path = pathname.length > 1 ? pathname.replace(/\/+$/, '') : pathname
+	return path === '/en' || path.startsWith('/en/') ? 'en' : sourceLocale
 }
 
+// Note: the trailing slash is not cosmetic — the host redirects /services to /services/, so every
+// direct page load arrives with one and every path comparison here would otherwise miss.
 export function stripLocale(pathname: string) {
-	if(pathname === '/en') return '/'
-	return pathname.startsWith('/en/') ? pathname.slice(3) : pathname
+	const path = pathname.length > 1 ? pathname.replace(/\/+$/, '') : pathname
+	if(path === '/en' || path === '') return '/'
+	return path.startsWith('/en/') ? path.slice(3) : path
 }
 
 export function localizedPath(path: string, locale: Locale) {
