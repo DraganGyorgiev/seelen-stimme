@@ -1,4 +1,6 @@
 import { getServices } from '../data/services.ts'
+import { getFaqTopics } from '../data/faqs.ts'
+import { stripLocale } from '../i18n/locale.ts'
 
 const siteOrigin = 'https://seelen-stimme.at'
 const scriptId = 'structured-data'
@@ -35,7 +37,7 @@ const reviews = [
 	{ author: 'Leonard Krasner', body: 'Alles war so stimmig und hat auch neue Erkenntnisse gebracht. Sie arbeitet sehr beweisführend.' },
 ]
 
-export function applyStructuredData() {
+export function applyStructuredData(pathname = window.location.pathname) {
 	const offers = getServices().map((service) => ({
 		'@type': 'Service',
 		name: service.title,
@@ -64,6 +66,7 @@ export function applyStructuredData() {
 				})),
 			},
 			...offers,
+			...faqPageFor(pathname),
 		],
 	}
 
@@ -73,4 +76,24 @@ export function applyStructuredData() {
 	script.setAttribute('type', 'application/ld+json')
 	script.textContent = JSON.stringify(graph)
 	if(!existing) document.head.append(script)
+}
+
+// Note: Google only accepts FAQPage markup on a page where the answers are actually visible, so this
+// is emitted on the FAQ route alone rather than site-wide.
+function faqPageFor(pathname: string) {
+	if(stripLocale(pathname) !== '/faq') return []
+
+	return [
+		{
+			'@type': 'FAQPage',
+			'@id': `${siteOrigin}/faq#faq`,
+			mainEntity: getFaqTopics().flatMap((topic) =>
+				topic.entries.map((entry) => ({
+					'@type': 'Question',
+					name: entry.question,
+					acceptedAnswer: { '@type': 'Answer', text: entry.answer },
+				})),
+			),
+		},
+	]
 }

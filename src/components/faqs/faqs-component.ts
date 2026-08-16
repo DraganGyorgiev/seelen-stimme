@@ -2,79 +2,21 @@ import { LitElement, html } from 'lit'
 import { customElement, state } from 'lit/decorators.js'
 import { localized, msg } from '@lit/localize'
 import tailwindCss from '../../tailwind/tailwindCss.ts'
-
-type FaqTopic = {
-	id: string
-	label: string
-	entries: { question: string; answer: string }[]
-}
-
-function getTopics(): FaqTopic[] {
-	return [
-		{
-			id: 'jk',
-			label: msg('Jenseitskontakt'),
-			entries: [
-				{
-					question: msg('Wie gehe ich bei einem Jenseitskontakt vor?'),
-					answer: msg(
-						'Als beweisführendes Medium möchte ich keinerlei Vorinformationen von dir oder deinen Lieben erhalten – so stelle ich sicher, dass ich alle Informationen ausschließlich von deinem Lieben erhalte.\n\nZuallererst beschreibe ich dir deinen Lieben, damit du sicher sein kannst, dass es sich um die richtige Seele handelt. Danach erhältst du eine persönliche Botschaft oder auch mehrere Botschaften.\n\nIm Anschluss kannst du gerne 2–3 Fragen an deine liebe Seele stellen – oder auch an mich, falls noch Unklarheiten bestehen.',
-					),
-				},
-				{
-					question: msg('Wo findet die Jenseitssitzung statt?'),
-					answer: msg(
-						'Die Jenseitssitzung findet ausschließlich über Zoom oder WhatsApp statt. Bitte beachte, dass nur über Zoom eine Aufzeichnung der Sitzung möglich ist.',
-					),
-				},
-			],
-		},
-		{
-			id: 'sw',
-			label: msg('Seelenweg'),
-			entries: [
-				{
-					question: msg('Was ist ein Seelenweg?'),
-					answer: msg(
-						'Erkenne und finde wieder deinen Weg.\n\nEntfalte dein persönliches Potenzial.\n\nErlange Selbsterkenntnis und finde deinen inneren Frieden.\n\nFinde deine Berufung und Bestimmung heraus.\n\nDurchbrich wiederkehrende Muster in deinem Leben.',
-					),
-				},
-				{
-					question: msg('Ist der Seelenweg die richtige Auswahl für mich?'),
-					answer: msg(
-						'Du befindest dich in einer für dich aussichtslosen Situation und weißt im Moment nicht ein und aus. Du bist daran interessiert, was zu deinen Seelenaufgaben zählt. Du möchtest deinen Weg wiederfinden und verschiedene Themen in deinem Leben genauer unter die Lupe nehmen.',
-					),
-				},
-				{
-					question: msg('Findet ein Vorgespräch statt?'),
-					answer: msg(
-						'Ein Vorgespräch ist nicht unbedingt erforderlich. Du kannst mir deine Fragen, die du bereits im Vorfeld hast, aber gerne mitteilen – so lasse ich diese in mein Channeling einfließen.',
-					),
-				},
-				{
-					question: msg('Was bekomme ich in der Sitzung?'),
-					answer: msg(
-						'Am Ende unserer Sitzung erhältst du die gesamte Sitzung als Video und den Bericht der Sitzung in schriftlicher Form per E-Mail zugeschickt.',
-					),
-				},
-			],
-		},
-	]
-}
+import { getFaqTopics } from '../../data/faqs.ts'
 
 @localized()
 @customElement('faqs-component')
 export class FaqsComponent extends LitElement {
-	@state() private activeTopicId = getTopics()[0].id
+	@state() private activeTopicId = getFaqTopics()[0].id
 
 	private get activeTopic() {
-		const topics = getTopics()
+		const topics = getFaqTopics()
 		return topics.find((topic) => topic.id === this.activeTopicId) ?? topics[0]
 	}
 
 	override render() {
 		const topic = this.activeTopic
-		const topics = getTopics()
+		const topics = getFaqTopics()
 
 		return html`
 			<div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">

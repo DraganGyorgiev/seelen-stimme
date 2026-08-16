@@ -16,6 +16,7 @@ const pages: Page[] = [
 	{ path: '/', component: 'main-page', load: () => import('../pages/app/subpages/main-page.ts') },
 	{ path: '/about', component: 'about-page', load: () => import('../pages/app/subpages/about-page.ts') },
 	{ path: '/services', component: 'services-page', load: () => import('../pages/app/subpages/services-page.ts') },
+	{ path: '/faq', component: 'faq-page', load: () => import('../pages/app/subpages/faq-page.ts') },
 	{ path: '/gallery', component: 'gallery-page', load: () => import('../pages/app/subpages/gallery-page.ts') },
 	{ path: '/contact', component: 'contact-page', load: () => import('../features/contact/contact-page.ts') },
 	{

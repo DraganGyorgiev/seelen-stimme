@@ -26,6 +26,14 @@
     </url>
 
     <url>
+        <loc>https://seelen-stimme.at/faq</loc>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="https://seelen-stimme.at/faq"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://seelen-stimme.at/en/faq"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://seelen-stimme.at/faq"/>
+    </url>
+
+    <url>
         <loc>https://seelen-stimme.at/gallery</loc>
         <priority>0.8</priority>
         <xhtml:link rel="alternate" hreflang="de" href="https://seelen-stimme.at/gallery"/>
@@ -53,6 +61,11 @@
 
     <url>
         <loc>https://seelen-stimme.at/en/about</loc>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://seelen-stimme.at/en/faq</loc>
         <priority>0.7</priority>
     </url>
 

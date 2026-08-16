@@ -25,6 +25,12 @@ export function getPageMeta(): Record<string, PageMeta> {
 				'Jenseitskontakt, Aura-Reading, Seelenweg, Krafttierbilder, medialer Übungszirkel, Einzelcoaching und mediale Beratung – mit Dauer und Preisen.',
 			),
 		},
+		'/faq': {
+			title: msg('Häufige Fragen – Seelen-Stimme'),
+			description: msg(
+				'Wie ein Jenseitskontakt abläuft, wo die Sitzungen stattfinden, wie du einen Termin bekommst und was du vorbereiten musst – die häufigsten Fragen beantwortet.',
+			),
+		},
 		'/gallery': {
 			title: msg('Galerie – Krafttierbilder'),
 			description: msg(

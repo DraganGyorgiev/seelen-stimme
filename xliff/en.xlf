@@ -26,26 +26,6 @@ Im Anschluss kannst du gerne 2–3 Fragen an deine liebe Seele stellen – oder 
   <source>Was ist ein Seelenweg?</source>
   <target>What is a Soul Path reading?</target>
 </trans-unit>
-<trans-unit id="se3131520d6934001">
-  <source>Erkenne und finde wieder deinen Weg.
-
-Entfalte dein persönliches Potenzial.
-
-Erlange Selbsterkenntnis und finde deinen inneren Frieden.
-
-Finde deine Berufung und Bestimmung heraus.
-
-Durchbrich wiederkehrende Muster in deinem Leben.</source>
-  <target>Rediscover your direction. Unlock the potential you already carry. Come to know yourself and find your peace. Discover your calling and your purpose. Break the patterns that keep repeating in your life.</target>
-</trans-unit>
-<trans-unit id="sd63f6ebd4c54c0db">
-  <source>Ist der Seelenweg die richtige Auswahl für mich?</source>
-  <target>Is a Soul Path reading right for me?</target>
-</trans-unit>
-<trans-unit id="s0c9e3ecc9dc55d36">
-  <source>Du befindest dich in einer für dich aussichtslosen Situation und weißt im Moment nicht ein und aus. Du bist daran interessiert, was zu deinen Seelenaufgaben zählt. Du möchtest deinen Weg wiederfinden und verschiedene Themen in deinem Leben genauer unter die Lupe nehmen.</source>
-  <target>You feel stuck in a situation with no way forward. You want to understand what your soul came here to do. You want to find your direction again and look honestly at the areas of your life that need your attention.</target>
-</trans-unit>
 <trans-unit id="s1e44e5975527516d">
   <source>Findet ein Vorgespräch statt?</source>
   <target>Do we speak beforehand?</target>
@@ -890,6 +870,106 @@ Durchbrich wiederkehrende Muster in deinem Leben.</source>
 <trans-unit id="s1bbaca7310fea3e4">
   <source>Seite nicht gefunden – Seelen-Stimme</source>
   <target>Page not found – Seelen-Stimme</target>
+</trans-unit>
+<trans-unit id="sf32ec7199cf4745b">
+  <source>FAQ</source>
+  <target>FAQ</target>
+</trans-unit>
+<trans-unit id="sa67111f975e76bd9">
+  <source>Was ist, wenn sich keine Verbindung zeigt?</source>
+  <target>What if no connection comes through?</target>
+</trans-unit>
+<trans-unit id="se7ec6706417db85b">
+  <source>Ich arbeite beweisführend: Zuerst beschreibe ich die Person, die sich zeigt, damit du selbst erkennen kannst, um wen es geht. In aller Regel kommt eine Verbindung zustande – versprechen lässt sich das aus der Natur dieser Arbeit heraus jedoch nicht. Sollte sich wider Erwarten keine Verbindung einstellen, finden wir gemeinsam eine Lösung.</source>
+  <target>I work evidentially: I begin by describing the person who comes through, so that you can recognise who it is yourself. A connection almost always comes about – though by the nature of this work it cannot be promised. If against expectation no connection comes through, we will find a solution together.</target>
+</trans-unit>
+<trans-unit id="sf5dba1a33b2571be">
+  <source>Der Seelenweg ist eine gechannelte Sitzung, in der ich mich mit deiner Seele verbinde und weitergebe, was sich zeigt: welche Themen dich gerade prägen, welche Aufgaben zu deinem Weg gehören und welcher Schritt als Nächstes ansteht.
+
+Im Unterschied zum Jenseitskontakt geht es dabei nicht um Verstorbene, sondern um dich – um deine Situation, deine Muster und deine Richtung.
+
+Am Ende hast du Antworten auf die Fragen, die dich beschäftigen, und ein klareres Bild davon, wohin dein Weg führt.</source>
+  <target>A Soul Path reading is a channelled session in which I connect with your soul and pass on what comes through: the themes shaping your life right now, the tasks that belong to your path, and the step that comes next.
+
+Unlike a mediumship reading, it isn’t about someone who has died – it’s about you: your situation, your patterns and your direction.
+
+By the end you have answers to the questions on your mind, and a clearer picture of where your path is leading.</target>
+</trans-unit>
+<trans-unit id="se4054cd91d5c4832">
+  <source>Ist der Seelenweg das Richtige für mich?</source>
+  <target>Is a Soul Path reading right for me?</target>
+</trans-unit>
+<trans-unit id="scd93736b870a5e44">
+  <source>Vermutlich ja, wenn du in einer Situation steckst, in der du nicht weiterweißt, wenn sich bestimmte Muster in deinem Leben immer wiederholen, oder wenn du spürst, dass etwas Grundsätzliches nicht stimmig ist.
+
+Geht es dir dagegen um eine konkrete Frage zu einer aktuellen Situation, ist die mediale Beratung meist die passendere Wahl. Und wenn du Kontakt zu einer verstorbenen Person suchst, ist der Jenseitskontakt der richtige Weg.
+
+Wenn du unsicher bist, schreib mir einfach – ich sage dir ehrlich, was zu deinem Anliegen passt.</source>
+  <target>Most likely yes, if you are stuck in a situation with no way forward, if the same patterns keep repeating in your life, or if you sense that something fundamental is out of step.
+
+If instead you have one specific question about a current situation, psychic guidance is usually the better fit. And if you are looking to make contact with someone who has died, a mediumship reading is the right choice.
+
+If you are not sure, just write to me – I will tell you honestly which one suits what you are bringing.</target>
+</trans-unit>
+<trans-unit id="sab57976947438246">
+  <source>Ablauf &amp; Organisation</source>
+  <target>How it works</target>
+</trans-unit>
+<trans-unit id="sd5ff5a748d033b86">
+  <source>Wie vereinbare ich einen Termin?</source>
+  <target>How do I book an appointment?</target>
+</trans-unit>
+<trans-unit id="s2ed5725fd08d3aab">
+  <source>Schreib mir über das Kontaktformular, per E-Mail oder direkt über WhatsApp und nenne mir die gewünschte Leistung. Ich melde mich mit möglichen Terminen bei dir zurück.
+
+Für den Jenseitskontakt sind die Termine zeitweise ausgebucht – melde dich trotzdem gerne, dann sage ich dir Bescheid, sobald wieder etwas frei wird.</source>
+  <target>Write to me through the contact form, by email or directly on WhatsApp, and tell me which service you would like. I will come back to you with possible dates.
+
+Mediumship readings are fully booked from time to time – do get in touch anyway, and I will let you know as soon as something opens up.</target>
+</trans-unit>
+<trans-unit id="s3ed76849157a926d">
+  <source>Wie und wann bezahle ich?</source>
+  <target>How and when do I pay?</target>
+</trans-unit>
+<trans-unit id="sce5e4c17f80c8273">
+  <source>Die Bezahlung erfolgt vor der Sitzung über die Zahlungsmethode, die wir gemeinsam vereinbaren. Die Details bekommst du von mir, sobald der Termin feststeht.</source>
+  <target>Payment is made before the session, using the payment method we agree between us. You will get the details from me once the appointment is confirmed.</target>
+</trans-unit>
+<trans-unit id="s1727d324c4df75f8">
+  <source>Muss ich mich auf die Sitzung vorbereiten?</source>
+  <target>Do I need to prepare anything?</target>
+</trans-unit>
+<trans-unit id="se2300dbd57346cbb">
+  <source>Nein. Du brauchst nichts vorzubereiten und nichts mitzubringen. Sorge nur dafür, dass du während der Sitzung ungestört bist und eine stabile Internetverbindung hast.
+
+Wenn du magst, kannst du dir vorher Fragen notieren – nötig ist das aber nicht.</source>
+  <target>No. There is nothing to prepare and nothing to bring. Just make sure you will be undisturbed during the session and have a stable internet connection.
+
+If you like, you can note down questions beforehand – but it isn’t necessary.</target>
+</trans-unit>
+<trans-unit id="scca22898808fc721">
+  <source>Was ist, wenn ich während der Sitzung sehr emotional werde?</source>
+  <target>What if I become very emotional during the session?</target>
+</trans-unit>
+<trans-unit id="s9c622ece2c51b9ef">
+  <source>Das ist völlig in Ordnung und kommt häufig vor. Wir machen so lange Pause, wie du brauchst, und du bestimmst das Tempo. Es gibt nichts, was du „richtig“ machen musst.</source>
+  <target>That is completely fine, and it happens often. We pause for as long as you need, and you set the pace. There is nothing you have to do “right”.</target>
+</trans-unit>
+<trans-unit id="sda555ecfa7898f1f">
+  <source>Kann ich einen Termin verschieben oder absagen?</source>
+  <target>Can I reschedule or cancel?</target>
+</trans-unit>
+<trans-unit id="sef92a77253a5cc36">
+  <source>Ja. Bitte sage mindestens 24 Stunden vorher per E-Mail ab, dann finden wir einen neuen Termin. Bei kurzfristigeren Absagen wird der volle Preis der gebuchten Leistung als Ausfallgebühr fällig – die Details stehen in den AGB.</source>
+  <target>Yes. Please cancel by email at least 24 hours beforehand and we will find a new date. For later cancellations the full price of the booked service is charged as a cancellation fee – the details are in the terms and conditions.</target>
+</trans-unit>
+<trans-unit id="s820a84cd30eb2037">
+  <source>Häufige Fragen – Seelen-Stimme</source>
+  <target>Frequently Asked Questions – Seelen-Stimme</target>
+</trans-unit>
+<trans-unit id="s02132bbadbcb188a">
+  <source>Wie ein Jenseitskontakt abläuft, wo die Sitzungen stattfinden, wie du einen Termin bekommst und was du vorbereiten musst – die häufigsten Fragen beantwortet.</source>
+  <target>How a mediumship reading works, where sessions take place, how to book an appointment and what you need to prepare – the most common questions answered.</target>
 </trans-unit>
 </body>
 </file>

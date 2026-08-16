@@ -39,6 +39,7 @@ export class SiteHeader extends LitElement {
 			{ label: msg('Home'), route: '/' },
 			{ label: msg('Über mich'), route: '/about' },
 			{ label: msg('Leistungen'), route: '/services' },
+			{ label: msg('FAQ'), route: '/faq' },
 			{ label: msg('Kontakt'), route: '/contact' },
 			{ label: msg('Galerie'), route: '/gallery' },
 		]
