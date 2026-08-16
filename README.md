@@ -200,5 +200,28 @@ German even in the English UI, so enquiries read consistently.
 
 ## Deployment
 
-Netlify builds `npm run build` and publishes `dist/`. `public/_redirects` rewrites all paths to
-`index.html` so client-side routes survive a hard refresh.
+Netlify builds `npm run build` and publishes `dist/`.
+
+`npm run build` finishes by running `scripts/prerender-meta.mjs`, which writes a real HTML file per
+route — `dist/services/index.html`, `dist/en/services/index.html` and so on — each with its own
+`<title>`, description, canonical, Open Graph tags and `hreflang` alternates already in the markup.
+
+This exists because the app sets those tags with JavaScript, and **social scrapers do not run
+JavaScript**. Without it, sharing any URL on Facebook or WhatsApp shows the home page's title and
+description, because `index.html` is all the scraper ever reads. Google renders JS and would eventually
+get it right; the scrapers never would.
+
+The strings come from `getPageMeta()` and `xliff/en.xlf`, the same sources the running app uses, so the
+prerendered markup cannot drift from what the app shows.
+
+The script also writes `dist/_redirects`: one explicit `200` rewrite per route pointing at its
+prerendered file, followed by the SPA catch-all. Relying on the host to resolve `/services` to
+`/services/index.html` would work, but being explicit means the behaviour does not depend on a hosting
+setting. `public/_redirects` is the fallback used if the prerender step is ever skipped.
+
+**After deploying, confirm it took**, since this is the one thing that cannot be checked locally:
+
+```bash
+curl -s https://seelen-stimme.at/en/services | grep -o '<title>[^<]*</title>'
+# expected: <title>Services – Seelenstimme</title>
+```
