@@ -18,7 +18,7 @@ export class AgbPage extends LitElement {
 							<h2 class="text-lg font-semibold text-gray-900">${msg('1. Geltungsbereich')}</h2>
 							<p class="mt-2">
 								${msg(html`Diese Allgemeinen Geschäftsbedingungen gelten für alle Dienstleistungen von
-									<strong>Seelenstimme</strong>.`)}
+									<strong>Seelen-Stimme</strong>.`)}
 							</p>
 						</section>
 

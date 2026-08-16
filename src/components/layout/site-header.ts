@@ -48,11 +48,11 @@ export class SiteHeader extends LitElement {
 				<nav class="flex items-center justify-between p-5 lg:px-5 lg:py-5" aria-label=${msg('Hauptnavigation')}>
 					<div class="flex flex-1">
 						<app-link to="/" variant="logo">
-							<span class="sr-only">${msg('Seelenstimme – zur Startseite')}</span>
+							<span class="sr-only">${msg('Seelen-Stimme – zur Startseite')}</span>
 							<img
 								class="xl:h-25 h-18 w-auto pr-3"
 								src=${Logo}
-								alt="Seelenstimme"
+								alt="Seelen-Stimme"
 								width="240"
 								height="100"
 							/>
@@ -98,8 +98,8 @@ export class SiteHeader extends LitElement {
 					<div class="fixed inset-y-0 right-0 z-20 w-full max-w-sm overflow-y-auto bg-white px-6 py-6 ring-1 ring-gray-900/10">
 						<div class="flex items-center justify-between">
 							<app-link to="/" variant="logo" @click=${() => (this.isMenuOpen = false)}>
-								<span class="sr-only">${msg('Seelenstimme – zur Startseite')}</span>
-								<img class="h-20 w-auto pr-2.5" src=${Logo} alt="Seelenstimme" width="240" height="100" />
+								<span class="sr-only">${msg('Seelen-Stimme – zur Startseite')}</span>
+								<img class="h-20 w-auto pr-2.5" src=${Logo} alt="Seelen-Stimme" width="240" height="100" />
 							</app-link>
 
 							<button

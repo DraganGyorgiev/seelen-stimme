@@ -8,19 +8,19 @@ type PageMeta = { title: string; description: string }
 export function getPageMeta(): Record<string, PageMeta> {
 	return {
 		'/': {
-			title: msg('Seelenstimme – Spirituelle Begleitung & Jenseitskontakte'),
+			title: msg('Seelen-Stimme – Spirituelle Begleitung & Jenseitskontakte'),
 			description: msg(
 				'Stefana Gyorgiev begleitet dich medial und einfühlsam: Jenseitskontakte, Aura-Reading, Seelenweg, Krafttierbilder und mediale Beratung im Burgenland und online.',
 			),
 		},
 		'/about': {
-			title: msg('Über mich – Seelenstimme'),
+			title: msg('Über mich – Seelen-Stimme'),
 			description: msg(
 				'Wie ich zur medialen Arbeit gekommen bin: mein Weg als Jenseitsmedium und spirituelle Begleiterin.',
 			),
 		},
 		'/services': {
-			title: msg('Leistungen – Seelenstimme'),
+			title: msg('Leistungen – Seelen-Stimme'),
 			description: msg(
 				'Jenseitskontakt, Aura-Reading, Seelenweg, Krafttierbilder, medialer Übungszirkel, Einzelcoaching und mediale Beratung – mit Dauer und Preisen.',
 			),
@@ -32,31 +32,31 @@ export function getPageMeta(): Record<string, PageMeta> {
 			),
 		},
 		'/contact': {
-			title: msg('Kontakt & Terminanfrage – Seelenstimme'),
+			title: msg('Kontakt & Terminanfrage – Seelen-Stimme'),
 			description: msg(
 				'Sende eine unverbindliche Terminanfrage für Jenseitskontakt, Aura-Reading, Seelenweg oder mediale Beratung – ich melde mich in Kürze bei dir.',
 			),
 		},
 		'/impressum': {
-			title: msg('Impressum – Seelenstimme'),
+			title: msg('Impressum – Seelen-Stimme'),
 			description: msg(
 				'Anbieterkennzeichnung gemäß § 5 ECG: Name, Adresse und Kontaktdaten der Betreiberin von seelen-stimme.at.',
 			),
 		},
 		'/datenschutz': {
-			title: msg('Datenschutzerklärung – Seelenstimme'),
+			title: msg('Datenschutzerklärung – Seelen-Stimme'),
 			description: msg(
 				'Welche personenbezogenen Daten seelen-stimme.at verarbeitet, zu welchem Zweck, auf welcher Rechtsgrundlage und welche Rechte dir dabei zustehen.',
 			),
 		},
 		'/agb': {
-			title: msg('AGB – Seelenstimme'),
+			title: msg('AGB – Seelen-Stimme'),
 			description: msg(
 				'Allgemeine Geschäftsbedingungen für Sitzungen und Bilder: Leistungsumfang, Terminvereinbarung, Stornofristen, Zahlung und Haftung.',
 			),
 		},
 		'/cookies': {
-			title: msg('Cookie-Richtlinie – Seelenstimme'),
+			title: msg('Cookie-Richtlinie – Seelen-Stimme'),
 			description: msg(
 				'Diese Website setzt keine Cookies. Was das für dich bedeutet und welche Dienste beim Absenden des Formulars beteiligt sind.',
 			),
@@ -66,7 +66,7 @@ export function getPageMeta(): Record<string, PageMeta> {
 
 function getNotFoundMeta(): PageMeta {
 	return {
-		title: msg('Seite nicht gefunden – Seelenstimme'),
+		title: msg('Seite nicht gefunden – Seelen-Stimme'),
 		description: msg('Diese Seite existiert nicht oder wurde verschoben.'),
 	}
 }

@@ -27,7 +27,7 @@ export class SiteFooter extends LitElement {
 					<div class="mt-16 flex justify-center gap-x-10">
 						<footer-social-link
 							href="https://www.facebook.com/profile.php?id=61571720355115"
-							label=${msg('Seelenstimme auf Facebook')}
+							label=${msg('Seelen-Stimme auf Facebook')}
 						>
 							<svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
 								<path
@@ -40,7 +40,7 @@ export class SiteFooter extends LitElement {
 					</div>
 
 					<p class="mt-10 text-center text-sm/6 text-gray-600">
-						&copy; ${new Date().getFullYear()} Seelenstimme. ${msg('Alle Rechte vorbehalten.')}
+						&copy; ${new Date().getFullYear()} Seelen-Stimme. ${msg('Alle Rechte vorbehalten.')}
 					</p>
 				</div>
 			</footer>

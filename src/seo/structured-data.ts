@@ -6,7 +6,7 @@ const scriptId = 'structured-data'
 const business = {
 	'@type': 'LocalBusiness',
 	'@id': `${siteOrigin}/#business`,
-	name: 'Seelenstimme',
+	name: 'Seelen-Stimme',
 	description: 'Jenseitsmedium und spirituelle Begleitung',
 	founder: { '@type': 'Person', name: 'Stefana Gyorgiev' },
 	url: siteOrigin,

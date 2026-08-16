@@ -106,10 +106,6 @@ Durchbrich wiederkehrende Muster in deinem Leben.</source>
   <source>Rechtliches</source>
   <target>Legal</target>
 </trans-unit>
-<trans-unit id="s40054ecc54073578">
-  <source>Seelenstimme auf Facebook</source>
-  <target>Seelenstimme on Facebook</target>
-</trans-unit>
 <trans-unit id="s4287722a1ed30ec4">
   <source>Alle Rechte vorbehalten.</source>
   <target>All rights reserved.</target>
@@ -137,10 +133,6 @@ Durchbrich wiederkehrende Muster in deinem Leben.</source>
 <trans-unit id="sbd4575edfbf5c84f">
   <source>Hauptnavigation</source>
   <target>Main navigation</target>
-</trans-unit>
-<trans-unit id="se47675a84f19a970">
-  <source>Seelenstimme – zur Startseite</source>
-  <target>Seelenstimme – home page</target>
 </trans-unit>
 <trans-unit id="sb5cd556ea8f46bb8">
   <source>Menü öffnen</source>
@@ -529,11 +521,6 @@ Durchbrich wiederkehrende Muster in deinem Leben.</source>
   <source>1. Geltungsbereich</source>
   <target>1. Scope</target>
 </trans-unit>
-<trans-unit id="h987f5d6269a684ed">
-  <source>Diese Allgemeinen Geschäftsbedingungen gelten für alle Dienstleistungen von
-									<x id="0" equiv-text="&lt;strong&gt;"/>Seelenstimme<x id="1" equiv-text="&lt;/strong&gt;"/>.</source>
-  <target>These Terms and Conditions apply to all services provided by <x id="0" equiv-text="&lt;strong&gt;"/>Seelenstimme<x id="1" equiv-text="&lt;/strong&gt;"/>.</target>
-</trans-unit>
 <trans-unit id="sa8e3cde1ab598c0b">
   <source>2. Leistungen</source>
   <target>2. Services</target>
@@ -727,57 +714,21 @@ Durchbrich wiederkehrende Muster in deinem Leben.</source>
   <source>Kontakt aufnehmen</source>
   <target>Get in touch</target>
 </trans-unit>
-<trans-unit id="s40efb1f74e2b430f">
-  <source>Seelenstimme – Spirituelle Begleitung &amp; Jenseitskontakte</source>
-  <target>Seelenstimme – Mediumship Readings and Spiritual Guidance</target>
-</trans-unit>
-<trans-unit id="s932021f4c0580e85">
-  <source>Über mich – Seelenstimme</source>
-  <target>About me – Seelenstimme</target>
-</trans-unit>
 <trans-unit id="sdfed1e428d1182d6">
   <source>Wie ich zur medialen Arbeit gekommen bin: mein Weg als Jenseitsmedium und spirituelle Begleiterin.</source>
   <target>How I came to this work: my path as a medium and spiritual guide in Burgenland, Austria.</target>
-</trans-unit>
-<trans-unit id="s97c33ec77f3882c1">
-  <source>Leistungen – Seelenstimme</source>
-  <target>Services – Seelenstimme</target>
-</trans-unit>
-<trans-unit id="sab1e9f584b6d52ce">
-  <source>Kontakt &amp; Terminanfrage – Seelenstimme</source>
-  <target>Contact and Booking – Seelenstimme</target>
-</trans-unit>
-<trans-unit id="sb161925b0c6a770a">
-  <source>Impressum – Seelenstimme</source>
-  <target>Legal Notice – Seelenstimme</target>
 </trans-unit>
 <trans-unit id="s9eaf9fd6faeb1328">
   <source>Anbieterkennzeichnung gemäß § 5 ECG: Name, Adresse und Kontaktdaten der Betreiberin von seelen-stimme.at.</source>
   <target>Provider identification pursuant to § 5 ECG: name, address and contact details of the owner of seelen-stimme.at.</target>
 </trans-unit>
-<trans-unit id="sdf0f1a929135522a">
-  <source>Datenschutzerklärung – Seelenstimme</source>
-  <target>Privacy Policy – Seelenstimme</target>
-</trans-unit>
 <trans-unit id="s226b6ace061a9d5c">
   <source>Welche personenbezogenen Daten seelen-stimme.at verarbeitet, zu welchem Zweck, auf welcher Rechtsgrundlage und welche Rechte dir dabei zustehen.</source>
   <target>What personal data seelen-stimme.at processes, why, on what legal basis, and what rights you have.</target>
 </trans-unit>
-<trans-unit id="sfac73e2634b2f0cd">
-  <source>AGB – Seelenstimme</source>
-  <target>Terms and Conditions – Seelenstimme</target>
-</trans-unit>
 <trans-unit id="sfcc8ffae5ff05b7f">
   <source>Allgemeine Geschäftsbedingungen für Sitzungen und Bilder: Leistungsumfang, Terminvereinbarung, Stornofristen, Zahlung und Haftung.</source>
   <target>Terms and conditions for sessions and paintings: what is included, booking, cancellation, payment and liability.</target>
-</trans-unit>
-<trans-unit id="s9da70b0b4b731aad">
-  <source>Cookie-Richtlinie – Seelenstimme</source>
-  <target>Cookie Policy – Seelenstimme</target>
-</trans-unit>
-<trans-unit id="s542a9db01dc2f83b">
-  <source>Seite nicht gefunden – Seelenstimme</source>
-  <target>Page not found – Seelenstimme</target>
 </trans-unit>
 <trans-unit id="s1c69dd4b34299566">
   <source>Diese Seite existiert nicht oder wurde verschoben.</source>
@@ -890,6 +841,55 @@ Durchbrich wiederkehrende Muster in deinem Leben.</source>
 <trans-unit id="s6c495e302c9c1018">
   <source>Diese Website setzt keine Cookies. Was das für dich bedeutet und welche Dienste beim Absenden des Formulars beteiligt sind.</source>
   <target>This website sets no cookies. What that means for you, and which services are involved when you submit the contact form.</target>
+</trans-unit>
+<trans-unit id="s0908ec8b87fc99c3">
+  <source>Seelen-Stimme auf Facebook</source>
+  <target>Seelen-Stimme on Facebook</target>
+</trans-unit>
+<trans-unit id="s01db6c2e885a5103">
+  <source>Seelen-Stimme – zur Startseite</source>
+  <target>Seelen-Stimme – home page</target>
+</trans-unit>
+<trans-unit id="h23898625cea252ba">
+  <source>Diese Allgemeinen Geschäftsbedingungen gelten für alle Dienstleistungen von
+									<x id="0" equiv-text="&lt;strong&gt;"/>Seelen-Stimme<x id="1" equiv-text="&lt;/strong&gt;"/>.</source>
+  <target>These Terms and Conditions apply to all services provided by <x id="0" equiv-text="&lt;strong&gt;"/>Seelen-Stimme<x id="1" equiv-text="&lt;/strong&gt;"/>.</target>
+</trans-unit>
+<trans-unit id="sc3c5826cbea94596">
+  <source>Seelen-Stimme – Spirituelle Begleitung &amp; Jenseitskontakte</source>
+  <target>Seelen-Stimme – Mediumship Readings and Spiritual Guidance</target>
+</trans-unit>
+<trans-unit id="sd8be9f23f7ff3402">
+  <source>Über mich – Seelen-Stimme</source>
+  <target>About me – Seelen-Stimme</target>
+</trans-unit>
+<trans-unit id="sb7cae6916b25101e">
+  <source>Leistungen – Seelen-Stimme</source>
+  <target>Services – Seelen-Stimme</target>
+</trans-unit>
+<trans-unit id="s076178e875789923">
+  <source>Kontakt &amp; Terminanfrage – Seelen-Stimme</source>
+  <target>Contact and Booking – Seelen-Stimme</target>
+</trans-unit>
+<trans-unit id="s2f1942b250ccd8bf">
+  <source>Impressum – Seelen-Stimme</source>
+  <target>Legal Notice – Seelen-Stimme</target>
+</trans-unit>
+<trans-unit id="sb5c450516a38f19f">
+  <source>Datenschutzerklärung – Seelen-Stimme</source>
+  <target>Privacy Policy – Seelen-Stimme</target>
+</trans-unit>
+<trans-unit id="sdf75186963c0d7ca">
+  <source>AGB – Seelen-Stimme</source>
+  <target>Terms and Conditions – Seelen-Stimme</target>
+</trans-unit>
+<trans-unit id="s94baf66358cbb9ea">
+  <source>Cookie-Richtlinie – Seelen-Stimme</source>
+  <target>Cookie Policy – Seelen-Stimme</target>
+</trans-unit>
+<trans-unit id="s1bbaca7310fea3e4">
+  <source>Seite nicht gefunden – Seelen-Stimme</source>
+  <target>Page not found – Seelen-Stimme</target>
 </trans-unit>
 </body>
 </file>
